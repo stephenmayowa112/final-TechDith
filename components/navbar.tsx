@@ -32,11 +32,14 @@ export default function Navbar() {
             <Link href="/aboutUs" className="text-gray-800 hover:text-purple-700">
               About Us
             </Link>
-            <Link href="/service" className="text-gray-800 hover:text-purple-700">
+            <Link href="/services" className="text-gray-800 hover:text-purple-700">
               Our Services
             </Link>
             <Link href="/project" className="text-gray-800 hover:text-purple-700">
-              Our project
+              Project
+            </Link>
+            <Link href="/blog" className="text-gray-800 hover:text-purple-700">
+              Blog
             </Link>
             <Link href="/contact-us" className="text-gray-800 hover:text-purple-700">
               Contact Us
