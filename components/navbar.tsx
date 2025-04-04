@@ -35,8 +35,8 @@ export default function Navbar() {
             <Link href="/service" className="text-gray-800 hover:text-purple-700">
               Our Services
             </Link>
-            <Link href="/the-difference" className="text-gray-800 hover:text-purple-700">
-              The Difference
+            <Link href="/project" className="text-gray-800 hover:text-purple-700">
+              Our project
             </Link>
             <Link href="/contact-us" className="text-gray-800 hover:text-purple-700">
               Contact Us
