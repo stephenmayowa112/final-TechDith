@@ -29,7 +29,7 @@ export default function Navbar() {
             <Link href="/" className="text-gray-800 hover:text-purple-700">
               Home
             </Link>
-            <Link href="/about-us" className="text-gray-800 hover:text-purple-700">
+            <Link href="/aboutUs" className="text-gray-800 hover:text-purple-700">
               About Us
             </Link>
             <Link href="/our-services" className="text-gray-800 hover:text-purple-700">
