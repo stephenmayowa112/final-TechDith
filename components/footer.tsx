@@ -42,8 +42,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/the-difference" className="text-gray-400 hover:text-white text-sm">
-                  The Difference
+                <Link href="/project" className="text-gray-400 hover:text-white text-sm">
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog" className="text-gray-400 hover:text-white text-sm">
+                  Blog
                 </Link>
               </li>
               <li>
