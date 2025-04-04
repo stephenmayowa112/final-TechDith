@@ -32,7 +32,7 @@ export default function Navbar() {
             <Link href="/aboutUs" className="text-gray-800 hover:text-purple-700">
               About Us
             </Link>
-            <Link href="/our-services" className="text-gray-800 hover:text-purple-700">
+            <Link href="/service" className="text-gray-800 hover:text-purple-700">
               Our Services
             </Link>
             <Link href="/the-difference" className="text-gray-800 hover:text-purple-700">
