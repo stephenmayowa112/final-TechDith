@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Hamilton Stone | Expert Business Consulting",
   description: "Get expert consultation, innovation solutions, and effective project oversight with Hamilton Stone.",
-    generator: 'v0.dev'
+  
 }
 
 export default function RootLayout({
