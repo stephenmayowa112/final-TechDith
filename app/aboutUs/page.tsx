@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import Image from "next/image"
+import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "About Us | TECHDITH LIMITED",
@@ -144,81 +145,106 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* Vision and Values */}
-      <section className="py-16 bg-emerald-700 text-white">
+      {/* Our Vision */}
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-6xl">
-          <div className="flex flex-col md:flex-row gap-12">
+          <h2 className="text-3xl font-bold mb-12 text-center text-gray-800">
+            <span className="inline-block pb-2 border-b-4 border-emerald-500">Our Vision</span>
+          </h2>
+
+          <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="md:w-1/2">
-              <h2 className="text-3xl font-bold mb-6">
-                <span className="inline-block pb-2 border-b-4 border-white">Our Vision</span>
-              </h2>
-              <p className="mb-6 leading-relaxed">
+              <div className="relative h-80 md:h-96 rounded-lg overflow-hidden shadow-xl">
+                <Image
+                  src="/placeholder.svg?height=800&width=800"
+                  alt="TECHDITH Vision"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+            <div className="md:w-1/2">
+              <p className="text-gray-700 mb-6 leading-relaxed">
                 We envision a future where technology is seamlessly integrated into every aspect of life and business in
                 Nigeria. We are committed to playing a leading role in shaping this future by delivering innovative,
                 reliable, and impactful technology solutions that make a real difference.
               </p>
-              <p className="leading-relaxed">
+              <p className="text-gray-700 mb-6 leading-relaxed">
                 TECHDITH LIMITED is more than just a technology company; we are a catalyst for change. We are committed
                 to driving digital transformation in Nigeria and helping businesses and industries thrive in the digital
                 age.
               </p>
+              <p className="text-gray-700 leading-relaxed">
+                Our vision extends beyond providing services – we aim to be a strategic partner in our clients' success,
+                contributing to the technological advancement and economic growth of Nigeria through innovation and
+                excellence.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Values: CITIE */}
+      <section className="py-16 bg-emerald-700 text-white">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <h2 className="text-3xl font-bold mb-12 text-center">
+            <span className="inline-block pb-2 border-b-4 border-white">Our Values: CITIE</span>
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 transform transition-transform hover:scale-105">
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-emerald-700 font-bold">C</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-center">Customer Focus</h3>
+              <p className="text-white/80 text-center">
+                We are committed to providing our clients with the highest level of service, understanding their unique
+                needs, and exceeding their expectations.
+              </p>
             </div>
 
-            <div className="md:w-1/2">
-              <h2 className="text-3xl font-bold mb-6">
-                <span className="inline-block pb-2 border-b-4 border-white">Our Values: CITIE</span>
-              </h2>
-              <div className="space-y-4">
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-emerald-700 font-bold">C</span>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold">Customer Focus</h3>
-                    <p>We are committed to providing our clients with the highest level of service.</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-emerald-700 font-bold">I</span>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold">Integrity</h3>
-                    <p>We conduct our business with honesty and integrity.</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-emerald-700 font-bold">T</span>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold">Teamwork</h3>
-                    <p>We believe that collaboration is key to success.</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-emerald-700 font-bold">I</span>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold">Innovation</h3>
-                    <p>We are passionate about pushing the boundaries of what is possible with technology.</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-emerald-700 font-bold">E</span>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold">Excellence</h3>
-                    <p>We strive for excellence in everything we do.</p>
-                  </div>
-                </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 transform transition-transform hover:scale-105">
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-emerald-700 font-bold">I</span>
               </div>
+              <h3 className="text-xl font-semibold mb-3 text-center">Integrity</h3>
+              <p className="text-white/80 text-center">
+                We conduct our business with honesty, transparency, and ethical standards that build trust with our
+                clients, partners, and team members.
+              </p>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 transform transition-transform hover:scale-105">
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-emerald-700 font-bold">T</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-center">Teamwork</h3>
+              <p className="text-white/80 text-center">
+                We believe that collaboration is key to success. We foster a culture of cooperation, respect, and shared
+                responsibility.
+              </p>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 transform transition-transform hover:scale-105">
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-emerald-700 font-bold">I</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-center">Innovation</h3>
+              <p className="text-white/80 text-center">
+                We are passionate about pushing the boundaries of what is possible with technology, constantly seeking
+                new ideas and creative solutions.
+              </p>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 transform transition-transform hover:scale-105">
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-emerald-700 font-bold">E</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-center">Excellence</h3>
+              <p className="text-white/80 text-center">
+                We strive for excellence in everything we do, maintaining high standards of quality and continuously
+                improving our processes and services.
+              </p>
             </div>
           </div>
         </div>
@@ -349,14 +375,23 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* Directors' Details */}
+      {/* Our Team */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 max-w-6xl">
           <h2 className="text-3xl font-bold mb-12 text-center text-gray-800">
-            <span className="inline-block pb-2 border-b-4 border-emerald-500">Our Leadership</span>
+            <span className="inline-block pb-2 border-b-4 border-emerald-500">Our Team</span>
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="mb-12">
+            <p className="text-gray-700 text-center max-w-3xl mx-auto">
+              Our team consists of dedicated professionals with diverse expertise and a shared commitment to excellence.
+              Together, we work to deliver innovative technology solutions that drive our clients' success.
+            </p>
+          </div>
+
+          {/* Leadership */}
+          <h3 className="text-2xl font-bold mb-8 text-gray-800">Leadership</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
             <div className="bg-white rounded-xl shadow-xl overflow-hidden transform transition-transform hover:scale-105">
               <div className="h-80 relative">
                 <Image src="/placeholder.svg?height=600&width=600" alt="Segun Oladiti" fill className="object-cover" />
@@ -364,7 +399,7 @@ export default function AboutUs() {
               <div className="p-8">
                 <h3 className="text-2xl font-bold mb-1">Segun Oladiti</h3>
                 <p className="text-emerald-600 font-medium mb-4">Chief Executive Officer</p>
-                <div className="space-y-2 text-gray-600">
+                <div className="space-y-2 text-gray-600 mb-6">
                   <p>
                     <span className="font-medium text-gray-800">Phone:</span> 07061622366, 08182681345
                   </p>
@@ -376,6 +411,20 @@ export default function AboutUs() {
                   </p>
                   <p>
                     <span className="font-medium text-gray-800">State of Origin:</span> State of Osun
+                  </p>
+                </div>
+                <div className="border-t pt-6">
+                  <h4 className="font-semibold text-gray-800 mb-3">Biography</h4>
+                  <p className="text-gray-600 leading-relaxed">
+                    Segun Oladiti is the visionary founder and CEO of TECHDITH LIMITED. With over 10 years of experience
+                    in technology and business management, Segun has led numerous successful projects across various
+                    sectors. His expertise in software development and strategic planning has been instrumental in
+                    establishing TECHDITH as a leading technology company in Nigeria.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed mt-3">
+                    Segun holds a degree in Computer Science and is passionate about leveraging technology to solve
+                    real-world problems. Under his leadership, TECHDITH continues to innovate and deliver exceptional
+                    value to clients.
                   </p>
                 </div>
               </div>
@@ -393,7 +442,7 @@ export default function AboutUs() {
               <div className="p-8">
                 <h3 className="text-2xl font-bold mb-1">Ife Thona Akoniyon</h3>
                 <p className="text-emerald-600 font-medium mb-4">Executive Director</p>
-                <div className="space-y-2 text-gray-600">
+                <div className="space-y-2 text-gray-600 mb-6">
                   <p>
                     <span className="font-medium text-gray-800">Phone:</span> 08106688512
                   </p>
@@ -407,8 +456,220 @@ export default function AboutUs() {
                     <span className="font-medium text-gray-800">State of Origin:</span> Ogun State
                   </p>
                 </div>
+                <div className="border-t pt-6">
+                  <h4 className="font-semibold text-gray-800 mb-3">Biography</h4>
+                  <p className="text-gray-600 leading-relaxed">
+                    Ife Thona Akoniyon serves as the Executive Director at TECHDITH LIMITED, bringing valuable expertise
+                    in business development and project management. With a background in both technology and business
+                    administration, Ife plays a crucial role in aligning the company's technological capabilities with
+                    market needs and client requirements.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed mt-3">
+                    Ife is particularly focused on expanding TECHDITH's presence in emerging sectors and has been
+                    instrumental in developing the company's agricultural technology initiatives. Her strategic vision
+                    and operational excellence continue to drive the company's growth and success.
+                  </p>
+                </div>
               </div>
             </div>
+          </div>
+
+          {/* Technical Team */}
+          <h3 className="text-2xl font-bold mb-8 text-gray-800">Technical Team</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="h-64 relative">
+                <Image
+                  src="/placeholder.svg?height=400&width=400"
+                  alt="Technical Team Member"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-1">Adebayo Johnson</h3>
+                <p className="text-emerald-600 font-medium mb-4">Lead Software Developer</p>
+                <p className="text-gray-600 mb-4">
+                  Adebayo leads our software development team, bringing 8+ years of experience in full-stack
+                  development. He specializes in web and mobile application development, with expertise in React,
+                  Node.js, and cloud infrastructure.
+                </p>
+                <div className="flex space-x-3">
+                  <a href="#" className="text-gray-400 hover:text-emerald-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z" />
+                    </svg>
+                  </a>
+                  <a href="#" className="text-gray-400 hover:text-emerald-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="h-64 relative">
+                <Image
+                  src="/placeholder.svg?height=400&width=400"
+                  alt="Technical Team Member"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-1">Chioma Nwosu</h3>
+                <p className="text-emerald-600 font-medium mb-4">UX/UI Designer</p>
+                <p className="text-gray-600 mb-4">
+                  Chioma is our talented UX/UI designer with a passion for creating intuitive and engaging user
+                  experiences. She combines aesthetic design with user-centered principles to create interfaces that are
+                  both beautiful and functional.
+                </p>
+                <div className="flex space-x-3">
+                  <a href="#" className="text-gray-400 hover:text-emerald-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z" />
+                    </svg>
+                  </a>
+                  <a href="#" className="text-gray-400 hover:text-emerald-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 0c-6.627 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="h-64 relative">
+                <Image
+                  src="/placeholder.svg?height=400&width=400"
+                  alt="Technical Team Member"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-1">Emmanuel Okonkwo</h3>
+                <p className="text-emerald-600 font-medium mb-4">Data Scientist</p>
+                <p className="text-gray-600 mb-4">
+                  Emmanuel specializes in data analytics and machine learning, helping our clients extract valuable
+                  insights from their data. His expertise in AI and predictive modeling contributes to our innovative
+                  technology solutions.
+                </p>
+                <div className="flex space-x-3">
+                  <a href="#" className="text-gray-400 hover:text-emerald-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z" />
+                    </svg>
+                  </a>
+                  <a href="#" className="text-gray-400 hover:text-emerald-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Business Team */}
+          <h3 className="text-2xl font-bold mb-8 mt-16 text-gray-800">Business Team</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="h-64 relative">
+                <Image
+                  src="/placeholder.svg?height=400&width=400"
+                  alt="Business Team Member"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-1">Folake Adeyemi</h3>
+                <p className="text-emerald-600 font-medium mb-4">Business Development Manager</p>
+                <p className="text-gray-600 mb-4">
+                  Folake leads our business development efforts, identifying new opportunities and building strategic
+                  partnerships. Her deep understanding of the Nigerian market helps us tailor our solutions to meet
+                  local needs.
+                </p>
+                <div className="flex space-x-3">
+                  <a href="#" className="text-gray-400 hover:text-emerald-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="h-64 relative">
+                <Image
+                  src="/placeholder.svg?height=400&width=400"
+                  alt="Business Team Member"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-1">Oluwaseun Adeleke</h3>
+                <p className="text-emerald-600 font-medium mb-4">Project Manager</p>
+                <p className="text-gray-600 mb-4">
+                  Oluwaseun oversees our project delivery, ensuring that we meet client requirements on time and within
+                  budget. His methodical approach and attention to detail ensure the successful implementation of our
+                  solutions.
+                </p>
+                <div className="flex space-x-3">
+                  <a href="#" className="text-gray-400 hover:text-emerald-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="h-64 relative">
+                <Image
+                  src="/placeholder.svg?height=400&width=400"
+                  alt="Business Team Member"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-1">Tunde Bakare</h3>
+                <p className="text-emerald-600 font-medium mb-4">Marketing Specialist</p>
+                <p className="text-gray-600 mb-4">
+                  Tunde manages our marketing initiatives, helping us communicate our value proposition to potential
+                  clients. His creative approach and digital marketing expertise enhance our brand presence in the
+                  market.
+                </p>
+                <div className="flex space-x-3">
+                  <a href="#" className="text-gray-400 hover:text-emerald-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-16">
+            <p className="text-gray-700 mb-6">
+              Interested in joining our team? We're always looking for talented individuals who share our passion for
+              technology and innovation.
+            </p>
+            <Link
+              href="/contact"
+              className="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-3 px-8 rounded-lg transition-colors shadow-lg"
+            >
+              Join Our Team
+            </Link>
           </div>
         </div>
       </section>

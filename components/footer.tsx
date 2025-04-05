@@ -32,12 +32,12 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/about-us" className="text-gray-400 hover:text-white text-sm">
+                <Link href="/aboutUs" className="text-gray-400 hover:text-white text-sm">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/our-services" className="text-gray-400 hover:text-white text-sm">
+                <Link href="/services" className="text-gray-400 hover:text-white text-sm">
                   Our Services
                 </Link>
               </li>
@@ -48,7 +48,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/blog" className="text-gray-400 hover:text-white text-sm">
-                  Blog
+                  blog
                 </Link>
               </li>
               <li>
@@ -65,15 +65,15 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-gray-400 mr-2 mt-0.5" />
-                <span className="text-gray-400 text-sm">123 Hamilton Avenue, Winnipeg, MB</span>
+                <span className="text-gray-400 text-sm">68, Adebayo Ajayi Avenue, Egan, Lagos</span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-gray-400 mr-2" />
-                <span className="text-gray-400 text-sm">+1 (204) 555-7890</span>
+                <span className="text-gray-400 text-sm"> 08182681345</span>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-gray-400 mr-2" />
-                <span className="text-gray-400 text-sm">info@hamiltonstone.com</span>
+                <span className="text-gray-400 text-sm">techlard4@gmail.com</span>
               </li>
             </ul>
           </div>
@@ -107,7 +107,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-6 text-center text-gray-400 text-sm">
-          <p>© 2023 Hamilton Stone. Powered by Hamilton Stone Consulting.</p>
+          <p>© 2025 Techdith Limited. Powered by Techdith Limited innovation.</p>
         </div>
       </div>
     </footer>
