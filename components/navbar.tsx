@@ -41,6 +41,9 @@ export default function Navbar() {
             <Link href="/blog" className="text-gray-800 hover:text-purple-700">
               Blog
             </Link>
+            <Link href="/lardshare" className="text-gray-800 hover:text-purple-700">
+              Lardshare
+            </Link>
             <Link href="/contact-us" className="text-gray-800 hover:text-purple-700">
               Contact Us
             </Link>
