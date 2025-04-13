@@ -14,7 +14,7 @@ export default function AboutUs() {
       <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=800&width=1600"
+            src="https://img.freepik.com/free-photo/aerial-view-business-team_53876-124515.jpg?t=st=1743854254~exp=1743857854~hmac=37359df9e9ab41078b1d8b24260c7f39ba61bbfec4a80fb591509de258a38e79&w=1380"
             alt="TECHDITH Technology Solutions"
             fill
             className="object-cover brightness-50"
@@ -50,7 +50,7 @@ export default function AboutUs() {
             </div>
             <div className="md:w-1/2 rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="https://img.freepik.com/free-photo/person-working-html-computer_23-2150038846.jpg?t=st=1743854967~exp=1743858567~hmac=fcaf1c53dbfe442615b8fa9bbce9756d6f9ae9424c1ec7c5f83a53c554e2f056&w=996"
                 alt="TECHDITH Office"
                 width={800}
                 height={600}
@@ -156,7 +156,7 @@ export default function AboutUs() {
             <div className="md:w-1/2">
               <div className="relative h-80 md:h-96 rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src="/placeholder.svg?height=800&width=800"
+                  src="https://img.freepik.com/free-photo/multinational-company-workers-meet-plan-project-focused-growth_482257-114515.jpg?t=st=1743855449~exp=1743859049~hmac=33529b7beb46113a7b761f66bed213f961f8358175fd750b23927c21b98d725d&w=1380"
                   alt="TECHDITH Vision"
                   fill
                   className="object-cover"
@@ -364,7 +364,7 @@ export default function AboutUs() {
 
             <div className="md:w-1/2 order-1 md:order-2">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="https://img.freepik.com/free-photo/industrial-designers-working-3d-model_23-2149370123.jpg?t=st=1743856305~exp=1743859905~hmac=1e3bbe8a687d8d12c6d963f7afbf4aed73005c543452c78e28e8bdab0b04183e&w=996"
                 alt="TECHDITH Headquarters"
                 width={800}
                 height={600}
@@ -433,7 +433,7 @@ export default function AboutUs() {
             <div className="bg-white rounded-xl shadow-xl overflow-hidden transform transition-transform hover:scale-105">
               <div className="h-80 relative">
                 <Image
-                  src="/placeholder.svg?height=600&width=600"
+                  src="https://img.freepik.com/free-photo/confident-business-woman-portrait-smiling-face_53876-137693.jpg?t=st=1743857797~exp=1743861397~hmac=4b2f6691b6fe3b7ad9d40eeec61d02e0cd0f2ee92e86fe6683e46b33e8e0183b&w=826"
                   alt="Ife Thona Akoniyon"
                   fill
                   className="object-cover"
@@ -480,7 +480,7 @@ export default function AboutUs() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="h-64 relative">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
+                  src="https://img.freepik.com/free-photo/business-man-banner-concept-with-copy-space_23-2149601461.jpg?t=st=1743857970~exp=1743861570~hmac=da5dd50e91fd3f3e1386df0d0a92a6608b86b516679ed542bc6350df90a120e0&w=1380"
                   alt="Technical Team Member"
                   fill
                   className="object-cover"
@@ -512,7 +512,7 @@ export default function AboutUs() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="h-64 relative">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
+                  src="https://img.freepik.com/free-photo/businesswoman-posing-outdoors_23-2149405879.jpg?t=st=1743858014~exp=1743861614~hmac=a9f30bf09528cecc711878f4b1cc58f06b106b32b023dff7cddc4fd4dfb869c8&w=740"
                   alt="Technical Team Member"
                   fill
                   className="object-cover"
@@ -534,7 +534,7 @@ export default function AboutUs() {
                   </a>
                   <a href="#" className="text-gray-400 hover:text-emerald-600">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 0c-6.627 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                     </svg>
                   </a>
                 </div>
@@ -544,7 +544,7 @@ export default function AboutUs() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="h-64 relative">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
+                  src="https://img.freepik.com/free-photo/portrait-attractive-dark-skinned-student-wearing-checkered-shirt-with-confident-joyful-expression-standing-chalkboard-wall_273609-5907.jpg?t=st=1743858079~exp=1743861679~hmac=84ed3f22a7ebaef7e069e4a17e3aed074d7f57b68c26d770f1ec63f6642c1e0f&w=996"
                   alt="Technical Team Member"
                   fill
                   className="object-cover"
@@ -580,7 +580,7 @@ export default function AboutUs() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="h-64 relative">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
+                  src="https://img.freepik.com/free-photo/portrait-confident-dark-skinned-woman-enterpreneur-with-serious-look-wears-round-glasses-red-blouse-going-meet-with-partners-from-abroad-prepares-presenting-company-isolated-white_273609-3653.jpg?t=st=1743858146~exp=1743861746~hmac=40608c809f8334976c7df8471b71d02def4b3d70064459993d18b7a30181cea7&w=996"
                   alt="Business Team Member"
                   fill
                   className="object-cover"
@@ -607,7 +607,7 @@ export default function AboutUs() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="h-64 relative">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
+                  src="https://img.freepik.com/free-photo/serious-trendy-guy-posing-indoors_74855-3105.jpg?t=st=1743858204~exp=1743861804~hmac=81d3212777fcdcc59fb600c35e443cde72f76551a183731542769f00da3d675d&w=996"
                   alt="Business Team Member"
                   fill
                   className="object-cover"
@@ -634,7 +634,7 @@ export default function AboutUs() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="h-64 relative">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
+                  src="https://img.freepik.com/free-photo/portrait-modern-man-caffe_23-2148956928.jpg?t=st=1743858325~exp=1743861925~hmac=52c25b99f452592c9b4164cc5ec5401deb3c493675cb2de212fbbe88ac90be8e&w=740"
                   alt="Business Team Member"
                   fill
                   className="object-cover"
@@ -665,7 +665,7 @@ export default function AboutUs() {
               technology and innovation.
             </p>
             <Link
-              href="/contact"
+              href="/contact-us"
               className="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-3 px-8 rounded-lg transition-colors shadow-lg"
             >
               Join Our Team
@@ -769,7 +769,7 @@ export default function AboutUs() {
             <div className="flex bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="w-1/3 relative">
                 <Image
-                  src="/placeholder.svg?height=400&width=300"
+                  src="https://img.freepik.com/free-photo/computer-program-coding-screen_53876-138060.jpg?uid=R75576832&ga=GA1.1.106458567.1743797612&semt=ais_hybrid&w=740"
                   alt="Computer Programming"
                   fill
                   className="object-cover"
@@ -787,7 +787,7 @@ export default function AboutUs() {
             <div className="flex bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="w-1/3 relative">
                 <Image
-                  src="/placeholder.svg?height=400&width=300"
+                  src="https://img.freepik.com/free-photo/cloud-storage-banner-background_53876-108506.jpg?t=st=1743858640~exp=1743862240~hmac=9e6d9e3a8c50e88a5e2060ed0a11d698251f444ceea4f1c10aae2992978fbb03&w=996"
                   alt="IT Infrastructure"
                   fill
                   className="object-cover"
@@ -805,7 +805,7 @@ export default function AboutUs() {
             <div className="flex bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="w-1/3 relative">
                 <Image
-                  src="/placeholder.svg?height=400&width=300"
+                  src="https://img.freepik.com/free-photo/scientist-working-laboratory_23-2148880441.jpg"
                   alt="Research and Development"
                   fill
                   className="object-cover"
@@ -823,7 +823,7 @@ export default function AboutUs() {
             <div className="flex bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="w-1/3 relative">
                 <Image
-                  src="/placeholder.svg?height=400&width=300"
+                  src="https://img.freepik.com/free-photo/young-woman-teaching-english-online_23-2149019714.jpg"
                   alt="Training and Development"
                   fill
                   className="object-cover"

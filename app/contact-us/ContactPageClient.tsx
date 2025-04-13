@@ -1,8 +1,8 @@
-"use client"
-import Image from "next/image"
-import Link from "next/link"
-import { GoogleMap } from "./components/google-map"
-import { ContactForm } from "./components/contact-form" // Ensure this file exists in the specified path
+"use client";
+import Image from "next/image";
+import Link from "next/link";
+import { GoogleMap } from "./components/google-map";
+import { ContactForm } from "./components/contact-form";
 
 export default function ContactPageClient() {
   return (
@@ -19,9 +19,12 @@ export default function ContactPageClient() {
           />
         </div>
         <div className="container mx-auto px-4 relative z-10 text-center text-white">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Contact Us</h1>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+            Contact Us
+          </h1>
           <p className="text-lg md:text-xl max-w-3xl mx-auto">
-            We're here to answer your questions and help you find the right technology solutions
+            We're here to answer your questions and help you find the right
+            technology solutions
           </p>
         </div>
       </section>
@@ -30,7 +33,9 @@ export default function ContactPageClient() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-6xl">
           <h2 className="text-3xl font-bold mb-12 text-center text-gray-800">
-            <span className="inline-block pb-2 border-b-4 border-emerald-500">Get In Touch</span>
+            <span className="inline-block pb-2 border-b-4 border-emerald-500">
+              Get In Touch
+            </span>
           </h2>
 
           <div className="flex flex-col lg:flex-row gap-12">
@@ -62,8 +67,12 @@ export default function ContactPageClient() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold mb-1 text-gray-800">Our Address</h3>
-                      <p className="text-gray-600">68, Adebayo Ajayi Avenue, Egan, Lagos</p>
+                      <h3 className="text-lg font-semibold mb-1 text-gray-800">
+                        Our Address
+                      </h3>
+                      <p className="text-gray-600">
+                        68, Adebayo Ajayi Avenue, Egan, Lagos
+                      </p>
                     </div>
                   </div>
 
@@ -85,7 +94,9 @@ export default function ContactPageClient() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold mb-1 text-gray-800">Phone Numbers</h3>
+                      <h3 className="text-lg font-semibold mb-1 text-gray-800">
+                        Phone Numbers
+                      </h3>
                       <p className="text-gray-600">07061622366</p>
                       <p className="text-gray-600">08182681345</p>
                     </div>
@@ -109,7 +120,9 @@ export default function ContactPageClient() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold mb-1 text-gray-800">Email Address</h3>
+                      <h3 className="text-lg font-semibold mb-1 text-gray-800">
+                        Email Address
+                      </h3>
                       <p className="text-gray-600">techlard4@gmail.com</p>
                     </div>
                   </div>
@@ -132,16 +145,24 @@ export default function ContactPageClient() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold mb-1 text-gray-800">Business Hours</h3>
-                      <p className="text-gray-600">Monday - Friday: 9:00 AM - 5:00 PM</p>
-                      <p className="text-gray-600">Saturday: 10:00 AM - 2:00 PM</p>
+                      <h3 className="text-lg font-semibold mb-1 text-gray-800">
+                        Business Hours
+                      </h3>
+                      <p className="text-gray-600">
+                        Monday - Friday: 9:00 AM - 5:00 PM
+                      </p>
+                      <p className="text-gray-600">
+                        Saturday: 10:00 AM - 2:00 PM
+                      </p>
                       <p className="text-gray-600">Sunday: Closed</p>
                     </div>
                   </div>
                 </div>
 
                 <div className="mt-8">
-                  <h3 className="text-lg font-semibold mb-4 text-gray-800">Connect With Us</h3>
+                  <h3 className="text-lg font-semibold mb-4 text-gray-800">
+                    Connect With Us
+                  </h3>
                   <div className="flex gap-4">
                     <Link
                       href="#"
@@ -201,10 +222,8 @@ export default function ContactPageClient() {
             </div>
 
             {/* Google Map */}
-            <div className="lg:w-1/2">
-              <div className="h-full min-h-[400px] rounded-xl overflow-hidden shadow-lg">
-                <GoogleMap address="68, Adebayo Ajayi Avenue, Egan, Lagos" />
-              </div>
+            <div className="lg:w-1/2 h-full">
+              <GoogleMap />
             </div>
           </div>
         </div>
@@ -214,7 +233,9 @@ export default function ContactPageClient() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 max-w-6xl">
           <h2 className="text-3xl font-bold mb-12 text-center text-gray-800">
-            <span className="inline-block pb-2 border-b-4 border-emerald-500">Send Us a Message</span>
+            <span className="inline-block pb-2 border-b-4 border-emerald-500">
+              Send Us a Message
+            </span>
           </h2>
 
           <div className="max-w-3xl mx-auto">
@@ -227,39 +248,53 @@ export default function ContactPageClient() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-6xl">
           <h2 className="text-3xl font-bold mb-12 text-center text-gray-800">
-            <span className="inline-block pb-2 border-b-4 border-emerald-500">Frequently Asked Questions</span>
+            <span className="inline-block pb-2 border-b-4 border-emerald-500">
+              Frequently Asked Questions
+            </span>
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-xl font-semibold mb-3 text-gray-800">What services does TECHDITH LIMITED offer?</h3>
+              <h3 className="text-xl font-semibold mb-3 text-gray-800">
+                What services does TECHDITH LIMITED offer?
+              </h3>
               <p className="text-gray-600">
-                TECHDITH LIMITED offers a wide range of technology services, including computer programming, IT
-                consultancy, infrastructure development, research and development, and training programs.
+                TECHDITH LIMITED offers a wide range of technology services,
+                including computer programming, IT consultancy, infrastructure
+                development, research and development, and training programs.
               </p>
             </div>
 
             <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-xl font-semibold mb-3 text-gray-800">How can I request a quote for your services?</h3>
+              <h3 className="text-xl font-semibold mb-3 text-gray-800">
+                How can I request a quote for your services?
+              </h3>
               <p className="text-gray-600">
-                You can request a quote by filling out our contact form, calling our office directly, or sending us an
-                email with details about your project requirements.
+                You can request a quote by filling out our contact form, calling
+                our office directly, or sending us an email with details about
+                your project requirements.
               </p>
             </div>
 
             <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-xl font-semibold mb-3 text-gray-800">Do you offer custom software development?</h3>
+              <h3 className="text-xl font-semibold mb-3 text-gray-800">
+                Do you offer custom software development?
+              </h3>
               <p className="text-gray-600">
-                Yes, we specialize in custom software development tailored to meet the unique needs of your business.
-                Our team can develop solutions for web, mobile, and enterprise applications.
+                Yes, we specialize in custom software development tailored to
+                meet the unique needs of your business. Our team can develop
+                solutions for web, mobile, and enterprise applications.
               </p>
             </div>
 
             <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-xl font-semibold mb-3 text-gray-800">What areas do you serve?</h3>
+              <h3 className="text-xl font-semibold mb-3 text-gray-800">
+                What areas do you serve?
+              </h3>
               <p className="text-gray-600">
-                While we are based in Lagos, Nigeria, we serve clients throughout Nigeria and can work remotely with
-                clients from other countries as well.
+                While we are based in Lagos, Nigeria, we serve clients
+                throughout Nigeria and can work remotely with clients from other
+                countries as well.
               </p>
             </div>
           </div>
@@ -271,8 +306,8 @@ export default function ContactPageClient() {
         <div className="container mx-auto px-4 max-w-6xl text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Get Started?</h2>
           <p className="text-lg max-w-3xl mx-auto mb-8">
-            Contact us today to discuss how our technology solutions can help your business achieve its goals and stay
-            ahead in the digital age.
+            Contact us today to discuss how our technology solutions can help
+            your business achieve its goals and stay ahead in the digital age.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -291,6 +326,5 @@ export default function ContactPageClient() {
         </div>
       </section>
     </main>
-  )
+  );
 }
-
