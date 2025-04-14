@@ -1,6 +1,11 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { AnimatedSection } from "@/components/animations/animated-section";
+import { AnimatedText } from "@/components/animations/animated-text";
+import { SlideInSection } from "@/components/animations/slide-in-section";
+import { FadeInView } from "@/components/animations/fade-in-view";
+import { AnimatedHeading } from "@/components/animations/animated-heading";
 import { GoogleMap } from "./components/google-map";
 import { ContactForm } from "./components/contact-form";
 
@@ -19,35 +24,36 @@ export default function ContactPageClient() {
           />
         </div>
         <div className="container mx-auto px-4 relative z-10 text-center text-white">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-            Contact Us
-          </h1>
-          <p className="text-lg md:text-xl max-w-3xl mx-auto">
-            We're here to answer your questions and help you find the right
-            technology solutions
-          </p>
+          <AnimatedText
+            text="Contact Us"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
+          />
+          <AnimatedSection variant="fadeInUp" delay={0.3}>
+            <p className="text-lg md:text-xl max-w-3xl mx-auto">
+              We're here to answer your questions and help you find the right
+              technology solutions
+            </p>
+          </AnimatedSection>
         </div>
       </section>
 
       {/* Get In Touch Section with Map */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-6xl">
-          <h2 className="text-3xl font-bold mb-12 text-center text-gray-800">
-            <span className="inline-block pb-2 border-b-4 border-emerald-500">
-              Get In Touch
-            </span>
-          </h2>
+          <AnimatedHeading className="text-3xl font-bold mb-12 text-center text-gray-800">
+            Get In Touch
+          </AnimatedHeading>
 
           <div className="flex flex-col lg:flex-row gap-12">
             {/* Contact Information */}
-            <div className="lg:w-1/2">
+            <SlideInSection direction="left" delay={0.2} className="lg:w-1/2">
               <div className="bg-gray-50 rounded-xl shadow-lg p-8 h-full">
                 <div className="space-y-8">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6 text-emerald-600"
+                        className="h-6 w-6 text-primary"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -77,10 +83,10 @@ export default function ContactPageClient() {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6 text-emerald-600"
+                        className="h-6 w-6 text-primary"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -103,10 +109,10 @@ export default function ContactPageClient() {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6 text-emerald-600"
+                        className="h-6 w-6 text-primary"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -128,10 +134,10 @@ export default function ContactPageClient() {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6 text-emerald-600"
+                        className="h-6 w-6 text-primary"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -166,11 +172,11 @@ export default function ContactPageClient() {
                   <div className="flex gap-4">
                     <Link
                       href="#"
-                      className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center hover:bg-emerald-200 transition-colors"
+                      className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5 text-emerald-600"
+                        className="h-5 w-5 text-primary"
                         fill="currentColor"
                         viewBox="0 0 24 24"
                       >
@@ -179,11 +185,11 @@ export default function ContactPageClient() {
                     </Link>
                     <Link
                       href="#"
-                      className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center hover:bg-emerald-200 transition-colors"
+                      className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5 text-emerald-600"
+                        className="h-5 w-5 text-primary"
                         fill="currentColor"
                         viewBox="0 0 24 24"
                       >
@@ -192,11 +198,11 @@ export default function ContactPageClient() {
                     </Link>
                     <Link
                       href="#"
-                      className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center hover:bg-emerald-200 transition-colors"
+                      className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5 text-emerald-600"
+                        className="h-5 w-5 text-primary"
                         fill="currentColor"
                         viewBox="0 0 24 24"
                       >
@@ -205,11 +211,11 @@ export default function ContactPageClient() {
                     </Link>
                     <Link
                       href="#"
-                      className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center hover:bg-emerald-200 transition-colors"
+                      className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5 text-emerald-600"
+                        className="h-5 w-5 text-primary"
                         fill="currentColor"
                         viewBox="0 0 24 24"
                       >
@@ -219,12 +225,16 @@ export default function ContactPageClient() {
                   </div>
                 </div>
               </div>
-            </div>
+            </SlideInSection>
 
             {/* Google Map */}
-            <div className="lg:w-1/2 h-full">
+            <SlideInSection
+              direction="right"
+              delay={0.3}
+              className="lg:w-1/2 h-full"
+            >
               <GoogleMap />
-            </div>
+            </SlideInSection>
           </div>
         </div>
       </section>
@@ -232,97 +242,86 @@ export default function ContactPageClient() {
       {/* Contact Form Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 max-w-6xl">
-          <h2 className="text-3xl font-bold mb-12 text-center text-gray-800">
-            <span className="inline-block pb-2 border-b-4 border-emerald-500">
-              Send Us a Message
-            </span>
-          </h2>
+          <AnimatedHeading className="text-3xl font-bold mb-12 text-center text-gray-800">
+            Send Us a Message
+          </AnimatedHeading>
 
-          <div className="max-w-3xl mx-auto">
+          <SlideInSection
+            direction="up"
+            delay={0.2}
+            className="max-w-3xl mx-auto"
+          >
             <ContactForm />
-          </div>
+          </SlideInSection>
         </div>
       </section>
 
       {/* FAQ Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-6xl">
-          <h2 className="text-3xl font-bold mb-12 text-center text-gray-800">
-            <span className="inline-block pb-2 border-b-4 border-emerald-500">
-              Frequently Asked Questions
-            </span>
-          </h2>
+          <AnimatedHeading className="text-3xl font-bold mb-12 text-center text-gray-800">
+            Frequently Asked Questions
+          </AnimatedHeading>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-xl font-semibold mb-3 text-gray-800">
-                What services does TECHDITH LIMITED offer?
-              </h3>
-              <p className="text-gray-600">
-                TECHDITH LIMITED offers a wide range of technology services,
-                including computer programming, IT consultancy, infrastructure
-                development, research and development, and training programs.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-xl font-semibold mb-3 text-gray-800">
-                How can I request a quote for your services?
-              </h3>
-              <p className="text-gray-600">
-                You can request a quote by filling out our contact form, calling
-                our office directly, or sending us an email with details about
-                your project requirements.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-xl font-semibold mb-3 text-gray-800">
-                Do you offer custom software development?
-              </h3>
-              <p className="text-gray-600">
-                Yes, we specialize in custom software development tailored to
-                meet the unique needs of your business. Our team can develop
-                solutions for web, mobile, and enterprise applications.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-xl font-semibold mb-3 text-gray-800">
-                What areas do you serve?
-              </h3>
-              <p className="text-gray-600">
-                While we are based in Lagos, Nigeria, we serve clients
-                throughout Nigeria and can work remotely with clients from other
-                countries as well.
-              </p>
-            </div>
+            {[0, 1, 2, 3].map((index) => (
+              <SlideInSection
+                key={index}
+                direction={index % 2 === 0 ? "left" : "right"}
+                delay={0.1 * (index + 1)}
+              >
+                <div className="bg-gray-50 rounded-lg p-6">
+                  <h3 className="text-xl font-semibold mb-3 text-gray-800">
+                    {index === 0 &&
+                      "What services does TECHDITH LIMITED offer?"}
+                    {index === 1 &&
+                      "How can I request a quote for your services?"}
+                    {index === 2 && "Do you offer custom software development?"}
+                    {index === 3 && "What areas do you serve?"}
+                  </h3>
+                  <p className="text-gray-600">
+                    {index === 0 &&
+                      "TECHDITH LIMITED offers a wide range of technology services, including computer programming, IT consultancy, infrastructure development, research and development, and training programs."}
+                    {index === 1 &&
+                      "You can request a quote by filling out our contact form, calling our office directly, or sending us an email with details about your project requirements."}
+                    {index === 2 &&
+                      "Yes, we specialize in custom software development tailored to meet the unique needs of your business. Our team can develop solutions for web, mobile, and enterprise applications."}
+                    {index === 3 &&
+                      "While we are based in Lagos, Nigeria, we serve clients throughout Nigeria and can work remotely with clients from other countries as well."}
+                  </p>
+                </div>
+              </SlideInSection>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-emerald-700 text-white">
+      <section className="py-16 bg-primary text-white">
         <div className="container mx-auto px-4 max-w-6xl text-center">
-          <h2 className="text-3xl font-bold mb-6">Ready to Get Started?</h2>
-          <p className="text-lg max-w-3xl mx-auto mb-8">
-            Contact us today to discuss how our technology solutions can help
-            your business achieve its goals and stay ahead in the digital age.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="tel:07061622366"
-              className="inline-block bg-white text-emerald-700 font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-gray-100 transition-colors"
-            >
-              Call Us Now
-            </Link>
-            <Link
-              href="mailto:techlard4@gmail.com"
-              className="inline-block bg-transparent border-2 border-white text-white font-semibold py-3 px-8 rounded-lg hover:bg-white hover:text-emerald-700 transition-colors"
-            >
-              Email Us
-            </Link>
-          </div>
+          <AnimatedHeading>
+            <h2 className="text-3xl font-bold mb-6">Ready to Get Started?</h2>
+            <p className="text-lg max-w-3xl mx-auto mb-8">
+              Contact us today to discuss how our technology solutions can help
+              your business achieve its goals and stay ahead in the digital age.
+            </p>
+          </AnimatedHeading>
+          <SlideInSection direction="up" delay={0.3}>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="tel:07061622366"
+                className="inline-block bg-white text-primary font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-gray-100 transition-colors"
+              >
+                Call Us Now
+              </Link>
+              <Link
+                href="mailto:techlard4@gmail.com"
+                className="inline-block bg-transparent border-2 border-white text-white font-semibold py-3 px-8 rounded-lg hover:bg-white hover:text-primary transition-colors"
+              >
+                Email Us
+              </Link>
+            </div>
+          </SlideInSection>
         </div>
       </section>
     </main>

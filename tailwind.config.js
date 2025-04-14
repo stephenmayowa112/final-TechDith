@@ -16,6 +16,16 @@ module.exports = {
     },
     extend: {
       colors: {
+        primary: {
+          DEFAULT: "#0A2463", // Deep blue
+          light: "#1A34B8",
+          dark: "#071940",
+        },
+        secondary: {
+          DEFAULT: "#FF6B35", // Orange
+          light: "#FF8559",
+          dark: "#E55420",
+        },
         border: {
           DEFAULT: "hsl(var(--border))",
         },
@@ -23,14 +33,6 @@ module.exports = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
@@ -50,6 +52,18 @@ module.exports = {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        emerald: {
+          50: "#ecfdf5",
+          100: "#d1fae5",
+          200: "#a7f3d0",
+          300: "#6ee7b7",
+          400: "#34d399",
+          500: "#10b981",
+          600: "#059669",
+          700: "#047857",
+          800: "#065f46",
+          900: "#064e3b",
         },
       },
       borderColor: "hsl(var(--border))",

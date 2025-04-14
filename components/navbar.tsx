@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <header className="bg-white shadow-sm">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16">  {/* Reduced from h-20 to h-16 */}
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
@@ -26,28 +26,30 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-gray-800 hover:text-purple-700">
+            <Link href="/" className="text-gray-800 hover:text-primary">
               Home
             </Link>
-            <Link href="/aboutUs" className="text-gray-800 hover:text-purple-700">
+            <Link href="/aboutUs" className="text-gray-800 hover:text-primary">
               About Us
             </Link>
-            <Link href="/services" className="text-gray-800 hover:text-purple-700">
+            <Link href="/services" className="text-gray-800 hover:text-primary">
               Our Services
             </Link>
-            <Link href="/project" className="text-gray-800 hover:text-purple-700">
+            <Link href="/project" className="text-gray-800 hover:text-primary">
               Projects
             </Link>
-            <Link href="/blog" className="text-gray-800 hover:text-purple-700">
+            <Link href="/blog" className="text-gray-800 hover:text-primary">
               Blog
             </Link>
-            <Link href="/lardshare" className="text-gray-800 hover:text-purple-700">
+            <Link href="/lardshare" className="text-gray-800 hover:text-primary">
               Lardshare
             </Link>
-            <Link href="/contact-us" className="text-gray-800 hover:text-purple-700">
+            <Link href="/contact-us" className="text-gray-800 hover:text-primary">
               Contact Us
             </Link>
-            <Button className="bg-purple-700 hover:bg-purple-800 text-white">Get A Quote</Button>
+            <Button className="bg-primary hover:bg-primary/90 text-white">
+              Get A Quote
+            </Button>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -59,41 +61,41 @@ export default function Navbar() {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white py-4 px-4 shadow-md">
-          <nav className="flex flex-col space-y-4">
-            <Link href="/" className="text-gray-800 hover:text-purple-700 py-2" onClick={() => setIsMenuOpen(false)}>
+        <div className="md:hidden bg-white py-3 px-4 shadow-md"> {/* Reduced padding */}
+          <nav className="flex flex-col space-y-3"> {/* Reduced spacing */}
+            <Link href="/" className="text-gray-800 hover:text-primary py-1" onClick={() => setIsMenuOpen(false)}>
               Home
             </Link>
             <Link
               href="/about-us"
-              className="text-gray-800 hover:text-purple-700 py-2"
+              className="text-gray-800 hover:text-primary py-1"
               onClick={() => setIsMenuOpen(false)}
             >
               About Us
             </Link>
             <Link
               href="/our-services"
-              className="text-gray-800 hover:text-purple-700 py-2"
+              className="text-gray-800 hover:text-primary py-1"
               onClick={() => setIsMenuOpen(false)}
             >
               Our Services
             </Link>
             <Link
               href="/the-difference"
-              className="text-gray-800 hover:text-purple-700 py-2"
+              className="text-gray-800 hover:text-primary py-1"
               onClick={() => setIsMenuOpen(false)}
             >
               The Difference
             </Link>
             <Link
               href="/contact-us"
-              className="text-gray-800 hover:text-purple-700 py-2"
+              className="text-gray-800 hover:text-primary py-1"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact Us
             </Link>
             <Button
-              className="bg-purple-700 hover:bg-purple-800 text-white w-full"
+              className="bg-primary hover:bg-primary/90 text-white w-full"
               onClick={() => setIsMenuOpen(false)}
             >
               Get A Quote

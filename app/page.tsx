@@ -1,23 +1,22 @@
-import type { Metadata } from "next"
-import Image from "next/image"
-import Link from "next/link"
-import { AnimatedSection } from "@/components/animations/animated-section"
-import { AnimatedText } from "@/components/animations/animated-text"
-import { AnimatedButton } from "@/components/ui/animated-button"
-import { SlideInSection } from "@/components/animations/slide-in-section"
-// Ensure the correct path to the FadeInView component
-import { FadeInView } from "@/components/animations/fade-in-view"
-import { AnimatedHeading } from "@/components/animations/animated-heading"
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import { AnimatedSection } from "@/components/animations/animated-section";
+import { AnimatedText } from "@/components/animations/animated-text";
+import { AnimatedButton } from "@/components/ui/animated-button";
+import { SlideInSection } from "@/components/animations/slide-in-section";
+import { FadeInView } from "@/components/animations/fade-in-view";
+import { AnimatedHeading } from "@/components/animations/animated-heading";
 
 export const metadata: Metadata = {
   title: "TECHDITH LIMITED | Technology Solutions",
   description:
     "TECHDITH LIMITED is a dynamic and innovative technology company based in Lagos, Nigeria, specializing in computer programming, consultancy, and technology solutions.",
-}
+};
 
-export default function HomePage() {
+export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       {/* Hero Section */}
       <section className="relative h-screen max-h-[800px] min-h-[600px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -36,24 +35,24 @@ export default function HomePage() {
           />
           <AnimatedSection variant="fadeInUp" delay={0.3}>
             <p className="text-lg md:text-xl max-w-3xl mx-auto mb-10">
-              TECHDITH LIMITED is a dynamic and innovative technology company at the forefront of the digital revolution
-              in Nigeria
+              TECHDITH LIMITED is a dynamic and innovative technology company at
+              the forefront of the digital revolution in Nigeria
             </p>
           </AnimatedSection>
           <AnimatedSection variant="fadeInUp" delay={0.6}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <AnimatedButton
+              <Link
                 href="/services"
-                className="bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-3 px-8 rounded-lg transition-colors shadow-lg"
+                className="bg-primary hover:bg-primary-dark text-white font-medium py-3 px-8 rounded-lg transition-colors shadow-lg"
               >
                 Our Services
-              </AnimatedButton>
-              <AnimatedButton
+              </Link>
+              <Link
                 href="/contact"
-                className="bg-transparent border-2 border-white hover:bg-white hover:text-emerald-700 text-white font-medium py-3 px-8 rounded-lg transition-colors"
+                className="bg-transparent border-2 border-white hover:bg-white hover:text-primary text-white font-medium py-3 px-8 rounded-lg transition-colors"
               >
                 Contact Us
-              </AnimatedButton>
+              </Link>
             </div>
           </AnimatedSection>
         </div>
@@ -65,7 +64,12 @@ export default function HomePage() {
             viewBox="0 0 24 24"
             stroke="currentColor"
           >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 14l-7 7m0 0l-7-7m7 7V3"
+            />
           </svg>
         </div>
       </section>
@@ -77,27 +81,32 @@ export default function HomePage() {
             <div className="md:w-1/2">
               <AnimatedSection variant="fadeInRight">
                 <h2 className="text-3xl font-bold mb-6 text-gray-800 relative">
-                  <span className="inline-block pb-2 border-b-4 border-emerald-500">About Us</span>
+                  <span className="inline-block pb-2 border-b-4 border-primary">
+                    About Us
+                  </span>
                 </h2>
               </AnimatedSection>
               <AnimatedSection variant="fadeInRight" delay={0.2}>
                 <p className="text-gray-700 mb-6 leading-relaxed">
-                  Established in July 2024, TECHDITH LIMITED is a dynamic and innovative technology company based in
-                  Lagos, Nigeria. We are at the forefront of the digital revolution, specializing in a wide range of
-                  cutting-edge solutions, including computer programming, consultancy, and other technology-related
+                  Established in July 2024, TECHDITH LIMITED is a dynamic and
+                  innovative technology company based in Lagos, Nigeria. We are
+                  at the forefront of the digital revolution, specializing in a
+                  wide range of cutting-edge solutions, including computer
+                  programming, consultancy, and other technology-related
                   activities.
                 </p>
               </AnimatedSection>
               <AnimatedSection variant="fadeInRight" delay={0.4}>
                 <p className="text-gray-700 mb-8 leading-relaxed">
-                  Our core mission is to empower businesses and industries across Nigeria to harness the transformative
-                  power of technology, driving efficiency, growth, and innovation.
+                  Our core mission is to empower businesses and industries
+                  across Nigeria to harness the transformative power of
+                  technology, driving efficiency, growth, and innovation.
                 </p>
               </AnimatedSection>
               <AnimatedSection variant="fadeInRight" delay={0.6}>
                 <AnimatedButton
                   href="/about-us"
-                  className="inline-flex items-center text-emerald-600 font-medium hover:text-emerald-700"
+                  className="inline-flex items-center text-primary font-medium hover:text-primary-dark"
                 >
                   Learn more about us
                   <svg
@@ -107,12 +116,21 @@ export default function HomePage() {
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
                   </svg>
                 </AnimatedButton>
               </AnimatedSection>
             </div>
-            <AnimatedSection variant="fadeInRight" delay={0.2} className="md:w-1/2">
+            <AnimatedSection
+              variant="fadeInRight"
+              delay={0.2}
+              className="md:w-1/2"
+            >
               <div className="rounded-lg overflow-hidden shadow-xl">
                 <Image
                   src="/placeholder.svg?height=600&width=800"
@@ -130,15 +148,17 @@ export default function HomePage() {
       {/* Services Section */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-6xl">
-          <AnimatedHeading className="text-3xl font-bold mb-12 text-center text-gray-800">Our Services</AnimatedHeading>
+          <AnimatedHeading className="text-3xl font-bold mb-12 text-center text-gray-800">
+            <span className="inline-block pb-2 border-b-4 border-secondary">Our Services</span>
+          </AnimatedHeading>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <SlideInSection direction="left" delay={0.1} className="h-full">
               <div className="bg-white rounded-lg shadow-lg p-8 transform transition-transform hover:scale-105 h-full">
-                <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mb-6">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-8 w-8 text-emerald-600"
+                    className="h-8 w-8 text-primary"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -151,15 +171,18 @@ export default function HomePage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Computer Programming</h3>
+                <h3 className="text-xl font-semibold mb-4">
+                  Computer Programming
+                </h3>
                 <p className="text-gray-600 mb-6">
-                  Our team of highly skilled programmers is proficient in a diverse array of programming languages and
-                  platforms. We develop custom software solutions, web applications, mobile apps, and enterprise
-                  systems.
+                  Our team of highly skilled programmers is proficient in a
+                  diverse array of programming languages and platforms. We
+                  develop custom software solutions, web applications, mobile
+                  apps, and enterprise systems.
                 </p>
                 <Link
                   href="/services"
-                  className="inline-flex items-center text-emerald-600 font-medium hover:text-emerald-700"
+                  className="inline-flex items-center text-primary font-medium hover:text-primary-dark"
                 >
                   Learn more
                   <svg
@@ -169,7 +192,12 @@ export default function HomePage() {
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
                   </svg>
                 </Link>
               </div>
@@ -177,10 +205,10 @@ export default function HomePage() {
 
             <SlideInSection direction="up" delay={0.2} className="h-full">
               <div className="bg-white rounded-lg shadow-lg p-8 transform transition-transform hover:scale-105 h-full">
-                <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mb-6">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-8 w-8 text-emerald-600"
+                    className="h-8 w-8 text-primary"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -195,13 +223,14 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-xl font-semibold mb-4">Consultancy</h3>
                 <p className="text-gray-600 mb-6">
-                  We offer expert guidance and strategic advice to businesses on how to leverage technology to achieve
-                  their goals. Our consultants work closely with clients to develop technology roadmaps aligned with
-                  business strategies.
+                  We offer expert guidance and strategic advice to businesses on
+                  how to leverage technology to achieve their goals. Our
+                  consultants work closely with clients to develop technology
+                  roadmaps aligned with business strategies.
                 </p>
                 <Link
                   href="/services"
-                  className="inline-flex items-center text-emerald-600 font-medium hover:text-emerald-700"
+                  className="inline-flex items-center text-primary font-medium hover:text-primary-dark"
                 >
                   Learn more
                   <svg
@@ -211,7 +240,12 @@ export default function HomePage() {
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
                   </svg>
                 </Link>
               </div>
@@ -219,10 +253,10 @@ export default function HomePage() {
 
             <SlideInSection direction="right" delay={0.3} className="h-full">
               <div className="bg-white rounded-lg shadow-lg p-8 transform transition-transform hover:scale-105 h-full">
-                <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mb-6">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-8 w-8 text-emerald-600"
+                    className="h-8 w-8 text-primary"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -235,14 +269,18 @@ export default function HomePage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Technology Solutions</h3>
+                <h3 className="text-xl font-semibold mb-4">
+                  Technology Solutions
+                </h3>
                 <p className="text-gray-600 mb-6">
-                  From cloud computing and artificial intelligence to cybersecurity and data analytics, we provide a
-                  comprehensive suite of technology solutions that enable businesses to stay ahead of the curve.
+                  From cloud computing and artificial intelligence to
+                  cybersecurity and data analytics, we provide a comprehensive
+                  suite of technology solutions that enable businesses to stay
+                  ahead of the curve.
                 </p>
                 <Link
                   href="/services"
-                  className="inline-flex items-center text-emerald-600 font-medium hover:text-emerald-700"
+                  className="inline-flex items-center text-primary font-medium hover:text-primary-dark"
                 >
                   Learn more
                   <svg
@@ -252,17 +290,26 @@ export default function HomePage() {
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
                   </svg>
                 </Link>
               </div>
             </SlideInSection>
           </div>
 
-          <AnimatedSection variant="fadeInUp" delay={0.6} className="text-center mt-12">
+          <AnimatedSection
+            variant="fadeInUp"
+            delay={0.6}
+            className="text-center mt-12"
+          >
             <AnimatedButton
               href="/services"
-              className="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-3 px-8 rounded-lg transition-colors shadow-lg"
+              className="inline-block bg-primary hover:bg-primary-dark text-white font-medium py-3 px-8 rounded-lg transition-colors shadow-lg"
             >
               View All Services
             </AnimatedButton>
@@ -273,7 +320,9 @@ export default function HomePage() {
       {/* Projects Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-6xl">
-          <AnimatedHeading className="text-3xl font-bold mb-12 text-center text-gray-800">Our Projects</AnimatedHeading>
+          <AnimatedHeading className="text-3xl font-bold mb-12 text-center text-gray-800">
+            <span className="inline-block pb-2 border-b-4 border-secondary">Our Projects</span>
+          </AnimatedHeading>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <SlideInSection direction="left" delay={0.1}>
@@ -286,19 +335,22 @@ export default function HomePage() {
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                  <div className="absolute top-4 left-4 bg-emerald-500 text-white px-4 py-1 rounded-full text-sm font-medium">
+                  <div className="absolute top-4 left-4 bg-primary text-white px-4 py-1 rounded-full text-sm font-medium">
                     Completed
                   </div>
                 </div>
                 <div className="p-6 relative">
-                  <h3 className="text-xl font-semibold mb-3">Agricultural Investment</h3>
+                  <h3 className="text-xl font-semibold mb-3">
+                    Agricultural Investment
+                  </h3>
                   <p className="text-gray-600 mb-4">
-                    Partnered with a farm subsidiary to plant 500 tubers of yam for a one-year planting season,
-                    achieving a notable turnover.
+                    Partnered with a farm subsidiary to plant 500 tubers of yam
+                    for a one-year planting season, achieving a notable
+                    turnover.
                   </p>
                   <Link
                     href="/projects"
-                    className="inline-flex items-center text-emerald-600 font-medium hover:text-emerald-700"
+                    className="inline-flex items-center text-primary font-medium hover:text-primary-dark"
                   >
                     View project details
                     <svg
@@ -308,7 +360,12 @@ export default function HomePage() {
                       viewBox="0 0 24 24"
                       stroke="currentColor"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      />
                     </svg>
                   </Link>
                 </div>
@@ -325,19 +382,22 @@ export default function HomePage() {
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                  <div className="absolute top-4 left-4 bg-emerald-500 text-white px-4 py-1 rounded-full text-sm font-medium">
+                  <div className="absolute top-4 left-4 bg-primary text-white px-4 py-1 rounded-full text-sm font-medium">
                     In Development
                   </div>
                 </div>
                 <div className="p-6 relative">
-                  <h3 className="text-xl font-semibold mb-3">LARDSHARE Platform</h3>
+                  <h3 className="text-xl font-semibold mb-3">
+                    LARDSHARE Platform
+                  </h3>
                   <p className="text-gray-600 mb-4">
-                    A hard-skill sharing platform-based software that connects service providers and users, featuring
-                    geospatial capabilities and AI.
+                    A hard-skill sharing platform-based software that connects
+                    service providers and users, featuring geospatial
+                    capabilities and AI.
                   </p>
                   <Link
                     href="/projects"
-                    className="inline-flex items-center text-emerald-600 font-medium hover:text-emerald-700"
+                    className="inline-flex items-center text-primary font-medium hover:text-primary-dark"
                   >
                     View project details
                     <svg
@@ -347,7 +407,12 @@ export default function HomePage() {
                       viewBox="0 0 24 24"
                       stroke="currentColor"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      />
                     </svg>
                   </Link>
                 </div>
@@ -355,10 +420,14 @@ export default function HomePage() {
             </SlideInSection>
           </div>
 
-          <FadeInView delay={0.3} className="text-center mt-12" variant="fadeIn">
+          <FadeInView
+            delay={0.3}
+            className="text-center mt-12"
+            variant="fadeIn"
+          >
             <Link
               href="/projects"
-              className="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-3 px-8 rounded-lg transition-colors shadow-lg"
+              className="inline-block bg-primary hover:bg-primary-dark text-white font-medium py-3 px-8 rounded-lg transition-colors shadow-lg"
             >
               View All Projects
             </Link>
@@ -367,7 +436,7 @@ export default function HomePage() {
       </section>
 
       {/* LARDSHARE Section */}
-      <section className="py-20 bg-emerald-50">
+      <section className="py-20 bg-primary/10">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <SlideInSection direction="left" delay={0.1} className="md:w-1/2">
@@ -378,28 +447,33 @@ export default function HomePage() {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute top-4 left-4 bg-emerald-600 text-white px-4 py-1 rounded-full text-sm font-medium">
+                <div className="absolute top-4 left-4 bg-primary text-white px-4 py-1 rounded-full text-sm font-medium">
                   Featured Product
                 </div>
               </div>
             </SlideInSection>
             <SlideInSection direction="right" delay={0.2} className="md:w-1/2">
               <h2 className="text-3xl font-bold mb-6 text-gray-800 relative">
-                <span className="inline-block pb-2 border-b-4 border-emerald-500">LARDSHARE</span>
+                <span className="inline-block pb-2 border-b-4 border-primary">
+                  LARDSHARE
+                </span>
               </h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                LARDSHARE is our innovative hard-skill sharing platform-based software that connects service providers
-                with users. Currently in its pre-iteration phase, this cutting-edge platform features geospatial
-                capabilities, robust back-end machine learning, and forefront artificial intelligence.
+                LARDSHARE is our innovative hard-skill sharing platform-based
+                software that connects service providers with users. Currently
+                in its pre-iteration phase, this cutting-edge platform features
+                geospatial capabilities, robust back-end machine learning, and
+                forefront artificial intelligence.
               </p>
               <p className="text-gray-700 mb-8 leading-relaxed">
-                We're actively seeking investment partners to help bring this revolutionary platform to market and
-                transform how services are discovered and delivered.
+                We're actively seeking investment partners to help bring this
+                revolutionary platform to market and transform how services are
+                discovered and delivered.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
                   href="/lardshare"
-                  className="inline-flex items-center bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-3 px-6 rounded-lg transition-colors shadow-lg"
+                  className="inline-flex items-center bg-primary hover:bg-primary-dark text-white font-medium py-3 px-6 rounded-lg transition-colors shadow-lg"
                 >
                   Explore LARDSHARE
                   <svg
@@ -409,12 +483,17 @@ export default function HomePage() {
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
                   </svg>
                 </Link>
                 <Link
                   href="/lardshare#funding"
-                  className="inline-flex items-center bg-white border border-emerald-600 text-emerald-600 hover:bg-emerald-50 font-medium py-3 px-6 rounded-lg transition-colors"
+                  className="inline-flex items-center bg-white border border-primary text-primary hover:bg-primary/10 font-medium py-3 px-6 rounded-lg transition-colors"
                 >
                   Investment Opportunity
                   <svg
@@ -442,7 +521,7 @@ export default function HomePage() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-6xl">
           <AnimatedHeading className="text-3xl font-bold mb-12 text-center text-gray-800">
-            Latest Articles
+            <span className="inline-block pb-2 border-b-4 border-secondary">Latest Articles</span>
           </AnimatedHeading>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -455,19 +534,22 @@ export default function HomePage() {
                     fill
                     className="object-cover"
                   />
-                  <div className="absolute top-4 left-4 bg-emerald-500 text-white px-3 py-1 rounded-full text-xs font-medium">
+                  <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-xs font-medium">
                     Technology Trends
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-3">The Future of AI in Business Applications</h3>
+                  <h3 className="text-xl font-semibold mb-3">
+                    The Future of AI in Business Applications
+                  </h3>
                   <p className="text-gray-600 mb-4 line-clamp-3">
-                    Explore how artificial intelligence is transforming business operations and creating new
-                    opportunities for growth and innovation.
+                    Explore how artificial intelligence is transforming business
+                    operations and creating new opportunities for growth and
+                    innovation.
                   </p>
                   <Link
                     href="/blog/1"
-                    className="inline-flex items-center text-emerald-600 font-medium hover:text-emerald-700"
+                    className="inline-flex items-center text-primary font-medium hover:text-primary-dark"
                   >
                     Read more
                     <svg
@@ -477,7 +559,12 @@ export default function HomePage() {
                       viewBox="0 0 24 24"
                       stroke="currentColor"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      />
                     </svg>
                   </Link>
                 </div>
@@ -493,21 +580,23 @@ export default function HomePage() {
                     fill
                     className="object-cover"
                   />
-                  <div className="absolute top-4 left-4 bg-emerald-500 text-white px-3 py-1 rounded-full text-xs font-medium">
+                  <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-xs font-medium">
                     Company News
                   </div>
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-3">
-                    TECHDITH Partners with Local Farms for Sustainable Agriculture
+                    TECHDITH Partners with Local Farms for Sustainable
+                    Agriculture
                   </h3>
                   <p className="text-gray-600 mb-4 line-clamp-3">
-                    Our recent agricultural investment project has yielded impressive results, demonstrating the
-                    potential of technology in farming.
+                    Our recent agricultural investment project has yielded
+                    impressive results, demonstrating the potential of
+                    technology in farming.
                   </p>
                   <Link
                     href="/blog/2"
-                    className="inline-flex items-center text-emerald-600 font-medium hover:text-emerald-700"
+                    className="inline-flex items-center text-primary font-medium hover:text-primary-dark"
                   >
                     Read more
                     <svg
@@ -517,7 +606,12 @@ export default function HomePage() {
                       viewBox="0 0 24 24"
                       stroke="currentColor"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      />
                     </svg>
                   </Link>
                 </div>
@@ -533,19 +627,22 @@ export default function HomePage() {
                     fill
                     className="object-cover"
                   />
-                  <div className="absolute top-4 left-4 bg-emerald-500 text-white px-3 py-1 rounded-full text-xs font-medium">
+                  <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-xs font-medium">
                     Security
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-3">Cybersecurity Best Practices for Small Businesses</h3>
+                  <h3 className="text-xl font-semibold mb-3">
+                    Cybersecurity Best Practices for Small Businesses
+                  </h3>
                   <p className="text-gray-600 mb-4 line-clamp-3">
-                    Protect your business from cyber threats with these essential security measures that every small
-                    business should implement.
+                    Protect your business from cyber threats with these
+                    essential security measures that every small business should
+                    implement.
                   </p>
                   <Link
                     href="/blog/3"
-                    className="inline-flex items-center text-emerald-600 font-medium hover:text-emerald-700"
+                    className="inline-flex items-center text-primary font-medium hover:text-primary-dark"
                   >
                     Read more
                     <svg
@@ -555,7 +652,12 @@ export default function HomePage() {
                       viewBox="0 0 24 24"
                       stroke="currentColor"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      />
                     </svg>
                   </Link>
                 </div>
@@ -563,10 +665,14 @@ export default function HomePage() {
             </SlideInSection>
           </div>
 
-          <AnimatedSection variant="fadeInUp" delay={0.4} className="text-center mt-12">
+          <AnimatedSection
+            variant="fadeInUp"
+            delay={0.4}
+            className="text-center mt-12"
+          >
             <Link
               href="/blog"
-              className="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-3 px-8 rounded-lg transition-colors shadow-lg"
+              className="inline-block bg-primary hover:bg-primary-dark text-white font-medium py-3 px-8 rounded-lg transition-colors shadow-lg"
             >
               View All Articles
             </Link>
@@ -575,10 +681,15 @@ export default function HomePage() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-emerald-700 text-white">
+      <section className="py-20 bg-primary text-white">
         <div className="container mx-auto px-4 max-w-6xl">
-          <AnimatedHeading className="text-3xl font-bold mb-12 text-center" underline={false}>
-            <span className="inline-block pb-2 border-b-4 border-white">What Our Clients Say</span>
+          <AnimatedHeading
+            className="text-3xl font-bold mb-12 text-center"
+            underline={false}
+          >
+            <span className="inline-block pb-2 border-b-4 border-secondary">
+              What Our Clients Say
+            </span>
           </AnimatedHeading>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -587,7 +698,7 @@ export default function HomePage() {
                 <div className="flex justify-center mb-6">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-12 w-12 text-emerald-300"
+                    className="h-12 w-12 text-primary/30"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -601,17 +712,20 @@ export default function HomePage() {
                   </svg>
                 </div>
                 <p className="text-white mb-6 italic">
-                  "TECHDITH LIMITED transformed our business operations with their custom software solution. Their
-                  team's expertise and dedication to understanding our unique needs resulted in a system that has
-                  significantly improved our efficiency."
+                  "TECHDITH LIMITED transformed our business operations with
+                  their custom software solution. Their team's expertise and
+                  dedication to understanding our unique needs resulted in a
+                  system that has significantly improved our efficiency."
                 </p>
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mr-4">
-                    <span className="text-emerald-700 font-bold">JA</span>
+                  <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-primary font-bold">JA</span>
                   </div>
                   <div>
                     <h4 className="font-semibold">John Adebayo</h4>
-                    <p className="text-white/80 text-sm">CEO, Adebayo Enterprises</p>
+                    <p className="text-white/80 text-sm">
+                      CEO, Adebayo Enterprises
+                    </p>
                   </div>
                 </div>
               </div>
@@ -622,7 +736,7 @@ export default function HomePage() {
                 <div className="flex justify-center mb-6">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-12 w-12 text-emerald-300"
+                    className="h-12 w-12 text-primary/30"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -636,16 +750,20 @@ export default function HomePage() {
                   </svg>
                 </div>
                 <p className="text-white mb-6 italic">
-                  "The consultancy services provided by TECHDITH LIMITED were invaluable to our digital transformation
-                  journey. Their strategic guidance helped us navigate complex technological decisions with confidence."
+                  "The consultancy services provided by TECHDITH LIMITED were
+                  invaluable to our digital transformation journey. Their
+                  strategic guidance helped us navigate complex technological
+                  decisions with confidence."
                 </p>
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mr-4">
-                    <span className="text-emerald-700 font-bold">SO</span>
+                  <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-primary font-bold">SO</span>
                   </div>
                   <div>
                     <h4 className="font-semibold">Sarah Okonkwo</h4>
-                    <p className="text-white/80 text-sm">Director of IT, Lagos Medical Center</p>
+                    <p className="text-white/80 text-sm">
+                      Director of IT, Lagos Medical Center
+                    </p>
                   </div>
                 </div>
               </div>
@@ -656,7 +774,7 @@ export default function HomePage() {
                 <div className="flex justify-center mb-6">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-12 w-12 text-emerald-300"
+                    className="h-12 w-12 text-primary/30"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -670,17 +788,20 @@ export default function HomePage() {
                   </svg>
                 </div>
                 <p className="text-white mb-6 italic">
-                  "Working with TECHDITH LIMITED on our agricultural technology project was a game-changer. Their
-                  innovative approach and technical expertise helped us implement solutions that have significantly
-                  increased our productivity."
+                  "Working with TECHDITH LIMITED on our agricultural technology
+                  project was a game-changer. Their innovative approach and
+                  technical expertise helped us implement solutions that have
+                  significantly increased our productivity."
                 </p>
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mr-4">
-                    <span className="text-emerald-700 font-bold">MI</span>
+                  <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-primary font-bold">MI</span>
                   </div>
                   <div>
                     <h4 className="font-semibold">Michael Ibrahim</h4>
-                    <p className="text-white/80 text-sm">Operations Manager, GreenField Farms</p>
+                    <p className="text-white/80 text-sm">
+                      Operations Manager, GreenField Farms
+                    </p>
                   </div>
                 </div>
               </div>
@@ -695,19 +816,22 @@ export default function HomePage() {
           <div className="flex flex-col lg:flex-row gap-12 items-center">
             <SlideInSection direction="left" delay={0.1} className="lg:w-1/2">
               <h2 className="text-3xl font-bold mb-6 text-gray-800 relative">
-                <span className="inline-block pb-2 border-b-4 border-emerald-500">Get In Touch</span>
+                <span className="inline-block pb-2 border-b-4 border-secondary">
+                  Get In Touch
+                </span>
               </h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                Have a question or want to learn more about our services? We'd love to hear from you. Contact us today
-                to discuss how we can help your business thrive in the digital age.
+                Have a question or want to learn more about our services? We'd
+                love to hear from you. Contact us today to discuss how we can
+                help your business thrive in the digital age.
               </p>
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6 text-emerald-600"
+                      className="h-6 w-6 text-primary"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -727,16 +851,20 @@ export default function HomePage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-1 text-gray-800">Our Address</h3>
-                    <p className="text-gray-600">68, Adebayo Ajayi Avenue, Egan, Lagos</p>
+                    <h3 className="text-lg font-semibold mb-1 text-gray-800">
+                      Our Address
+                    </h3>
+                    <p className="text-gray-600">
+                      68, Adebayo Ajayi Avenue, Egan, Lagos
+                    </p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6 text-emerald-600"
+                      className="h-6 w-6 text-primary"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -750,17 +878,19 @@ export default function HomePage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-1 text-gray-800">Phone Numbers</h3>
+                    <h3 className="text-lg font-semibold mb-1 text-gray-800">
+                      Phone Numbers
+                    </h3>
                     <p className="text-gray-600">07061622366</p>
                     <p className="text-gray-600">08182681345</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6 text-emerald-600"
+                      className="h-6 w-6 text-primary"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -774,7 +904,9 @@ export default function HomePage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-1 text-gray-800">Email Address</h3>
+                    <h3 className="text-lg font-semibold mb-1 text-gray-800">
+                      Email Address
+                    </h3>
                     <p className="text-gray-600">techlard4@gmail.com</p>
                   </div>
                 </div>
@@ -783,7 +915,7 @@ export default function HomePage() {
               <div className="mt-8">
                 <Link
                   href="/contact"
-                  className="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-3 px-8 rounded-lg transition-colors shadow-lg"
+                  className="inline-block bg-primary hover:bg-primary-dark text-white font-medium py-3 px-8 rounded-lg transition-colors shadow-lg"
                 >
                   Contact Us
                 </Link>
@@ -792,57 +924,71 @@ export default function HomePage() {
 
             <SlideInSection direction="right" delay={0.2} className="lg:w-1/2">
               <div className="bg-gray-50 rounded-lg shadow-lg p-8">
-                <h3 className="text-xl font-semibold mb-6 text-gray-800">Send Us a Message</h3>
+                <h3 className="text-xl font-semibold mb-6 text-gray-800">
+                  Send Us a Message
+                </h3>
                 <form className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                      <label
+                        htmlFor="name"
+                        className="block text-sm font-medium text-gray-700 mb-1"
+                      >
                         Your Name
                       </label>
                       <input
                         type="text"
                         id="name"
                         name="name"
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                         placeholder="John Doe"
                       />
                     </div>
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                      <label
+                        htmlFor="email"
+                        className="block text-sm font-medium text-gray-700 mb-1"
+                      >
                         Email Address
                       </label>
                       <input
                         type="email"
                         id="email"
                         name="email"
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                         placeholder="john@example.com"
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
+                    <label
+                      htmlFor="subject"
+                      className="block text-sm font-medium text-gray-700 mb-1"
+                    >
                       Subject
                     </label>
                     <input
                       type="text"
                       id="subject"
                       name="subject"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                       placeholder="How can we help you?"
                     />
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                    <label
+                      htmlFor="message"
+                      className="block text-sm font-medium text-gray-700 mb-1"
+                    >
                       Your Message
                     </label>
                     <textarea
                       id="message"
                       name="message"
                       rows={4}
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                       placeholder="Please provide details about your inquiry..."
                     ></textarea>
                   </div>
@@ -850,7 +996,7 @@ export default function HomePage() {
                   <div>
                     <button
                       type="submit"
-                      className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-3 px-6 rounded-lg transition-colors"
+                      className="w-full bg-primary hover:bg-primary-dark text-white font-medium py-3 px-6 rounded-lg transition-colors"
                     >
                       Send Message
                     </button>
@@ -863,34 +1009,36 @@ export default function HomePage() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-emerald-700 text-white">
+      <section className="py-16 bg-primary text-white">
         <div className="container mx-auto px-4 max-w-6xl text-center">
-          <AnimatedText text="Ready to Transform Your Business?" className="text-3xl font-bold mb-6" />
+          <AnimatedText
+            text="Ready to Transform Your Business?"
+            className="text-3xl font-bold mb-6"
+          />
           <AnimatedSection variant="fadeInUp" delay={0.2}>
             <p className="text-lg max-w-3xl mx-auto mb-8">
-              Partner with TECHDITH LIMITED and harness the power of technology to drive growth, efficiency, and
-              innovation.
+              Partner with TECHDITH LIMITED and harness the power of technology
+              to drive growth, efficiency, and innovation.
             </p>
           </AnimatedSection>
           <AnimatedSection variant="fadeInUp" delay={0.4}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/services"
-                className="bg-white text-emerald-700 hover:bg-gray-100 font-medium py-3 px-8 rounded-lg transition-colors shadow-lg"
+                className="bg-white text-primary hover:bg-gray-100 font-medium py-3 px-8 rounded-lg transition-colors shadow-lg"
               >
                 Explore Our Services
               </Link>
               <Link
                 href="/contact"
-                className="bg-transparent border-2 border-white hover:bg-white hover:text-emerald-700 text-white font-medium py-3 px-8 rounded-lg transition-colors"
+                className="bg-secondary hover:bg-secondary-dark text-white font-medium py-3 px-8 rounded-lg transition-colors shadow-lg"
               >
-                Contact Us
+                Get Started
               </Link>
             </div>
           </AnimatedSection>
         </div>
       </section>
     </main>
-  )
+  );
 }
-
