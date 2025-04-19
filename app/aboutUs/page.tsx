@@ -9,9 +9,9 @@ import { FadeInView } from "@/components/animations/fade-in-view";
 import { AnimatedHeading } from "@/components/animations/animated-heading";
 
 export const metadata: Metadata = {
-  title: "About Us | TECHDITH LIMITED",
+  title: "About Us | TechDith Limited",
   description:
-    "Learn about TECHDITH LIMITED, a dynamic and innovative technology company based in Lagos, Nigeria.",
+    "Learn about TechDith Limited, a dynamic and innovative technology company based in Lagos, Nigeria.",
 };
 
 export default function AboutUs() {
@@ -30,7 +30,7 @@ export default function AboutUs() {
         </div>
         <div className="container mx-auto px-4 relative z-10 text-center text-white">
           <AnimatedText
-            text="About TECHDITH LIMITED"
+            text="About TechDith Limited"
             className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
           />
           <AnimatedSection variant="fadeInUp" delay={0.3}>
@@ -42,7 +42,7 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* Introduction */}
+      {/* Learn more about us */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="flex flex-col md:flex-row gap-12 items-center">
@@ -50,28 +50,21 @@ export default function AboutUs() {
               <AnimatedSection variant="fadeInRight">
                 <h2 className="text-3xl font-bold mb-6 text-gray-800 relative">
                   <span className="inline-block pb-2 border-b-4 border-secondary">
-                    Introduction
+                    Learn more about us
                   </span>
                 </h2>
               </AnimatedSection>
               <AnimatedSection variant="fadeInRight" delay={0.2}>
                 <p className="text-gray-700 mb-6 leading-relaxed">
-                  Established in July 2024, TECHDITH LIMITED is a dynamic and
-                  innovative technology company based in Lagos, Nigeria. We are
-                  at the forefront of the digital revolution, specializing in a
-                  wide range of cutting-edge solutions, including computer
-                  programming, consultancy, and other technology-related
-                  activities.
-                </p>
-              </AnimatedSection>
-              <AnimatedSection variant="fadeInRight" delay={0.4}>
-                <p className="text-gray-700 leading-relaxed">
-                  Our core mission is to empower businesses and industries
-                  across Nigeria to harness the transformative power of
-                  technology, driving efficiency, growth, and innovation.
+                  We envision a future where technology is seamlessly integrated
+                  into every aspect of our lives and business in Nigeria and
+                  Africa by extension. We are committed to delivering
+                  exceptional service that bridges the gap between cutting-edge
+                  technology and real-world business needs.
                 </p>
               </AnimatedSection>
             </div>
+
             <AnimatedSection
               variant="fadeInLeft"
               delay={0.2}
@@ -89,103 +82,61 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* Our Expertise */}
-      <section className="py-16 bg-primary/10">
+      {/* Our Goals */}
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-6xl">
           <AnimatedHeading className="text-3xl font-bold mb-12 text-center text-gray-800">
-            Our Expertise
+            Our Goals
           </AnimatedHeading>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <SlideInSection direction="left" delay={0.1}>
-              <div className="bg-white rounded-lg shadow-lg p-8 transform transition-transform hover:scale-105">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 mx-auto">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-8 w-8 text-primary"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold mb-4 text-center">
-                  Computer Programming
-                </h3>
-                <p className="text-gray-600 text-center">
-                  Our team of highly skilled programmers is proficient in a
-                  diverse array of programming languages and platforms. We
-                  develop custom software solutions, web applications, mobile
-                  apps, and enterprise systems.
-                </p>
+          <div className="flex flex-col md:flex-row gap-12 items-start">
+            {/* Image Section */}
+            <div className="md:w-1/2">
+              <div className="relative w-full h-72 rounded-lg overflow-hidden shadow-xl">
+                <Image
+                  src="https://img.freepik.com/free-photo/multinational-company-workers-meet-plan-project-focused-growth_482257-114515.jpg?t=st=1743855449~exp=1743859049~hmac=33529b7beb46113a7b761f66bed213f961f8358175fd750b23927c21b98d725d&w=1380"
+                  alt="TECHDITH Vision"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
-            </SlideInSection>
+            </div>
 
-            <SlideInSection direction="up" delay={0.2}>
-              <div className="bg-white rounded-lg shadow-lg p-8 transform transition-transform hover:scale-105">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 mx-auto">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-8 w-8 text-primary"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold mb-4 text-center">
-                  Consultancy
-                </h3>
-                <p className="text-gray-600 text-center">
-                  We offer expert guidance and strategic advice to businesses on
-                  how to leverage technology to achieve their goals. Our
-                  consultants work closely with clients to develop technology
-                  roadmaps aligned with business strategies.
+            {/* Text Section */}
+            <div className="md:w-1/2">
+              <AnimatedSection variant="fadeInRight">
+                <p className="text-gray-700 mb-4 leading-relaxed">
+                  To deliver scalable, reliable, and innovative IT solutions
+                  that:
                 </p>
-              </div>
-            </SlideInSection>
+              </AnimatedSection>
 
-            <SlideInSection direction="right" delay={0.3}>
-              <div className="bg-white rounded-lg shadow-lg p-8 transform transition-transform hover:scale-105">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 mx-auto">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-8 w-8 text-primary"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold mb-4 text-center">
-                  Technology Solutions
-                </h3>
-                <p className="text-gray-600 text-center">
-                  From cloud computing and artificial intelligence to
-                  cybersecurity and data analytics, we provide a comprehensive
-                  suite of technology solutions that enable businesses to stay
-                  ahead of the curve.
-                </p>
-              </div>
-            </SlideInSection>
+              <ul className="list-disc list-inside text-gray-700 space-y-4 mb-6">
+                <li>
+                  <AnimatedSection variant="fadeInRight" delay={0.1}>
+                    Streamline operations for SMEs and government agencies
+                  </AnimatedSection>
+                </li>
+                <li>
+                  <AnimatedSection variant="fadeInRight" delay={0.2}>
+                    Enhance consumer experiences through tech
+                  </AnimatedSection>
+                </li>
+                <li>
+                  <AnimatedSection variant="fadeInRight" delay={0.3}>
+                    Create a bridge between emerging technologies and the local
+                    market
+                  </AnimatedSection>
+                </li>
+                <li>
+                  <AnimatedSection variant="fadeInRight" delay={0.4}>
+                    Foster economic growth and sustainability through digital
+                    empowerment
+                  </AnimatedSection>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -454,7 +405,7 @@ export default function AboutUs() {
                           Email Address
                         </h3>
                         <p className="text-lg font-semibold">
-                          techlard4@gmail.com
+                          info@techdith.com
                         </p>
                       </div>
                     </div>

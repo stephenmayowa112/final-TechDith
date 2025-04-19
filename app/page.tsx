@@ -7,12 +7,14 @@ import { AnimatedButton } from "@/components/ui/animated-button";
 import { SlideInSection } from "@/components/animations/slide-in-section";
 import { FadeInView } from "@/components/animations/fade-in-view";
 import { AnimatedHeading } from "@/components/animations/animated-heading";
+import { useState } from "react";
 
 export const metadata: Metadata = {
-  title: "TECHDITH LIMITED | Technology Solutions",
+  title: "TechDith Limited | Technology Solutions",
   description:
-    "TECHDITH LIMITED is a dynamic and innovative technology company based in Lagos, Nigeria, specializing in computer programming, consultancy, and technology solutions.",
+    "TechDith Limited is an innovative technology company focused on empowering African businesses through strategic digital transformation.",
 };
+
 
 export default function Home() {
   return (
@@ -22,7 +24,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/placeholder.svg?height=1200&width=1920"
-            alt="TECHDITH Technology Solutions"
+            alt="Techdith Technology Solutions"
             fill
             className="object-cover brightness-50"
             priority
@@ -30,13 +32,12 @@ export default function Home() {
         </div>
         <div className="container mx-auto px-4 relative z-10 text-center text-white">
           <AnimatedText
-            text="Transforming Business Through Technology"
+            text="TechDith"
             className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
           />
           <AnimatedSection variant="fadeInUp" delay={0.3}>
             <p className="text-lg md:text-xl max-w-3xl mx-auto mb-10">
-              TECHDITH LIMITED is a dynamic and innovative technology company at
-              the forefront of the digital revolution in Nigeria
+              Transforming technology Businesses Through Technologies.
             </p>
           </AnimatedSection>
           <AnimatedSection variant="fadeInUp" delay={0.6}>
@@ -75,81 +76,81 @@ export default function Home() {
       </section>
 
       {/* About Us Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <div className="flex flex-col md:flex-row gap-12 items-center">
-            <div className="md:w-1/2">
-              <AnimatedSection variant="fadeInRight">
-                <h2 className="text-3xl font-bold mb-6 text-gray-800 relative">
-                  <span className="inline-block pb-2 border-b-4 border-primary">
-                    About Us
-                  </span>
-                </h2>
-              </AnimatedSection>
-              <AnimatedSection variant="fadeInRight" delay={0.2}>
-                <p className="text-gray-700 mb-6 leading-relaxed">
-                  Established in July 2024, TECHDITH LIMITED is a dynamic and
-                  innovative technology company based in Lagos, Nigeria. We are
-                  at the forefront of the digital revolution, specializing in a
-                  wide range of cutting-edge solutions, including computer
-                  programming, consultancy, and other technology-related
-                  activities.
-                </p>
-              </AnimatedSection>
-              <AnimatedSection variant="fadeInRight" delay={0.4}>
-                <p className="text-gray-700 mb-8 leading-relaxed">
-                  Our core mission is to empower businesses and industries
-                  across Nigeria to harness the transformative power of
-                  technology, driving efficiency, growth, and innovation.
-                </p>
-              </AnimatedSection>
-              <AnimatedSection variant="fadeInRight" delay={0.6}>
-                <AnimatedButton
-                  href="/about-us"
-                  className="inline-flex items-center text-primary font-medium hover:text-primary-dark"
-                >
-                  Learn more about us
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 ml-2"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M14 5l7 7m0 0l-7 7m7-7H3"
-                    />
-                  </svg>
-                </AnimatedButton>
-              </AnimatedSection>
-            </div>
-            <AnimatedSection
-              variant="fadeInRight"
-              delay={0.2}
-              className="md:w-1/2"
+<section className="py-20 bg-white">
+  <div className="container mx-auto px-4 max-w-6xl">
+    <div className="flex flex-col md:flex-row gap-12 items-stretch">
+      
+      {/* Text Column */}
+      <div className="md:w-1/2 flex flex-col justify-between">
+        <AnimatedSection variant="fadeInRight">
+          <h2 className="text-3xl font-bold mb-6 text-gray-800 relative">
+            <span className="inline-block pb-2 border-b-4 border-primary">
+              About Us
+            </span>
+          </h2>
+        </AnimatedSection>
+
+        <AnimatedSection variant="fadeInRight" delay={0.2}>
+          <p className="text-gray-700 mb-6 leading-relaxed">
+            TechDith Limited is a dynamic technology company that specializes in transforming Micro, Small and Medium-scale Enterprises (MSMEs) via simplified tech solutions.
+            These tailored tech solutions enhance efficiency, improve consumer experience, and foster innovation in the larger digital economy.
+          </p>
+        </AnimatedSection>
+
+        <AnimatedSection variant="fadeInRight" delay={0.6}>
+          <AnimatedButton
+            href="/aboutUs"
+            className="inline-flex items-center text-primary font-medium hover:text-primary-dark"
+          >
+            Learn more about us
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 ml-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
             >
-              <div className="rounded-lg overflow-hidden shadow-xl">
-                <Image
-                  src="/placeholder.svg?height=600&width=800"
-                  alt="TECHDITH Office"
-                  width={800}
-                  height={600}
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-            </AnimatedSection>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              />
+            </svg>
+          </AnimatedButton>
+        </AnimatedSection>
+      </div>
+
+      {/* Image Column */}
+      <AnimatedSection
+        variant="fadeInRight"
+        delay={0.2}
+        className="md:w-1/2"
+      >
+        <div className="rounded-lg overflow-hidden shadow-xl h-full">
+          <div
+            className="w-full h-full relative cursor-pointer transition duration-300 active:scale-95 focus:scale-95 outline-none"
+            tabIndex={0}
+          >
+            <Image
+              src="/placeholder.svg?height=600&width=800"
+              alt="TECHDITH Office"
+              layout="fill"
+              className="object-cover w-full h-full"
+            />
           </div>
         </div>
-      </section>
+      </AnimatedSection>
+    </div>
+  </div>
+</section>
+        {/* End of About Us Section */}
 
       {/* Services Section */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-6xl">
           <AnimatedHeading className="text-3xl font-bold mb-12 text-center text-gray-800">
-            <span className="inline-block pb-2 border-b-4 border-secondary">Our Services</span>
+            <span className="inline-block pb-2 border-b-4 border-secondary">What we offer</span>
           </AnimatedHeading>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -571,52 +572,7 @@ export default function Home() {
               </div>
             </SlideInSection>
 
-            <SlideInSection direction="up" delay={0.2}>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
-                <div className="relative h-48">
-                  <Image
-                    src="/placeholder.svg?height=400&width=600"
-                    alt="Sustainable Agriculture"
-                    fill
-                    className="object-cover"
-                  />
-                  <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-xs font-medium">
-                    Company News
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-3">
-                    TECHDITH Partners with Local Farms for Sustainable
-                    Agriculture
-                  </h3>
-                  <p className="text-gray-600 mb-4 line-clamp-3">
-                    Our recent agricultural investment project has yielded
-                    impressive results, demonstrating the potential of
-                    technology in farming.
-                  </p>
-                  <Link
-                    href="/blog/2"
-                    className="inline-flex items-center text-primary font-medium hover:text-primary-dark"
-                  >
-                    Read more
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 ml-2"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M14 5l7 7m0 0l-7 7m7-7H3"
-                      />
-                    </svg>
-                  </Link>
-                </div>
-              </div>
-            </SlideInSection>
+            
 
             <SlideInSection direction="up" delay={0.3}>
               <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
@@ -851,12 +807,7 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-1 text-gray-800">
-                      Our Address
-                    </h3>
-                    <p className="text-gray-600">
-                      68, Adebayo Ajayi Avenue, Egan, Lagos
-                    </p>
+                    
                   </div>
                 </div>
 
@@ -881,8 +832,7 @@ export default function Home() {
                     <h3 className="text-lg font-semibold mb-1 text-gray-800">
                       Phone Numbers
                     </h3>
-                    <p className="text-gray-600">07061622366</p>
-                    <p className="text-gray-600">08182681345</p>
+                    <p className="text-gray-600">08083737756</p>
                   </div>
                 </div>
 

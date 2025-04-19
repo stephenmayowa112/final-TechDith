@@ -1,15 +1,15 @@
-import type { Metadata } from "next"
-import Image from "next/image"
-import { AnimatedSection } from "@/components/animations/animated-section"
-import { AnimatedText } from "@/components/animations/animated-text"
-import { SlideInSection } from "@/components/animations/slide-in-section"
-import { AnimatedHeading } from "@/components/animations/animated-heading"
+import type { Metadata } from "next";
+import Image from "next/image";
+import { AnimatedSection } from "@/components/animations/animated-section";
+import { AnimatedText } from "@/components/animations/animated-text";
+import { SlideInSection } from "@/components/animations/slide-in-section";
+import { AnimatedHeading } from "@/components/animations/animated-heading";
 
 export const metadata: Metadata = {
   title: "Our Services | TECHDITH LIMITED",
   description:
     "Explore the comprehensive technology services offered by TECHDITH LIMITED, including computer programming, IT infrastructure, R&D, and training.",
-}
+};
 
 export default function ServicesPage() {
   return (
@@ -19,7 +19,7 @@ export default function ServicesPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/placeholder.svg?height=800&width=1600"
-            alt="TECHDITH Technology Services"
+            alt="TechDith Technology Services"
             fill
             className="object-cover brightness-50"
             priority
@@ -32,7 +32,8 @@ export default function ServicesPage() {
           />
           <AnimatedSection variant="fadeInUp" delay={0.3}>
             <p className="text-lg md:text-xl max-w-3xl mx-auto">
-              Comprehensive technology solutions tailored to meet your business needs
+              Comprehensive technology solutions tailored to meet your business
+              needs
             </p>
           </AnimatedSection>
         </div>
@@ -50,21 +51,29 @@ export default function ServicesPage() {
               </AnimatedSection>
               <AnimatedSection variant="fadeInRight" delay={0.2}>
                 <p className="text-gray-700 mb-6 leading-relaxed">
-                  At TECHDITH LIMITED, we provide a comprehensive suite of technology services designed to empower
-                  businesses and industries across Nigeria. Our core mission is to help organizations harness the
-                  transformative power of technology, driving efficiency, growth, and innovation.
+                  At TECHDITH LIMITED, we provide a comprehensive suite of
+                  technology services designed to empower businesses and
+                  industries across Nigeria. Our core mission is to help
+                  organizations harness the transformative power of technology,
+                  driving efficiency, growth, and innovation.
                 </p>
               </AnimatedSection>
               <AnimatedSection variant="fadeInRight" delay={0.4}>
                 <p className="text-gray-700 leading-relaxed">
-                  Our team of highly skilled professionals is committed to delivering exceptional solutions that address
-                  your unique challenges and help you achieve your business objectives. Whether you need custom software
-                  development, IT infrastructure support, or specialized training, we have the expertise to meet your
-                  needs.
+                  Our team of highly skilled professionals is committed to
+                  delivering exceptional solutions that address your unique
+                  challenges and help you achieve your business objectives.
+                  Whether you need custom software development, IT
+                  infrastructure support, or specialized training, we have the
+                  expertise to meet your needs.
                 </p>
               </AnimatedSection>
             </div>
-            <AnimatedSection variant="fadeInLeft" delay={0.2} className="md:w-1/2 rounded-lg overflow-hidden shadow-xl">
+            <AnimatedSection
+              variant="fadeInLeft"
+              delay={0.2}
+              className="md:w-1/2 rounded-lg overflow-hidden shadow-xl"
+            >
               <Image
                 src="/placeholder.svg?height=600&width=800"
                 alt="TECHDITH Technology Solutions"
@@ -88,12 +97,18 @@ export default function ServicesPage() {
           <SlideInSection direction="left" delay={0.1}>
             <div className="mb-16">
               <div className="flex flex-col lg:flex-row gap-12 items-center">
-                <AnimatedSection variant="fadeInRight" className="lg:w-1/2 order-2 lg:order-1">
-                  <h3 className="text-2xl font-bold mb-4 text-gray-800">Computer Programming and Consultancy</h3>
+                <AnimatedSection
+                  variant="fadeInRight"
+                  className="lg:w-1/2 order-2 lg:order-1"
+                >
+                  <h3 className="text-2xl font-bold mb-4 text-gray-800">
+                    Computer Programming and Consultancy
+                  </h3>
                   <p className="text-gray-700 mb-6 leading-relaxed">
-                    We provide tailored software development and IT consulting services to meet the unique needs of our
-                    clients. Our team of highly skilled programmers is proficient in a diverse array of programming
-                    languages and platforms.
+                    We provide tailored software development and IT consulting
+                    services to meet the unique needs of our clients. Our team
+                    of highly skilled programmers is proficient in a diverse
+                    array of programming languages and platforms.
                   </p>
                   <div className="bg-white rounded-lg shadow-md p-6">
                     <h4 className="text-lg font-semibold mb-4 text-primary">
@@ -109,11 +124,17 @@ export default function ServicesPage() {
                             viewBox="0 0 24 24"
                             stroke="currentColor"
                           >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M5 13l4 4L19 7"
+                            />
                           </svg>
                         </div>
                         <span className="text-gray-700">
-                          Custom software development tailored to your business requirements
+                          Custom software development tailored to your business
+                          requirements
                         </span>
                       </li>
                       <li className="flex items-start gap-3">
@@ -125,10 +146,17 @@ export default function ServicesPage() {
                             viewBox="0 0 24 24"
                             stroke="currentColor"
                           >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M5 13l4 4L19 7"
+                            />
                           </svg>
                         </div>
-                        <span className="text-gray-700">Web application development with responsive design</span>
+                        <span className="text-gray-700">
+                          Web application development with responsive design
+                        </span>
                       </li>
                       <li className="flex items-start gap-3">
                         <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -139,10 +167,17 @@ export default function ServicesPage() {
                             viewBox="0 0 24 24"
                             stroke="currentColor"
                           >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M5 13l4 4L19 7"
+                            />
                           </svg>
                         </div>
-                        <span className="text-gray-700">Mobile app development for iOS and Android platforms</span>
+                        <span className="text-gray-700">
+                          Mobile app development for iOS and Android platforms
+                        </span>
                       </li>
                       <li className="flex items-start gap-3">
                         <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -153,10 +188,17 @@ export default function ServicesPage() {
                             viewBox="0 0 24 24"
                             stroke="currentColor"
                           >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M5 13l4 4L19 7"
+                            />
                           </svg>
                         </div>
-                        <span className="text-gray-700">Enterprise system integration and development</span>
+                        <span className="text-gray-700">
+                          Enterprise system integration and development
+                        </span>
                       </li>
                       <li className="flex items-start gap-3">
                         <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -167,15 +209,26 @@ export default function ServicesPage() {
                             viewBox="0 0 24 24"
                             stroke="currentColor"
                           >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M5 13l4 4L19 7"
+                            />
                           </svg>
                         </div>
-                        <span className="text-gray-700">Strategic IT consulting and technology roadmap development</span>
+                        <span className="text-gray-700">
+                          Strategic IT consulting and technology roadmap
+                          development
+                        </span>
                       </li>
                     </ul>
                   </div>
                 </AnimatedSection>
-                <AnimatedSection variant="fadeInLeft" className="lg:w-1/2 order-1 lg:order-2">
+                <AnimatedSection
+                  variant="fadeInLeft"
+                  className="lg:w-1/2 order-1 lg:order-2"
+                >
                   <div className="relative h-80 lg:h-96 rounded-lg overflow-hidden shadow-xl">
                     <Image
                       src="/placeholder.svg?height=800&width=800"
@@ -204,13 +257,19 @@ export default function ServicesPage() {
                   </div>
                 </AnimatedSection>
                 <AnimatedSection variant="fadeInRight" className="lg:w-1/2">
-                  <h3 className="text-2xl font-bold mb-4 text-gray-800">IT Infrastructure Development</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-gray-800">
+                    IT Infrastructure Development
+                  </h3>
                   <p className="text-gray-700 mb-6 leading-relaxed">
-                    Our expertise includes establishing and managing computer centers, manufacturing or processing
-                    software packages, and handling hardware materials and components required for the computer industry.
+                    Our expertise includes establishing and managing computer
+                    centers, manufacturing or processing software packages, and
+                    handling hardware materials and components required for the
+                    computer industry.
                   </p>
                   <div className="bg-white rounded-lg shadow-md p-6">
-                    <h4 className="text-lg font-semibold mb-4 text-primary">Our Infrastructure Services Include:</h4>
+                    <h4 className="text-lg font-semibold mb-4 text-primary">
+                      Our Infrastructure Services Include:
+                    </h4>
                     <ul className="space-y-3">
                       <li className="flex items-start gap-3">
                         <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -221,10 +280,18 @@ export default function ServicesPage() {
                             viewBox="0 0 24 24"
                             stroke="currentColor"
                           >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M5 13l4 4L19 7"
+                            />
                           </svg>
                         </div>
-                        <span className="text-gray-700">Design and implementation of IT infrastructure solutions</span>
+                        <span className="text-gray-700">
+                          Design and implementation of IT infrastructure
+                          solutions
+                        </span>
                       </li>
                       <li className="flex items-start gap-3">
                         <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -235,10 +302,17 @@ export default function ServicesPage() {
                             viewBox="0 0 24 24"
                             stroke="currentColor"
                           >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M5 13l4 4L19 7"
+                            />
                           </svg>
                         </div>
-                        <span className="text-gray-700">Network design, setup, and management</span>
+                        <span className="text-gray-700">
+                          Network design, setup, and management
+                        </span>
                       </li>
                       <li className="flex items-start gap-3">
                         <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -249,10 +323,17 @@ export default function ServicesPage() {
                             viewBox="0 0 24 24"
                             stroke="currentColor"
                           >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M5 13l4 4L19 7"
+                            />
                           </svg>
                         </div>
-                        <span className="text-gray-700">Cloud infrastructure setup and migration services</span>
+                        <span className="text-gray-700">
+                          Cloud infrastructure setup and migration services
+                        </span>
                       </li>
                       <li className="flex items-start gap-3">
                         <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -263,10 +344,17 @@ export default function ServicesPage() {
                             viewBox="0 0 24 24"
                             stroke="currentColor"
                           >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M5 13l4 4L19 7"
+                            />
                           </svg>
                         </div>
-                        <span className="text-gray-700">Hardware procurement, installation, and maintenance</span>
+                        <span className="text-gray-700">
+                          Hardware procurement, installation, and maintenance
+                        </span>
                       </li>
                       <li className="flex items-start gap-3">
                         <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -277,10 +365,17 @@ export default function ServicesPage() {
                             viewBox="0 0 24 24"
                             stroke="currentColor"
                           >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M5 13l4 4L19 7"
+                            />
                           </svg>
                         </div>
-                        <span className="text-gray-700">Data center design and management</span>
+                        <span className="text-gray-700">
+                          Data center design and management
+                        </span>
                       </li>
                     </ul>
                   </div>
@@ -293,15 +388,24 @@ export default function ServicesPage() {
           <SlideInSection direction="left" delay={0.3}>
             <div className="mb-16">
               <div className="flex flex-col lg:flex-row gap-12 items-center">
-                <AnimatedSection variant="fadeInRight" className="lg:w-1/2 order-2 lg:order-1">
-                  <h3 className="text-2xl font-bold mb-4 text-gray-800">Research and Development</h3>
+                <AnimatedSection
+                  variant="fadeInRight"
+                  className="lg:w-1/2 order-2 lg:order-1"
+                >
+                  <h3 className="text-2xl font-bold mb-4 text-gray-800">
+                    Research and Development
+                  </h3>
                   <p className="text-gray-700 mb-6 leading-relaxed">
-                    We undertake R&D initiatives for technological updates in various areas, ensuring our solutions remain
-                    cutting-edge. Our research team explores emerging technologies and develops innovative solutions to
-                    address complex business challenges.
+                    We undertake R&D initiatives for technological updates in
+                    various areas, ensuring our solutions remain cutting-edge.
+                    Our research team explores emerging technologies and
+                    develops innovative solutions to address complex business
+                    challenges.
                   </p>
                   <div className="bg-white rounded-lg shadow-md p-6">
-                    <h4 className="text-lg font-semibold mb-4 text-primary">Our R&D Focus Areas:</h4>
+                    <h4 className="text-lg font-semibold mb-4 text-primary">
+                      Our R&D Focus Areas:
+                    </h4>
                     <ul className="space-y-3">
                       <li className="flex items-start gap-3">
                         <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -312,10 +416,18 @@ export default function ServicesPage() {
                             viewBox="0 0 24 24"
                             stroke="currentColor"
                           >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M5 13l4 4L19 7"
+                            />
                           </svg>
                         </div>
-                        <span className="text-gray-700">Artificial Intelligence and Machine Learning applications</span>
+                        <span className="text-gray-700">
+                          Artificial Intelligence and Machine Learning
+                          applications
+                        </span>
                       </li>
                       <li className="flex items-start gap-3">
                         <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -326,10 +438,17 @@ export default function ServicesPage() {
                             viewBox="0 0 24 24"
                             stroke="currentColor"
                           >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M5 13l4 4L19 7"
+                            />
                           </svg>
                         </div>
-                        <span className="text-gray-700">Blockchain technology and applications</span>
+                        <span className="text-gray-700">
+                          Blockchain technology and applications
+                        </span>
                       </li>
                       <li className="flex items-start gap-3">
                         <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -340,10 +459,17 @@ export default function ServicesPage() {
                             viewBox="0 0 24 24"
                             stroke="currentColor"
                           >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M5 13l4 4L19 7"
+                            />
                           </svg>
                         </div>
-                        <span className="text-gray-700">Internet of Things (IoT) solutions</span>
+                        <span className="text-gray-700">
+                          Internet of Things (IoT) solutions
+                        </span>
                       </li>
                       <li className="flex items-start gap-3">
                         <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -354,10 +480,17 @@ export default function ServicesPage() {
                             viewBox="0 0 24 24"
                             stroke="currentColor"
                           >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M5 13l4 4L19 7"
+                            />
                           </svg>
                         </div>
-                        <span className="text-gray-700">Advanced data analytics and business intelligence</span>
+                        <span className="text-gray-700">
+                          Advanced data analytics and business intelligence
+                        </span>
                       </li>
                       <li className="flex items-start gap-3">
                         <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -368,15 +501,25 @@ export default function ServicesPage() {
                             viewBox="0 0 24 24"
                             stroke="currentColor"
                           >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M5 13l4 4L19 7"
+                            />
                           </svg>
                         </div>
-                        <span className="text-gray-700">Cybersecurity research and solutions</span>
+                        <span className="text-gray-700">
+                          Cybersecurity research and solutions
+                        </span>
                       </li>
                     </ul>
                   </div>
                 </AnimatedSection>
-                <AnimatedSection variant="fadeInLeft" className="lg:w-1/2 order-1 lg:order-2">
+                <AnimatedSection
+                  variant="fadeInLeft"
+                  className="lg:w-1/2 order-1 lg:order-2"
+                >
                   <div className="relative h-80 lg:h-96 rounded-lg overflow-hidden shadow-xl">
                     <Image
                       src="/placeholder.svg?height=800&width=800"
@@ -405,14 +548,19 @@ export default function ServicesPage() {
                   </div>
                 </AnimatedSection>
                 <AnimatedSection variant="fadeInRight" className="lg:w-1/2">
-                  <h3 className="text-2xl font-bold mb-4 text-gray-800">Training and Development</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-gray-800">
+                    Training and Development
+                  </h3>
                   <p className="text-gray-700 mb-6 leading-relaxed">
-                    We offer training courses, tests, and examinations in management and computer technology, encompassing
-                    both hardware and software aspects, as well as essential learning and development programs across
-                    multiple industries.
+                    We offer training courses, tests, and examinations in
+                    management and computer technology, encompassing both
+                    hardware and software aspects, as well as essential learning
+                    and development programs across multiple industries.
                   </p>
                   <div className="bg-white rounded-lg shadow-md p-6">
-                    <h4 className="text-lg font-semibold mb-4 text-primary">Our Training Programs Include:</h4>
+                    <h4 className="text-lg font-semibold mb-4 text-primary">
+                      Our Training Programs Include:
+                    </h4>
                     <ul className="space-y-3">
                       <li className="flex items-start gap-3">
                         <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -423,11 +571,17 @@ export default function ServicesPage() {
                             viewBox="0 0 24 24"
                             stroke="currentColor"
                           >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M5 13l4 4L19 7"
+                            />
                           </svg>
                         </div>
                         <span className="text-gray-700">
-                          Technical skills training in programming languages and frameworks
+                          Technical skills training in programming languages and
+                          frameworks
                         </span>
                       </li>
                       <li className="flex items-start gap-3">
@@ -439,10 +593,17 @@ export default function ServicesPage() {
                             viewBox="0 0 24 24"
                             stroke="currentColor"
                           >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M5 13l4 4L19 7"
+                            />
                           </svg>
                         </div>
-                        <span className="text-gray-700">IT management and leadership development programs</span>
+                        <span className="text-gray-700">
+                          IT management and leadership development programs
+                        </span>
                       </li>
                       <li className="flex items-start gap-3">
                         <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -453,10 +614,17 @@ export default function ServicesPage() {
                             viewBox="0 0 24 24"
                             stroke="currentColor"
                           >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M5 13l4 4L19 7"
+                            />
                           </svg>
                         </div>
-                        <span className="text-gray-700">Cybersecurity awareness and best practices training</span>
+                        <span className="text-gray-700">
+                          Cybersecurity awareness and best practices training
+                        </span>
                       </li>
                       <li className="flex items-start gap-3">
                         <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -467,10 +635,17 @@ export default function ServicesPage() {
                             viewBox="0 0 24 24"
                             stroke="currentColor"
                           >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M5 13l4 4L19 7"
+                            />
                           </svg>
                         </div>
-                        <span className="text-gray-700">Software and hardware certification programs</span>
+                        <span className="text-gray-700">
+                          Software and hardware certification programs
+                        </span>
                       </li>
                       <li className="flex items-start gap-3">
                         <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -481,10 +656,17 @@ export default function ServicesPage() {
                             viewBox="0 0 24 24"
                             stroke="currentColor"
                           >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M5 13l4 4L19 7"
+                            />
                           </svg>
                         </div>
-                        <span className="text-gray-700">Customized corporate training solutions</span>
+                        <span className="text-gray-700">
+                          Customized corporate training solutions
+                        </span>
                       </li>
                     </ul>
                   </div>
@@ -521,10 +703,12 @@ export default function ServicesPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-center">Expertise</h3>
+                <h3 className="text-xl font-semibold mb-3 text-center">
+                  Expertise
+                </h3>
                 <p className="text-gray-600 text-center">
-                  Our team consists of highly skilled professionals with extensive experience in various technology
-                  domains.
+                  Our team consists of highly skilled professionals with
+                  extensive experience in various technology domains.
                 </p>
               </div>
             </SlideInSection>
@@ -547,10 +731,12 @@ export default function ServicesPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-center">Innovation</h3>
+                <h3 className="text-xl font-semibold mb-3 text-center">
+                  Innovation
+                </h3>
                 <p className="text-gray-600 text-center">
-                  We are passionate about pushing the boundaries of what is possible with technology and finding
-                  innovative solutions.
+                  We are passionate about pushing the boundaries of what is
+                  possible with technology and finding innovative solutions.
                 </p>
               </div>
             </SlideInSection>
@@ -573,10 +759,12 @@ export default function ServicesPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-center">Customer Focus</h3>
+                <h3 className="text-xl font-semibold mb-3 text-center">
+                  Customer Focus
+                </h3>
                 <p className="text-gray-600 text-center">
-                  We are committed to understanding your unique needs and delivering solutions that exceed your
-                  expectations.
+                  We are committed to understanding your unique needs and
+                  delivering solutions that exceed your expectations.
                 </p>
               </div>
             </SlideInSection>
@@ -591,13 +779,21 @@ export default function ServicesPage() {
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 10V3L4 14h7v7l9-11h-7z"
+                    />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-center">Quality</h3>
+                <h3 className="text-xl font-semibold mb-3 text-center">
+                  Quality
+                </h3>
                 <p className="text-gray-600 text-center">
-                  We strive for excellence in everything we do, ensuring that our solutions are robust, reliable, and of
-                  the highest quality.
+                  We strive for excellence in everything we do, ensuring that
+                  our solutions are robust, reliable, and of the highest
+                  quality.
                 </p>
               </div>
             </SlideInSection>
@@ -613,8 +809,8 @@ export default function ServicesPage() {
           </AnimatedHeading>
           <AnimatedSection variant="fadeInUp" delay={0.2}>
             <p className="text-lg max-w-3xl mx-auto mb-8">
-              Contact us today to discuss how our technology services can help your business achieve its goals and stay
-              ahead in the digital age.
+              Contact us today to discuss how our technology services can help
+              your business achieve its goals and stay ahead in the digital age.
             </p>
             <div className="inline-block bg-white text-primary font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-gray-100 transition-colors">
               Contact Us
@@ -623,6 +819,5 @@ export default function ServicesPage() {
         </div>
       </section>
     </main>
-  )
+  );
 }
-

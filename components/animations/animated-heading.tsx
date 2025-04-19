@@ -22,16 +22,15 @@ export function AnimatedHeading({ children, className = "", underline = true }: 
       className={className}
     >
       {underline ? (
-        <span className="inline-block pb-2 border-b-4 border-emerald-500 relative">
-          {children}
-          <motion.span
-            initial={{ width: 0 }}
-            animate={isInView ? { width: "100%" } : { width: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="absolute bottom-0 left-0 h-1 bg-emerald-500"
-            style={{ bottom: "-4px" }}
-          />
-        </span>
+        <span className="inline-block pb-0 border-b-2 border-secondary relative">
+        {children}
+        <motion.span
+          initial={{ width: 0 }}
+          animate={isInView ? { width: "100%" } : { width: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="absolute bottom-0 left-0 h-1 bg-secondary"
+        />
+      </span>
       ) : (
         children
       )}
