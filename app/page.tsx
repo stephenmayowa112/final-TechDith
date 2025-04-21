@@ -7,7 +7,7 @@ import { AnimatedButton } from "@/components/ui/animated-button";
 import { SlideInSection } from "@/components/animations/slide-in-section";
 import { FadeInView } from "@/components/animations/fade-in-view";
 import { AnimatedHeading } from "@/components/animations/animated-heading";
-import { useState } from "react";
+import { useState } from "react"; // used below for expertise toggles
 import { Plus } from "lucide-react";
 
 export default function Home() {
@@ -36,15 +36,24 @@ export default function Home() {
             priority
           />
         </div>
-        <div className="container mx-auto px-4 relative z-10 text-center text-white">
+        <div className="container text-2xl mx-auto px-4 relative z-10 text-center text-white">
           <AnimatedText
             text="TechDith"
-            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
+            className="text-8xl md:text-9xl lg:text-[10rem] font-bold mb-6 leading-tight"
           />
           <AnimatedSection variant="fadeInUp" delay={0.3}>
-            <p className="text-lg md:text-xl max-w-3xl mx-auto mb-10">
-              Transforming technology Businesses Through Technologies.
-            </p>
+            <div className="marqueeY h-16 max-w-3xl mx-auto mb-10 overflow-hidden">
+              {[
+                'Transforming Businesses Through Technology',
+                'Powering Innovation & IT Solutions',
+                'Transforming Businesses Through Technology',
+                'Powering Innovation & IT Solutions'
+              ].map((text, idx) => (
+                <p key={idx} className="text-lg md:text-xl leading-tight">
+                  {text}
+                </p>
+              ))}
+            </div>
           </AnimatedSection>
           <AnimatedSection variant="fadeInUp" delay={0.6}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -156,9 +165,9 @@ export default function Home() {
       <section id="expertise" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-6xl">
           <h2 className="text-3xl font-bold mb-12 text-center text-gray-800">
-            <span className="inline-block pb-2 border-b-4 border-secondary">Our Expertise</span>
+            <span className="inline-block pb-2 border-b-4 border-secondary">What we offer</span>
           </h2>
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
             {expertise.map((item, idx) => (
               <li key={idx} className="border border-gray-400 rounded-lg p-4">
                 <div

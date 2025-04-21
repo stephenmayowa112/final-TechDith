@@ -12,6 +12,16 @@ body {
   }
 }
 
+@keyframes marqueeY {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-200%); }
+}
+.marqueeY {
+  display: flex;
+  flex-direction: column;
+  animation: marqueeY 10s linear infinite;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
