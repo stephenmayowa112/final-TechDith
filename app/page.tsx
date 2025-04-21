@@ -41,10 +41,10 @@ export default function Home() {
             text="TechDith"
             className="text-8xl md:text-9xl lg:text-[10rem] font-bold mb-6 leading-tight"
           />
-          <AnimatedSection variant="fadeInUp" delay={0.3}>
-            <div className="slider max-w-3xl mx-auto mb-10">
-              <span className="block text-base md:text-lg leading-tight">Transforming Businesses Through Technology</span>
-              <span className="block text-base md:text-lg leading-tight">Powering Innovation & IT Solutions</span>
+          <AnimatedSection variant="fadeInUp" delay={0.2}>
+            <div className="slider max-w-4xl mx-auto mb-10">
+              <span className="text-lg md:text-5xl leading-loose">Transforming Businesses Through Technology</span>
+              <span className="text-lg md:text-5xl leading-loose">Powering Innovation & IT Solutions</span>
             </div>
           </AnimatedSection>
           <AnimatedSection variant="fadeInUp" delay={0.6}>
