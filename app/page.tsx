@@ -42,17 +42,19 @@ export default function Home() {
             className="text-8xl md:text-9xl lg:text-[10rem] font-bold mb-6 leading-tight"
           />
           <AnimatedSection variant="fadeInUp" delay={0.3}>
-            <div className="marqueeY h-16 max-w-3xl mx-auto mb-10 overflow-hidden">
-              {[
-                'Transforming Businesses Through Technology',
-                'Powering Innovation & IT Solutions',
-                'Transforming Businesses Through Technology',
-                'Powering Innovation & IT Solutions'
-              ].map((text, idx) => (
-                <p key={idx} className="text-lg md:text-xl leading-tight">
-                  {text}
-                </p>
-              ))}
+            <div className="h-16 max-w-3xl mx-auto mb-10 overflow-hidden">
+              <div className="marqueeY">
+                {[
+                  'Transforming Businesses Through Technology',
+                  'Powering Innovation & IT Solutions',
+                  'Transforming Businesses Through Technology',
+                  'Powering Innovation & IT Solutions'
+                ].map((text, idx) => (
+                  <p key={idx} className="text-base md:text-lg leading-tight">
+                    {text}
+                  </p>
+                ))}
+              </div>
             </div>
           </AnimatedSection>
           <AnimatedSection variant="fadeInUp" delay={0.6}>

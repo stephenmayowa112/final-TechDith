@@ -19,7 +19,7 @@ body {
 .marqueeY {
   display: flex;
   flex-direction: column;
-  animation: marqueeY 10s linear infinite;
+  animation: marqueeY 2s ease-in-out infinite;
 }
 
 @layer base {

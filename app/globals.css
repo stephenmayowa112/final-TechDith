@@ -59,8 +59,19 @@
   }
 }
 
+@keyframes marqueeY {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .marqueeY {
+    display: flex;
+    flex-direction: column;
+    animation: marqueeY 1.5s ease-in-out infinite;
   }
 }
