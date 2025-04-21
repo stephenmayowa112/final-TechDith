@@ -141,9 +141,11 @@ export default function Home() {
             tabIndex={0}
           >
             <Image
-              src="/placeholder.svg?height=600&width=800"
+              src="images/techdithlogo.jpg"
               alt="TECHDITH Office"
-              layout="fill"
+              width={0}
+              height={0}
+              
               className="object-cover w-full h-full"
             />
           </div>
@@ -195,7 +197,7 @@ export default function Home() {
             <SlideInSection direction="left" delay={0.1} className="md:w-1/2">
               <div className="relative h-80 md:h-96 rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src="/placeholder.svg?height=800&width=800"
+                  src="images/lardshare.jpg"
                   alt="LARDSHARE Platform"
                   fill
                   className="object-cover"
@@ -282,7 +284,7 @@ export default function Home() {
               <div className="w-full bg-white rounded-lg shadow-md overflow-hidden h-full">
                 <div className="relative h-48">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/images/ai.jpg"
                     alt="AI in Business"
                     fill
                     className="object-cover"
@@ -330,7 +332,7 @@ export default function Home() {
               <div className="w-full bg-white rounded-lg shadow-md overflow-hidden h-full">
                 <div className="relative h-48">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/images/cybersecurity.jpg"
                     alt="Cybersecurity"
                     fill
                     className="object-cover"
