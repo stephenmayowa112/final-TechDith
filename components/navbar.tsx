@@ -16,11 +16,11 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
-              src="/images/techdith logo.svg" // Updated logo path
-              alt="Techdith Logo" // Updated alt text
-              width={350} // Increased width
-              height={84} // Increased height
-              className="h-24 w-auto" // Increased height class
+              src="/images/techdithlogo.png" 
+              alt="Techdith Logo"
+              width={200} // optimized width for navbar
+              height={60} // optimized height for navbar
+              className="h-10 md:h-12 w-auto" // constrain to navbar height
             />
           </Link>
 
