@@ -64,6 +64,13 @@
   100% { transform: translateY(-50%); }
 }
 
+@keyframes slideY {
+  0%, 10% { transform: translateY(100%); }
+  20%, 45% { transform: translateY(0); }
+  55%, 90% { transform: translateY(-100%); }
+  100% { transform: translateY(-100%); }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -72,6 +79,24 @@
   .marqueeY {
     display: flex;
     flex-direction: column;
-    animation: marqueeY 1.5s ease-in-out infinite;
+    animation: marqueeY 1.5s linear infinite;
+  }
+
+  .slider {
+    position: relative;
+    overflow: hidden;
+    height: 4rem; /* matches text height (e.g., h-16) */
+  }
+  .slider span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4rem;
+    top: 0;
+    left: 0;
+    animation: slideY 3s linear infinite;
+  }
+  .slider span:nth-child(2) {
+    animation-delay: 1.5s;
   }
 }

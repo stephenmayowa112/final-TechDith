@@ -42,19 +42,9 @@ export default function Home() {
             className="text-8xl md:text-9xl lg:text-[10rem] font-bold mb-6 leading-tight"
           />
           <AnimatedSection variant="fadeInUp" delay={0.3}>
-            <div className="h-16 max-w-3xl mx-auto mb-10 overflow-hidden">
-              <div className="marqueeY">
-                {[
-                  'Transforming Businesses Through Technology',
-                  'Powering Innovation & IT Solutions',
-                  'Transforming Businesses Through Technology',
-                  'Powering Innovation & IT Solutions'
-                ].map((text, idx) => (
-                  <p key={idx} className="text-base md:text-lg leading-tight">
-                    {text}
-                  </p>
-                ))}
-              </div>
+            <div className="slider max-w-3xl mx-auto mb-10">
+              <span className="block text-base md:text-lg leading-tight">Transforming Businesses Through Technology</span>
+              <span className="block text-base md:text-lg leading-tight">Powering Innovation & IT Solutions</span>
             </div>
           </AnimatedSection>
           <AnimatedSection variant="fadeInUp" delay={0.6}>
