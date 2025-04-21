@@ -12,7 +12,7 @@ export default function Footer() {
           <div>
             <Link href="/" className="inline-block mb-6">
               <Image
-                src="/images/techdith logo.svg" // Updated logo path
+                src="/images/techdithlogo.png"  // Updated logo path
                 alt="Techdith Logo" // Updated alt text
                 width={250} // Increased width
                 height={60} // Increased height
