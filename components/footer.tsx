@@ -16,26 +16,16 @@ export default function Footer() {
                 alt="Techdith Logo"
                 width={250}
                 height={60}
-                className="h-16 w-auto filter brightness-0 invert" // render logo in white
+                className="h-16 pl-10 w-auto filter brightness-0 invert" // render logo in white
               />
             </Link>
-            <p className="text-gray-400 text-sm mb-4">Expert business consulting solutions</p>
+            <p className="text-gray-400 pl-10 text-sm mb-4">Powering innovation & IT Solutions</p>
           </div>
 
           {/* Quick Links */}
           <div>
             <h3 className="text-lg font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li>
-                <Link href="/" className="text-gray-400 hover:text-white text-sm">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="/aboutUs" className="text-gray-400 hover:text-white text-sm">
-                  About Us
-                </Link>
-              </li>
               <li>
                 <Link href="/services" className="text-gray-400 hover:text-white text-sm">
                   Our Services
@@ -47,18 +37,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-gray-400 hover:text-white text-sm">
-                  blog
-                </Link>
-              </li>
-              <li>
                 <Link href="/lardshare" className="text-gray-400 hover:text-white text-sm">
                   Lardshare
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact-us" className="text-gray-400 hover:text-white text-sm">
-                  Contact Us
                 </Link>
               </li>
             </ul>

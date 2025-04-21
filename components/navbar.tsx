@@ -20,7 +20,7 @@ export default function Navbar() {
               alt="Techdith Logo"
               width={200} // optimized width for navbar
               height={60} // optimized height for navbar
-              className="h-10 md:h-12 w-auto" // constrain to navbar height
+              className="h-10 pl-10 md:h-12 w-auto" // constrain to navbar height
             />
           </Link>
 
