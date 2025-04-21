@@ -157,31 +157,40 @@ export default function Home() {
         {/* End of About Us Section */}
 
       {/* Services Section */}
-      <section id="expertise" className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <h2 className="text-3xl font-bold mb-12 text-center text-gray-800">
-            <span className="inline-block pb-2 border-b-4 border-secondary">What we offer</span>
-          </h2>
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-            {expertise.map((item, idx) => (
-              <li key={idx} className="border border-gray-400 rounded-lg p-4">
-                <div
-                  className="flex items-center cursor-pointer"
-                  onClick={() => {
-                    const newOpen = [...openItems];
-                    newOpen[idx] = !newOpen[idx];
-                    setOpenItems(newOpen);
-                  }}
-                >
-                  <Plus className={`h-6 w-6 text-orange-500 transform transition-transform ${openItems[idx] ? 'rotate-45' : 'rotate-0'}`} />
-                  <h3 className="text-xl font-semibold ml-2">{item.title}</h3>
-                </div>
-                {openItems[idx] && <p className="text-gray-600 mt-2">{item.description}</p>}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
+      {/* Services Section */}
+<section id="expertise" className="py-20 bg-gray-50">
+  <div className="container mx-auto px-4 max-w-6xl">
+    <h2 className="text-3xl font-bold mb-12 text-center text-gray-800">
+      <span className="inline-block pb-2 border-b-4 border-secondary">What we offer</span>
+    </h2>
+    <ul className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+      {expertise.map((item, idx) => (
+        <SlideInSection
+          key={idx}
+          direction="left"
+          delay={0.1 * idx}
+          className="md:w-full"
+        >
+          <li className="border border-gray-400 rounded-lg p-4">
+            <div
+              className="flex items-center cursor-pointer"
+              onClick={() => {
+                const newOpen = [...openItems];
+                newOpen[idx] = !newOpen[idx];
+                setOpenItems(newOpen);
+              }}
+            >
+              <Plus className={`h-6 w-6 text-orange-500 transform transition-transform ${openItems[idx] ? 'rotate-45' : 'rotate-0'}`} />
+              <h3 className="text-xl font-semibold ml-2">{item.title}</h3>
+            </div>
+            {openItems[idx] && <p className="text-gray-600 mt-2">{item.description}</p>}
+          </li>
+        </SlideInSection>
+      ))}
+    </ul>
+  </div>
+</section>
+
 
       {/* Projects Section */}
       {false && (
