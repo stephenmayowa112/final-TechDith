@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { AnimatedSection } from "@/components/animations/animated-section";
@@ -8,15 +8,21 @@ import { SlideInSection } from "@/components/animations/slide-in-section";
 import { FadeInView } from "@/components/animations/fade-in-view";
 import { AnimatedHeading } from "@/components/animations/animated-heading";
 import { useState } from "react";
-
-export const metadata: Metadata = {
-  title: "TechDith Limited | Technology Solutions",
-  description:
-    "TechDith Limited is an innovative technology company focused on empowering African businesses through strategic digital transformation.",
-};
-
+import { Plus } from "lucide-react";
 
 export default function Home() {
+  const expertise = [
+    { title: 'Graphics and Identity Design', description: 'Craft visual elements like logos and color schemes, shaping a cohesive brand identity.' },
+    { title: 'Advertising and Communications', description: 'Develop and implement strategic communication plans, including advertising campaigns and public relations, to boost brand visibility across platforms.' },
+    { title: 'Strategy and Positioning', description: 'Develop comprehensive plans to position a brand, outlining objectives, target audience, and differentiators for long-term success.' },
+    { title: 'Data Visualizations', description: 'Translate complex data into visual formats (charts, infographics) for accessible stakeholder communication and reporting.' },
+    { title: 'Products and Packaging Design', description: 'Design product aesthetics and packaging for enhanced brand appeal and a positive consumer experience.' },
+    { title: 'Event Design and Architecture', description: 'Create immersive event experiences through meticulous design, focusing on layout, aesthetics, and ambiance.' },
+    { title: 'Sound', description: 'Create audio elements like jingles and soundtracks, enhancing brand recognition and sensory connection.' },
+    { title: 'Typefaces', description: 'Develop unique fonts reflecting a brand\'s personality for effective communication across media.' }
+  ];
+  const [openItems, setOpenItems] = useState<boolean[]>(Array(expertise.length).fill(false));
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       {/* Hero Section */}
@@ -147,294 +153,38 @@ export default function Home() {
         {/* End of About Us Section */}
 
       {/* Services Section */}
-      <section className="py-20 bg-gray-50">
+      <section id="expertise" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-6xl">
-          <AnimatedHeading className="text-3xl font-bold mb-12 text-center text-gray-800">
-            <span className="inline-block pb-2 border-b-4 border-secondary">What we offer</span>
-          </AnimatedHeading>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <SlideInSection direction="left" delay={0.1} className="h-full">
-              <div className="bg-white rounded-lg shadow-lg p-8 transform transition-transform hover:scale-105 h-full">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-8 w-8 text-primary"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold mb-4">
-                  Computer Programming
-                </h3>
-                <p className="text-gray-600 mb-6">
-                  Our team of highly skilled programmers is proficient in a
-                  diverse array of programming languages and platforms. We
-                  develop custom software solutions, web applications, mobile
-                  apps, and enterprise systems.
-                </p>
-                <Link
-                  href="/services"
-                  className="inline-flex items-center text-primary font-medium hover:text-primary-dark"
+          <h2 className="text-3xl font-bold mb-12 text-center text-gray-800">
+            <span className="inline-block pb-2 border-b-4 border-secondary">Our Expertise</span>
+          </h2>
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {expertise.map((item, idx) => (
+              <li key={idx} className="border border-gray-400 rounded-lg p-4">
+                <div
+                  className="flex items-center cursor-pointer"
+                  onClick={() => {
+                    const newOpen = [...openItems];
+                    newOpen[idx] = !newOpen[idx];
+                    setOpenItems(newOpen);
+                  }}
                 >
-                  Learn more
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 ml-2"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M14 5l7 7m0 0l-7 7m7-7H3"
-                    />
-                  </svg>
-                </Link>
-              </div>
-            </SlideInSection>
-
-            <SlideInSection direction="up" delay={0.2} className="h-full">
-              <div className="bg-white rounded-lg shadow-lg p-8 transform transition-transform hover:scale-105 h-full">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-8 w-8 text-primary"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                    />
-                  </svg>
+                  <Plus className={`h-6 w-6 transform transition-transform ${openItems[idx] ? 'rotate-45' : 'rotate-0'}`} />
+                  <h3 className="text-xl font-semibold ml-2">{item.title}</h3>
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Consultancy</h3>
-                <p className="text-gray-600 mb-6">
-                  We offer expert guidance and strategic advice to businesses on
-                  how to leverage technology to achieve their goals. Our
-                  consultants work closely with clients to develop technology
-                  roadmaps aligned with business strategies.
-                </p>
-                <Link
-                  href="/services"
-                  className="inline-flex items-center text-primary font-medium hover:text-primary-dark"
-                >
-                  Learn more
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 ml-2"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M14 5l7 7m0 0l-7 7m7-7H3"
-                    />
-                  </svg>
-                </Link>
-              </div>
-            </SlideInSection>
-
-            <SlideInSection direction="right" delay={0.3} className="h-full">
-              <div className="bg-white rounded-lg shadow-lg p-8 transform transition-transform hover:scale-105 h-full">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-8 w-8 text-primary"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold mb-4">
-                  Technology Solutions
-                </h3>
-                <p className="text-gray-600 mb-6">
-                  From cloud computing and artificial intelligence to
-                  cybersecurity and data analytics, we provide a comprehensive
-                  suite of technology solutions that enable businesses to stay
-                  ahead of the curve.
-                </p>
-                <Link
-                  href="/services"
-                  className="inline-flex items-center text-primary font-medium hover:text-primary-dark"
-                >
-                  Learn more
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 ml-2"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M14 5l7 7m0 0l-7 7m7-7H3"
-                    />
-                  </svg>
-                </Link>
-              </div>
-            </SlideInSection>
-          </div>
-
-          <AnimatedSection
-            variant="fadeInUp"
-            delay={0.6}
-            className="text-center mt-12"
-          >
-            <AnimatedButton
-              href="/services"
-              className="inline-block bg-primary hover:bg-primary-dark text-white font-medium py-3 px-8 rounded-lg transition-colors shadow-lg"
-            >
-              View All Services
-            </AnimatedButton>
-          </AnimatedSection>
+                {openItems[idx] && <p className="text-gray-600 mt-2">{item.description}</p>}
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
       {/* Projects Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <AnimatedHeading className="text-3xl font-bold mb-12 text-center text-gray-800">
-            <span className="inline-block pb-2 border-b-4 border-secondary">Our Projects</span>
-          </AnimatedHeading>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <SlideInSection direction="left" delay={0.1}>
-              <div className="group relative overflow-hidden rounded-lg shadow-lg">
-                <div className="relative h-64">
-                  <Image
-                    src="/placeholder.svg?height=500&width=800"
-                    alt="Agricultural Investment"
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                  <div className="absolute top-4 left-4 bg-primary text-white px-4 py-1 rounded-full text-sm font-medium">
-                    Completed
-                  </div>
-                </div>
-                <div className="p-6 relative">
-                  <h3 className="text-xl font-semibold mb-3">
-                    Agricultural Investment
-                  </h3>
-                  <p className="text-gray-600 mb-4">
-                    Partnered with a farm subsidiary to plant 500 tubers of yam
-                    for a one-year planting season, achieving a notable
-                    turnover.
-                  </p>
-                  <Link
-                    href="/projects"
-                    className="inline-flex items-center text-primary font-medium hover:text-primary-dark"
-                  >
-                    View project details
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 ml-2"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M14 5l7 7m0 0l-7 7m7-7H3"
-                      />
-                    </svg>
-                  </Link>
-                </div>
-              </div>
-            </SlideInSection>
-
-            <SlideInSection direction="right" delay={0.2}>
-              <div className="group relative overflow-hidden rounded-lg shadow-lg">
-                <div className="relative h-64">
-                  <Image
-                    src="/placeholder.svg?height=500&width=800"
-                    alt="LARDSHARE Product Development"
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                  <div className="absolute top-4 left-4 bg-primary text-white px-4 py-1 rounded-full text-sm font-medium">
-                    In Development
-                  </div>
-                </div>
-                <div className="p-6 relative">
-                  <h3 className="text-xl font-semibold mb-3">
-                    LARDSHARE Platform
-                  </h3>
-                  <p className="text-gray-600 mb-4">
-                    A hard-skill sharing platform-based software that connects
-                    service providers and users, featuring geospatial
-                    capabilities and AI.
-                  </p>
-                  <Link
-                    href="/projects"
-                    className="inline-flex items-center text-primary font-medium hover:text-primary-dark"
-                  >
-                    View project details
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 ml-2"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M14 5l7 7m0 0l-7 7m7-7H3"
-                      />
-                    </svg>
-                  </Link>
-                </div>
-              </div>
-            </SlideInSection>
-          </div>
-
-          <FadeInView
-            delay={0.3}
-            className="text-center mt-12"
-            variant="fadeIn"
-          >
-            <Link
-              href="/projects"
-              className="inline-block bg-primary hover:bg-primary-dark text-white font-medium py-3 px-8 rounded-lg transition-colors shadow-lg"
-            >
-              View All Projects
-            </Link>
-          </FadeInView>
-        </div>
-      </section>
+      {false && (
+        <section className="py-20 bg-white">
+          {/* Our Projects section temporarily disabled */}
+        </section>
+      )}
 
       {/* LARDSHARE Section */}
       <section className="py-20 bg-primary/10">
@@ -525,9 +275,9 @@ export default function Home() {
             <span className="inline-block pb-2 border-b-4 border-secondary">Latest Articles</span>
           </AnimatedHeading>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <SlideInSection direction="up" delay={0.1}>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
+              <div className="w-full bg-white rounded-lg shadow-md overflow-hidden h-full">
                 <div className="relative h-48">
                   <Image
                     src="/placeholder.svg?height=400&width=600"
@@ -575,7 +325,7 @@ export default function Home() {
             
 
             <SlideInSection direction="up" delay={0.3}>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
+              <div className="w-full bg-white rounded-lg shadow-md overflow-hidden h-full">
                 <div className="relative h-48">
                   <Image
                     src="/placeholder.svg?height=400&width=600"

@@ -10,7 +10,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="bg-white shadow-sm">
+    <header className="fixed top-0 w-full bg-white shadow-sm z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">  {/* Reduced from h-20 to h-16 */}
           {/* Logo */}

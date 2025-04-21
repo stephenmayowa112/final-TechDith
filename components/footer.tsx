@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 py-8">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Logo and Info */}
           <div>
@@ -111,7 +111,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-12 pt-6 text-center text-gray-400 text-sm">
+        <div className="border-t border-gray-800 mt-8 pt-4 text-center text-gray-400 text-sm">
           <p>© 2025 Techdith Limited. Powered by Techdith Limited innovation.</p>
         </div>
       </div>
