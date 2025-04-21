@@ -32,9 +32,10 @@ export default function Home() {
             src="/images/5192479.jpg"
             alt="Techdith Technology Solutions"
             fill
-            className="object-cover brightness-50"
+            className="object-cover"
             priority
           />
+          <div className="absolute inset-0 bg-black opacity-50"></div>
         </div>
         <div className="container text-2xl mx-auto px-4 relative z-10 text-center text-white">
           <AnimatedText

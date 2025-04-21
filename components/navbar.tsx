@@ -18,9 +18,9 @@ export default function Navbar() {
             <Image
               src="/images/techdith logo.svg" // Updated logo path
               alt="Techdith Logo" // Updated alt text
-              width={3000}
-              height={4000}
-              className="h-10 w-auto"
+              width={350} // Increased width
+              height={84} // Increased height
+              className="h-24 w-auto" // Increased height class
             />
           </Link>
 
