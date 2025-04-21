@@ -169,7 +169,7 @@ export default function Home() {
                     setOpenItems(newOpen);
                   }}
                 >
-                  <Plus className={`h-6 w-6 transform transition-transform ${openItems[idx] ? 'rotate-45' : 'rotate-0'}`} />
+                  <Plus className={`h-6 w-6 text-orange-500 transform transition-transform ${openItems[idx] ? 'rotate-45' : 'rotate-0'}`} />
                   <h3 className="text-xl font-semibold ml-2">{item.title}</h3>
                 </div>
                 {openItems[idx] && <p className="text-gray-600 mt-2">{item.description}</p>}
