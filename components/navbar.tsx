@@ -16,10 +16,10 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
-              src="/placeholder.svg?height=40&width=150"
-              alt="Hamilton Stone"
-              width={150}
-              height={40}
+              src="/images/techdith logo.svg" // Updated logo path
+              alt="Techdith Logo" // Updated alt text
+              width={3000}
+              height={4000}
               className="h-10 w-auto"
             />
           </Link>

@@ -12,11 +12,11 @@ export default function Footer() {
           <div>
             <Link href="/" className="inline-block mb-6">
               <Image
-                src="/placeholder.svg?height=40&width=150"
-                alt="Hamilton Stone"
-                width={150}
-                height={40}
-                className="h-10 w-auto"
+                src="/images/techdith logo.svg" // Updated logo path
+                alt="Techdith Logo" // Updated alt text
+                width={250} // Increased width
+                height={60} // Increased height
+                className="h-16 w-auto" // Increased height class
               />
             </Link>
             <p className="text-gray-400 text-sm mb-4">Expert business consulting solutions</p>
