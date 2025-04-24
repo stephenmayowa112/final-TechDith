@@ -140,7 +140,7 @@ export default function ContactPageClient() {
                   </h3>
                   <div className="flex gap-4">
                     <Link
-                      href="#"
+                      href=" https://web.facebook.com/profile.php?id=61575122038301#"
                       className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors"
                     >
                       <svg
@@ -153,7 +153,7 @@ export default function ContactPageClient() {
                       </svg>
                     </Link>
                     <Link
-                      href="#"
+                      href=" https://x.com/techdith?s=21"
                       className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors"
                     >
                       <svg
@@ -166,7 +166,7 @@ export default function ContactPageClient() {
                       </svg>
                     </Link>
                     <Link
-                      href="#"
+                      href=" https://www.linkedin.com/company/techdith/"
                       className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors"
                     >
                       <svg
@@ -179,7 +179,7 @@ export default function ContactPageClient() {
                       </svg>
                     </Link>
                     <Link
-                      href="#"
+                      href=" https://www.instagram.com/techdith_24/"
                       className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors"
                     >
                       <svg

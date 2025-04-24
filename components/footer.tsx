@@ -72,16 +72,16 @@ export default function Footer() {
               <Button className="bg-orange-500 hover:bg-orange-600 text-white rounded-l-none">Subscribe</Button>
             </div>
             <div className="flex space-x-4 mt-6">
-              <Link href="#" className="text-gray-400 hover:text-white">
+              <Link href=" https://web.facebook.com/profile.php?id=61575122038301#" className="text-gray-400 hover:text-white">
                 <Facebook className="h-5 w-5" />
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-white">
+              <Link href=" https://x.com/techdith?s=21" className="text-gray-400 hover:text-white">
                 <Twitter className="h-5 w-5" />
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-white">
+              <Link href="https://www.linkedin.com/company/techdith/" className="text-gray-400 hover:text-white">
                 <Linkedin className="h-5 w-5" />
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-white">
+              <Link href=" https://www.instagram.com/techdith_24/" className="text-gray-400 hover:text-white">
                 <Instagram className="h-5 w-5" />
               </Link>
             </div>
