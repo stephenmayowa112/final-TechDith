@@ -16,7 +16,7 @@ export default function ContactPageClient() {
       <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=800&width=1600"
+            src="images/rep.jpg"
             alt="TECHDITH Contact Us"
             fill
             className="object-cover brightness-50"
@@ -49,39 +49,7 @@ export default function ContactPageClient() {
             <SlideInSection direction="left" delay={0.2} className="lg:w-1/2">
               <div className="bg-gray-50 rounded-xl shadow-lg p-8 h-full">
                 <div className="space-y-8">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6 text-primary"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                        />
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                        />
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-semibold mb-1 text-gray-800">
-                        Our Address
-                      </h3>
-                      <p className="text-gray-600">
-                        68, Adebayo Ajayi Avenue, Egan, Lagos
-                      </p>
-                    </div>
-                  </div>
-
+                  
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <svg
@@ -103,8 +71,8 @@ export default function ContactPageClient() {
                       <h3 className="text-lg font-semibold mb-1 text-gray-800">
                         Phone Numbers
                       </h3>
-                      <p className="text-gray-600">07061622366</p>
-                      <p className="text-gray-600">08182681345</p>
+                      <p className="text-gray-600">08083737756
+                      </p>
                     </div>
                   </div>
 
@@ -129,7 +97,8 @@ export default function ContactPageClient() {
                       <h3 className="text-lg font-semibold mb-1 text-gray-800">
                         Email Address
                       </h3>
-                      <p className="text-gray-600">techlard4@gmail.com</p>
+                      <p className="text-gray-600">info@techdith.com
+                      </p>
                     </div>
                   </div>
 

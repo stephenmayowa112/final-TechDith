@@ -19,7 +19,7 @@ export default function ProjectsPage() {
       <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=800&width=1600"
+            src="images/blueback.jpg"
             alt="TECHDITH Projects"
             fill
             className="object-cover brightness-50"
@@ -52,21 +52,13 @@ export default function ProjectsPage() {
               </AnimatedSection>
               <AnimatedSection variant="fadeInRight" delay={0.2}>
                 <p className="text-gray-700 mb-6 leading-relaxed">
-                  At TECHDITH LIMITED, we are committed to driving innovation
+                  At TechDith Limited, we are committed to driving innovation
                   through diverse projects that span various sectors. Our
                   projects demonstrate our ability to apply technology and
                   expertise to solve real-world challenges and create value.
                 </p>
               </AnimatedSection>
-              <AnimatedSection variant="fadeInRight" delay={0.4}>
-                <p className="text-gray-700 leading-relaxed">
-                  From agricultural investments to cutting-edge software
-                  development, our projects showcase our versatility and
-                  commitment to excellence. We approach each project with a
-                  focus on sustainability, efficiency, and delivering measurable
-                  results.
-                </p>
-              </AnimatedSection>
+              
             </div>
             <AnimatedSection
               variant="fadeInLeft"
@@ -74,10 +66,10 @@ export default function ProjectsPage() {
               className="md:w-1/2 rounded-lg overflow-hidden shadow-xl"
             >
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="images/inno.jpg"
                 alt="TECHDITH Innovation"
-                width={800}
-                height={600}
+                width={400}
+                height={200}
                 className="w-full h-auto object-cover"
               />
             </AnimatedSection>
@@ -92,142 +84,6 @@ export default function ProjectsPage() {
             Completed Projects
           </AnimatedHeading>
 
-          {/* Agricultural Investment Project */}
-          <SlideInSection direction="left" delay={0.1}>
-            <div className="mb-16">
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="flex flex-col lg:flex-row">
-                  <div className="lg:w-1/2 relative">
-                    <div className="h-64 lg:h-full relative">
-                      <Image
-                        src="/placeholder.svg?height=800&width=800"
-                        alt="Agricultural Investment"
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                    <div className="absolute top-4 left-4 bg-primary text-white px-4 py-1 rounded-full text-sm font-medium">
-                      Agriculture
-                    </div>
-                  </div>
-                  <div className="lg:w-1/2 p-8">
-                    <h3 className="text-2xl font-bold mb-4 text-gray-800">
-                      Agricultural Investment
-                    </h3>
-                    <div className="mb-6">
-                      <div className="flex items-center gap-2 text-gray-600 mb-2">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="h-5 w-5 text-primary"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                          />
-                        </svg>
-                        <span>Completed: 2023</span>
-                      </div>
-                    </div>
-                    <p className="text-gray-700 mb-6 leading-relaxed">
-                      Partnered with a farm subsidiary to plant 500 tubers of
-                      yam for a one-year planting season, achieving a notable
-                      turnover. This project demonstrated our commitment to
-                      diversification and sustainable agricultural practices.
-                    </p>
-                    <div className="bg-gray-50 rounded-lg p-4 mb-6">
-                      <h4 className="font-semibold text-gray-800 mb-2">
-                        Project Highlights:
-                      </h4>
-                      <ul className="space-y-2">
-                        <li className="flex items-start gap-2">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5 text-primary flex-shrink-0 mt-0.5"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M5 13l4 4L19 7"
-                            />
-                          </svg>
-                          <span className="text-gray-700">
-                            Cultivation of 500 tubers of yam
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5 text-primary flex-shrink-0 mt-0.5"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M5 13l4 4L19 7"
-                            />
-                          </svg>
-                          <span className="text-gray-700">
-                            Strategic partnership with local farm subsidiary
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5 text-primary flex-shrink-0 mt-0.5"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M5 13l4 4L19 7"
-                            />
-                          </svg>
-                          <span className="text-gray-700">
-                            Full one-year planting cycle management
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5 text-primary flex-shrink-0 mt-0.5"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M5 13l4 4L19 7"
-                            />
-                          </svg>
-                          <span className="text-gray-700">
-                            Successful harvest with notable financial returns
-                          </span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </SlideInSection>
-
           {/* BSF Farming Research Project */}
           <SlideInSection direction="right" delay={0.2}>
             <div>
@@ -236,7 +92,7 @@ export default function ProjectsPage() {
                   <div className="lg:w-1/2 order-1 lg:order-2 relative">
                     <div className="h-64 lg:h-full relative">
                       <Image
-                        src="/placeholder.svg?height=800&width=800"
+                        src="images/agric.jpg"
                         alt="Black Soldier Fly Farming Research"
                         fill
                         className="object-cover"
@@ -381,7 +237,7 @@ export default function ProjectsPage() {
               <div className="bg-gray-50 rounded-xl shadow-lg overflow-hidden transform transition-transform hover:scale-105">
                 <div className="h-56 relative">
                   <Image
-                    src="/placeholder.svg?height=600&width=800"
+                    src="images/inni4.jpg"
                     alt="Government Partnerships"
                     fill
                     className="object-cover"
@@ -470,7 +326,7 @@ export default function ProjectsPage() {
               <div className="bg-gray-50 rounded-xl shadow-lg overflow-hidden transform transition-transform hover:scale-105">
                 <div className="h-56 relative">
                   <Image
-                    src="/placeholder.svg?height=600&width=800"
+                    src="images/lardshare.jpg"
                     alt="LARDSHARE Product Development"
                     fill
                     className="object-cover"

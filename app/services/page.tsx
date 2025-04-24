@@ -18,7 +18,7 @@ export default function ServicesPage() {
       <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=800&width=1600"
+            src="images/back1.jpg"
             alt="TechDith Technology Services"
             fill
             className="object-cover brightness-50"
@@ -51,7 +51,7 @@ export default function ServicesPage() {
               </AnimatedSection>
               <AnimatedSection variant="fadeInRight" delay={0.2}>
                 <p className="text-gray-700 mb-6 leading-relaxed">
-                  At TECHDITH LIMITED, we provide a comprehensive suite of
+                  At TechDith Limited, we provide a comprehensive suite of
                   technology services designed to empower businesses and
                   industries across Nigeria. Our core mission is to help
                   organizations harness the transformative power of technology,
@@ -75,7 +75,7 @@ export default function ServicesPage() {
               className="md:w-1/2 rounded-lg overflow-hidden shadow-xl"
             >
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="images/smiles.jpg"
                 alt="TECHDITH Technology Solutions"
                 width={800}
                 height={600}
@@ -231,7 +231,7 @@ export default function ServicesPage() {
                 >
                   <div className="relative h-80 lg:h-96 rounded-lg overflow-hidden shadow-xl">
                     <Image
-                      src="/placeholder.svg?height=800&width=800"
+                      src="images/software.jpg"
                       alt="Computer Programming Services"
                       fill
                       className="object-cover"
@@ -249,7 +249,7 @@ export default function ServicesPage() {
                 <AnimatedSection variant="fadeInLeft" className="lg:w-1/2">
                   <div className="relative h-80 lg:h-96 rounded-lg overflow-hidden shadow-xl">
                     <Image
-                      src="/placeholder.svg?height=800&width=800"
+                      src="images/infrastructure.jpg"
                       alt="IT Infrastructure Services"
                       fill
                       className="object-cover"
@@ -261,10 +261,7 @@ export default function ServicesPage() {
                     IT Infrastructure Development
                   </h3>
                   <p className="text-gray-700 mb-6 leading-relaxed">
-                    Our expertise includes establishing and managing computer
-                    centers, manufacturing or processing software packages, and
-                    handling hardware materials and components required for the
-                    computer industry.
+                  We create and manage robust IT environments to keep your business running smoothly.
                   </p>
                   <div className="bg-white rounded-lg shadow-md p-6">
                     <h4 className="text-lg font-semibold mb-4 text-primary">
@@ -289,8 +286,7 @@ export default function ServicesPage() {
                           </svg>
                         </div>
                         <span className="text-gray-700">
-                          Design and implementation of IT infrastructure
-                          solutions
+                        IT Design & Implementation: Tailored solutions for your needs.
                         </span>
                       </li>
                       <li className="flex items-start gap-3">
@@ -311,7 +307,8 @@ export default function ServicesPage() {
                           </svg>
                         </div>
                         <span className="text-gray-700">
-                          Network design, setup, and management
+                        Network Management:*Setup and ongoing support.
+
                         </span>
                       </li>
                       <li className="flex items-start gap-3">
@@ -332,7 +329,7 @@ export default function ServicesPage() {
                           </svg>
                         </div>
                         <span className="text-gray-700">
-                          Cloud infrastructure setup and migration services
+                        Cloud Services: Migration and management.
                         </span>
                       </li>
                       <li className="flex items-start gap-3">
@@ -353,7 +350,7 @@ export default function ServicesPage() {
                           </svg>
                         </div>
                         <span className="text-gray-700">
-                          Hardware procurement, installation, and maintenance
+                        Hardware Support: Procurement and maintenance.
                         </span>
                       </li>
                       <li className="flex items-start gap-3">
@@ -374,7 +371,7 @@ export default function ServicesPage() {
                           </svg>
                         </div>
                         <span className="text-gray-700">
-                          Data center design and management
+                        Data Centers: Efficient design and management.
                         </span>
                       </li>
                     </ul>
@@ -393,18 +390,14 @@ export default function ServicesPage() {
                   className="lg:w-1/2 order-2 lg:order-1"
                 >
                   <h3 className="text-2xl font-bold mb-4 text-gray-800">
-                    Research and Development
+                  Innovative Research & Development:
                   </h3>
                   <p className="text-gray-700 mb-6 leading-relaxed">
-                    We undertake R&D initiatives for technological updates in
-                    various areas, ensuring our solutions remain cutting-edge.
-                    Our research team explores emerging technologies and
-                    develops innovative solutions to address complex business
-                    challenges.
+                  We stay ahead of the curve by exploring new technologies to solve your toughest challenges.
                   </p>
                   <div className="bg-white rounded-lg shadow-md p-6">
                     <h4 className="text-lg font-semibold mb-4 text-primary">
-                      Our R&D Focus Areas:
+                    Focus Areas:
                     </h4>
                     <ul className="space-y-3">
                       <li className="flex items-start gap-3">
@@ -425,8 +418,7 @@ export default function ServicesPage() {
                           </svg>
                         </div>
                         <span className="text-gray-700">
-                          Artificial Intelligence and Machine Learning
-                          applications
+                        property tech
                         </span>
                       </li>
                       <li className="flex items-start gap-3">
@@ -447,7 +439,7 @@ export default function ServicesPage() {
                           </svg>
                         </div>
                         <span className="text-gray-700">
-                          Blockchain technology and applications
+                        FinTech
                         </span>
                       </li>
                       <li className="flex items-start gap-3">
@@ -468,7 +460,7 @@ export default function ServicesPage() {
                           </svg>
                         </div>
                         <span className="text-gray-700">
-                          Internet of Things (IoT) solutions
+                        AI & Machine Learning
                         </span>
                       </li>
                       <li className="flex items-start gap-3">
@@ -489,7 +481,7 @@ export default function ServicesPage() {
                           </svg>
                         </div>
                         <span className="text-gray-700">
-                          Advanced data analytics and business intelligence
+                        IoT Innovations
                         </span>
                       </li>
                       <li className="flex items-start gap-3">
@@ -510,7 +502,7 @@ export default function ServicesPage() {
                           </svg>
                         </div>
                         <span className="text-gray-700">
-                          Cybersecurity research and solutions
+                        Cybersecurity
                         </span>
                       </li>
                     </ul>
@@ -522,7 +514,7 @@ export default function ServicesPage() {
                 >
                   <div className="relative h-80 lg:h-96 rounded-lg overflow-hidden shadow-xl">
                     <Image
-                      src="/placeholder.svg?height=800&width=800"
+                      src="images/Research&Development.jpg"
                       alt="Research and Development"
                       fill
                       className="object-cover"
@@ -540,7 +532,7 @@ export default function ServicesPage() {
                 <AnimatedSection variant="fadeInLeft" className="lg:w-1/2">
                   <div className="relative h-80 lg:h-96 rounded-lg overflow-hidden shadow-xl">
                     <Image
-                      src="/placeholder.svg?height=800&width=800"
+                      src="images/training.jpg"
                       alt="Training and Development"
                       fill
                       className="object-cover"
@@ -552,14 +544,11 @@ export default function ServicesPage() {
                     Training and Development
                   </h3>
                   <p className="text-gray-700 mb-6 leading-relaxed">
-                    We offer training courses, tests, and examinations in
-                    management and computer technology, encompassing both
-                    hardware and software aspects, as well as essential learning
-                    and development programs across multiple industries.
+                  Empower your team with our hands-on training programs.
                   </p>
                   <div className="bg-white rounded-lg shadow-md p-6">
                     <h4 className="text-lg font-semibold mb-4 text-primary">
-                      Our Training Programs Include:
+                      Our Training Includes:
                     </h4>
                     <ul className="space-y-3">
                       <li className="flex items-start gap-3">
@@ -580,8 +569,7 @@ export default function ServicesPage() {
                           </svg>
                         </div>
                         <span className="text-gray-700">
-                          Technical skills training in programming languages and
-                          frameworks
+                        Tech Skills: Learn programming languages and frameworks.
                         </span>
                       </li>
                       <li className="flex items-start gap-3">
@@ -602,7 +590,7 @@ export default function ServicesPage() {
                           </svg>
                         </div>
                         <span className="text-gray-700">
-                          IT management and leadership development programs
+                        Leadership: Develop IT management skills
                         </span>
                       </li>
                       <li className="flex items-start gap-3">
@@ -623,7 +611,7 @@ export default function ServicesPage() {
                           </svg>
                         </div>
                         <span className="text-gray-700">
-                          Cybersecurity awareness and best practices training
+                        Cybersecurity: Best practices and awareness.
                         </span>
                       </li>
                       <li className="flex items-start gap-3">
@@ -644,7 +632,7 @@ export default function ServicesPage() {
                           </svg>
                         </div>
                         <span className="text-gray-700">
-                          Software and hardware certification programs
+                        Certifications: Software and hardware programs.
                         </span>
                       </li>
                       <li className="flex items-start gap-3">
@@ -665,7 +653,7 @@ export default function ServicesPage() {
                           </svg>
                         </div>
                         <span className="text-gray-700">
-                          Customized corporate training solutions
+                        Corporate Training: Customized for your team.
                         </span>
                       </li>
                     </ul>

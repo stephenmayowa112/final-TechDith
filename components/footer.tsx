@@ -48,17 +48,14 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-4">Contact</h3>
             <ul className="space-y-3">
-              <li className="flex items-start">
-                <MapPin className="h-5 w-5 text-gray-400 mr-2 mt-0.5" />
-                <span className="text-gray-400 text-sm">68, Adebayo Ajayi Avenue, Egan, Lagos</span>
-              </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-gray-400 mr-2" />
-                <span className="text-gray-400 text-sm"> 08182681345</span>
+                <span className="text-gray-400 text-sm"> 08083737756</span>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-gray-400 mr-2" />
-                <span className="text-gray-400 text-sm">techlard4@gmail.com</span>
+                <span className="text-gray-400 text-sm">info@techdith.com
+                </span>
               </li>
             </ul>
           </div>
@@ -92,7 +89,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-4 text-center text-gray-400 text-sm">
-          <p>© 2025 Techdith Limited. Powered by Techdith Limited innovation.</p>
+          <p>© 2025 Techdith Limited. Powered by Chidera Frankie.</p>
         </div>
       </div>
     </footer>

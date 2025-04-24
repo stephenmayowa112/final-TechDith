@@ -23,7 +23,7 @@ const blogPosts = [
     date: "April 2, 2025",
     author: "Segun Oladiti",
     authorRole: "CEO",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "images/aiib.jpg",
     featured: true,
   },
   {
@@ -46,7 +46,7 @@ const blogPosts = [
     date: "March 20, 2025",
     author: "Segun Oladiti",
     authorRole: "CEO",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "images/secu.jpg",
   },
   {
     id: 4,
@@ -57,7 +57,7 @@ const blogPosts = [
     date: "March 15, 2025",
     author: "Ife Thona Akoniyon",
     authorRole: "Executive Director",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "images/lardshare.jpg",
   },
   {
     id: 5,
@@ -68,7 +68,7 @@ const blogPosts = [
     date: "March 10, 2025",
     author: "Segun Oladiti",
     authorRole: "CEO",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "images/farm.jpg",
   },
   {
     id: 6,
@@ -80,7 +80,7 @@ const blogPosts = [
     date: "March 5, 2025",
     author: "Ife Thona Akoniyon",
     authorRole: "Executive Director",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "images/cloud.jpg",
   },
 ];
 
@@ -96,7 +96,7 @@ export default function BlogPage() {
       <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=800&width=1600"
+            src="images/blog1.jpg"
             alt="TECHDITH Blog & News"
             fill
             className="object-cover brightness-50"
@@ -441,7 +441,7 @@ export default function BlogPage() {
                 </div>
                 <div className="md:w-1/2">
                   <Image
-                    src="/placeholder.svg?height=400&width=500"
+                    src="images/techdithlogo.jpg"
                     alt="Newsletter Subscription"
                     width={500}
                     height={400}

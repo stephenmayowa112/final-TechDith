@@ -9,7 +9,7 @@ import { FadeInView } from "@/components/animations/fade-in-view";
 import { AnimatedHeading } from "@/components/animations/animated-heading";
 
 export const metadata: Metadata = {
-  title: "LARDSHARE | Hard-Skill Sharing Platform | TECHDITH LIMITED",
+  title: "LARDSHARE | Hard-Skill Sharing Platform | TechDith Limited",
   description:
     "LARDSHARE is an innovative hard-skill sharing platform connecting service providers with users through advanced AI, machine learning, and geospatial capabilities.",
 };
@@ -21,7 +21,7 @@ export default function LardSharePage() {
       <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=1000&width=1920"
+            src="images/green.jpg"
             alt="LARDSHARE Platform"
             fill
             className="object-cover brightness-50"
@@ -95,7 +95,7 @@ export default function LardSharePage() {
               className="md:w-1/2 rounded-lg overflow-hidden shadow-xl"
             >
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="images/lardshare.jpg"
                 alt="LARDSHARE Platform Overview"
                 width={800}
                 height={600}
@@ -232,7 +232,7 @@ export default function LardSharePage() {
               <div className="flex flex-col md:flex-row gap-8 items-center">
                 <div className="md:w-1/3">
                   <Image
-                    src="/placeholder.svg?height=400&width=400"
+                    src="images/cloud.jpg"
                     alt="AI Technology"
                     width={400}
                     height={400}
