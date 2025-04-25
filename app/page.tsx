@@ -78,7 +78,7 @@ FinTech
 - *Leadership:* Develop IT management skills.
 - *Cybersecurity:* Best practices and awareness.
 - *Certifications:* Software and hardware programs.
-- *Corporate Training:* Customized for your team.`
+- *Corporate Training:* Customized for your team.`
     },
     
     
