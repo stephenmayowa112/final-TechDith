@@ -108,7 +108,7 @@ FinTech
           />
           <AnimatedSection variant="fadeInUp" delay={0.2}>
             <div className="slider max-w-4xl mx-auto mb-10">
-              <span className={`text-lg md:text-2xl leading-loose transition-opacity duration-700 ${isTextFading ? 'opacity-0' : 'opacity-100'}`}>{heroTexts[currentTextIndex]}</span>
+              <span className={`text-base md:text-3xl leading-loose transition-opacity duration-700 ${isTextFading ? 'opacity-0' : 'opacity-100'}`}>{heroTexts[currentTextIndex]}</span>
             </div>
           </AnimatedSection>
           <AnimatedSection variant="fadeInUp" delay={0.6}>
