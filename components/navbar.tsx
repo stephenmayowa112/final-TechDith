@@ -5,6 +5,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import logoImg from '@/public/images/techdithlogo.jpg'
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -14,13 +15,14 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">  {/* Reduced from h-20 to h-16 */}
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="flex items-center pl-4 md:pl-0">
             <Image
-              src="/images/techdithlogo.png" 
+              src={logoImg}
               alt="Techdith Logo"
-              width={200} // optimized width for navbar
-              height={60} // optimized height for navbar
-              className="h-10 pl-10 md:h-12 w-auto" // constrain to navbar height
+              width={150}
+              height={40}
+              placeholder="blur"
+              className="h-10 md:h-12 w-auto"
             />
           </Link>
 
@@ -61,31 +63,31 @@ export default function Navbar() {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white py-3 px-4 shadow-md"> {/* Reduced padding */}
+        <div className="md:hidden bg-white py-3 px-4 shadow-md overflow-y-auto max-h-[calc(100vh-4rem)]"> {/* scroll on overflow */}
           <nav className="flex flex-col space-y-3"> {/* Reduced spacing */}
             <Link href="/" className="text-gray-800 hover:text-primary py-1" onClick={() => setIsMenuOpen(false)}>
               Home
             </Link>
             <Link
-              href="/about-us"
+              href="/aboutUs"
               className="text-gray-800 hover:text-primary py-1"
               onClick={() => setIsMenuOpen(false)}
             >
               About Us
             </Link>
             <Link
-              href="/our-services"
+              href="/services"
               className="text-gray-800 hover:text-primary py-1"
               onClick={() => setIsMenuOpen(false)}
             >
               Our Services
             </Link>
             <Link
-              href="/the-difference"
+              href="/project"
               className="text-gray-800 hover:text-primary py-1"
               onClick={() => setIsMenuOpen(false)}
             >
-              The Difference
+              Projects
             </Link>
             <Link
               href="/contact-us"

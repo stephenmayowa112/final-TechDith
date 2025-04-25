@@ -9,17 +9,54 @@ import { FadeInView } from "@/components/animations/fade-in-view";
 import { AnimatedHeading } from "@/components/animations/animated-heading";
 import { useState } from "react"; // used below for expertise toggles
 import { Plus } from "lucide-react";
+import heroBg from '@/public/images/5192479.jpg';
+import techdithLogo from '@/public/images/techdithlogo.jpg';
+import lardshareImg from '@/public/images/lardshare.jpg';
+import aiImg from '@/public/images/ai.jpg';
+import cybersecurityImg from '@/public/images/cybersecurity.jpg';
 
 export default function Home() {
   const expertise = [
-    { title: 'Graphics and Identity Design', description: 'Craft visual elements like logos and color schemes, shaping a cohesive brand identity.' },
-    { title: 'Advertising and Communications', description: 'Develop and implement strategic communication plans, including advertising campaigns and public relations, to boost brand visibility across platforms.' },
-    { title: 'Strategy and Positioning', description: 'Develop comprehensive plans to position a brand, outlining objectives, target audience, and differentiators for long-term success.' },
-    { title: 'Data Visualizations', description: 'Translate complex data into visual formats (charts, infographics) for accessible stakeholder communication and reporting.' },
-    { title: 'Products and Packaging Design', description: 'Design product aesthetics and packaging for enhanced brand appeal and a positive consumer experience.' },
-    { title: 'Event Design and Architecture', description: 'Create immersive event experiences through meticulous design, focusing on layout, aesthetics, and ambiance.' },
-    { title: 'Sound', description: 'Create audio elements like jingles and soundtracks, enhancing brand recognition and sensory connection.' },
-    { title: 'Typefaces', description: 'Develop unique fonts reflecting a brand\'s personality for effective communication across media.' }
+    {
+      title: 'Software Solutions',
+      description: `- Custom Software: Built to fit your business needs.
+- Web Apps: Responsive designs that work on any device.
+- Mobile Apps: For both iOS and Android.
+- Integration: Seamlessly connect your systems.
+- IT Consulting: Strategic tech planning for your future.`
+    },
+    {
+      title: 'IT Infrastructure',
+      description: `We create and manage robust IT environments to keep your business running smoothly
+- IT Design & Implementation: Tailored solutions for your needs.
+- Network Management:*Setup and ongoing support.
+- Cloud Services: Migration and management.
+- Hardware Support: Procurement and maintenance.
+- Data Centers: Efficient design and management.
+
+`
+    },
+    {
+      title: 'Innovative Research & DevelopmentSoftware Solutions',
+      description: `Focus Areas:
+property tech
+FinTech
+- *AI & Machine Learning*
+- *IoT Innovations*
+- *Data Analytics*
+- *Cybersecurity*
+`
+    },
+     {
+      title: 'Training & Development',
+      description: `- *Tech Skills:* Learn programming languages and frameworks.
+- *Leadership:* Develop IT management skills.
+- *Cybersecurity:* Best practices and awareness.
+- *Certifications:* Software and hardware programs.
+- *Corporate Training:* Customized for your team.`
+    },
+    
+    
   ];
   const [openItems, setOpenItems] = useState<boolean[]>(Array(expertise.length).fill(false));
 
@@ -29,7 +66,9 @@ export default function Home() {
       <section className="relative h-screen max-h-[800px] min-h-[600px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/5192479.jpg"
+            src={heroBg}
+            placeholder="blur"
+            sizes="100vw"
             alt="Techdith Technology Solutions"
             fill
             className="object-cover"
@@ -40,7 +79,7 @@ export default function Home() {
         <div className="container text-2xl mx-auto px-4 relative z-10 text-center text-white">
           <AnimatedText
             text="TechDith"
-            className="text-8xl md:text-9xl lg:text-[10rem] font-bold mb-6 leading-tight"
+            className="text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] font-bold mb-6 leading-tight"
           />
           <AnimatedSection variant="fadeInUp" delay={0.2}>
             <div className="slider max-w-4xl mx-auto mb-10">
@@ -141,11 +180,11 @@ export default function Home() {
             tabIndex={0}
           >
             <Image
-              src="images/techdithlogo.jpg"
+              src={techdithLogo}
               alt="TECHDITH Office"
-              width={0}
-              height={0}
-              
+              placeholder="blur"
+              sizes="(min-width: 768px) 50vw, 100vw"
+              fill
               className="object-cover w-full h-full"
             />
           </div>
@@ -163,7 +202,7 @@ export default function Home() {
     <h2 className="text-3xl font-bold mb-12 text-center text-gray-800">
       <span className="inline-block pb-2 border-b-4 border-secondary">What we offer</span>
     </h2>
-    <ul className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+    <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8 items-start">
       {expertise.map((item, idx) => (
         <SlideInSection
           key={idx}
@@ -206,7 +245,9 @@ export default function Home() {
             <SlideInSection direction="left" delay={0.1} className="md:w-1/2">
               <div className="relative h-80 md:h-96 rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src="images/lardshare.jpg"
+                  src={lardshareImg}
+                  placeholder="blur"
+                  sizes="(min-width: 768px) 50vw, 100vw"
                   alt="LARDSHARE Platform"
                   fill
                   className="object-cover"
@@ -288,12 +329,14 @@ export default function Home() {
             <span className="inline-block pb-2 border-b-4 border-secondary">Latest Articles</span>
           </AnimatedHeading>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8">
             <SlideInSection direction="up" delay={0.1}>
               <div className="w-full bg-white rounded-lg shadow-md overflow-hidden h-full">
                 <div className="relative h-48">
                   <Image
-                    src="/images/ai.jpg"
+                    src={aiImg}
+                    placeholder="blur"
+                    sizes="100vw"
                     alt="AI in Business"
                     fill
                     className="object-cover"
@@ -341,7 +384,9 @@ export default function Home() {
               <div className="w-full bg-white rounded-lg shadow-md overflow-hidden h-full">
                 <div className="relative h-48">
                   <Image
-                    src="/images/cybersecurity.jpg"
+                    src={cybersecurityImg}
+                    placeholder="blur"
+                    sizes="100vw"
                     alt="Cybersecurity"
                     fill
                     className="object-cover"
@@ -411,7 +456,7 @@ export default function Home() {
             </span>
           </AnimatedHeading>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             <SlideInSection direction="left" delay={0.1}>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 h-full">
                 <div className="flex justify-center mb-6">

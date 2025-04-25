@@ -4,6 +4,12 @@ import { AnimatedSection } from "@/components/animations/animated-section";
 import { AnimatedText } from "@/components/animations/animated-text";
 import { SlideInSection } from "@/components/animations/slide-in-section";
 import { AnimatedHeading } from "@/components/animations/animated-heading";
+import back1 from '@/public/images/back1.jpg';
+import smiles from '@/public/images/smiles.jpg';
+import softwareImg from '@/public/images/software.jpg';
+import infraImg from '@/public/images/infrastructure.jpg';
+import rndImg from '@/public/images/Research&Development.jpg';
+import trainingImg from '@/public/images/training.jpg';
 
 export const metadata: Metadata = {
   title: "Our Services | TECHDITH LIMITED",
@@ -18,7 +24,9 @@ export default function ServicesPage() {
       <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="images/back1.jpg"
+            src={back1}
+            placeholder="blur"
+            sizes="100vw"
             alt="TechDith Technology Services"
             fill
             className="object-cover brightness-50"
@@ -28,10 +36,10 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4 relative z-10 text-center text-white">
           <AnimatedText
             text="Our Services"
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4"
           />
           <AnimatedSection variant="fadeInUp" delay={0.3}>
-            <p className="text-lg md:text-xl max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto">
               Comprehensive technology solutions tailored to meet your business
               needs
             </p>
@@ -75,7 +83,9 @@ export default function ServicesPage() {
               className="md:w-1/2 rounded-lg overflow-hidden shadow-xl"
             >
               <Image
-                src="images/smiles.jpg"
+                src={smiles}
+                placeholder="blur"
+                sizes="(min-width: 768px) 50vw, 100vw"
                 alt="TECHDITH Technology Solutions"
                 width={800}
                 height={600}
@@ -231,7 +241,9 @@ export default function ServicesPage() {
                 >
                   <div className="relative h-80 lg:h-96 rounded-lg overflow-hidden shadow-xl">
                     <Image
-                      src="images/software.jpg"
+                      src={softwareImg}
+                      placeholder="blur"
+                      sizes="(min-width: 768px) 50vw, 100vw"
                       alt="Computer Programming Services"
                       fill
                       className="object-cover"
@@ -249,7 +261,9 @@ export default function ServicesPage() {
                 <AnimatedSection variant="fadeInLeft" className="lg:w-1/2">
                   <div className="relative h-80 lg:h-96 rounded-lg overflow-hidden shadow-xl">
                     <Image
-                      src="images/infrastructure.jpg"
+                      src={infraImg}
+                      placeholder="blur"
+                      sizes="(min-width: 768px) 50vw, 100vw"
                       alt="IT Infrastructure Services"
                       fill
                       className="object-cover"
@@ -514,7 +528,9 @@ export default function ServicesPage() {
                 >
                   <div className="relative h-80 lg:h-96 rounded-lg overflow-hidden shadow-xl">
                     <Image
-                      src="images/Research&Development.jpg"
+                      src={rndImg}
+                      placeholder="blur"
+                      sizes="(min-width: 768px) 50vw, 100vw"
                       alt="Research and Development"
                       fill
                       className="object-cover"
@@ -532,7 +548,9 @@ export default function ServicesPage() {
                 <AnimatedSection variant="fadeInLeft" className="lg:w-1/2">
                   <div className="relative h-80 lg:h-96 rounded-lg overflow-hidden shadow-xl">
                     <Image
-                      src="images/training.jpg"
+                      src={trainingImg}
+                      placeholder="blur"
+                      sizes="(min-width: 768px) 50vw, 100vw"
                       alt="Training and Development"
                       fill
                       className="object-cover"

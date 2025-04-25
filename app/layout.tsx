@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "TECHDITH LIMITED | Technology Solutions",
   description:
     "TECHDITH LIMITED is a dynamic and innovative technology company based in Lagos, Nigeria, specializing in computer programming, consultancy, and technology solutions.",
+  viewport: 'width=device-width, initial-scale=1',
 };
 
 export default function RootLayout({

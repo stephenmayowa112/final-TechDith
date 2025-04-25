@@ -7,6 +7,11 @@ import { AnimatedButton } from "@/components/ui/animated-button";
 import { SlideInSection } from "@/components/animations/slide-in-section";
 import { FadeInView } from "@/components/animations/fade-in-view";
 import { AnimatedHeading } from "@/components/animations/animated-heading";
+import bgImg from '@/public/images/backgroundImg1.jpg';
+import handImg from '@/public/images/hand.jpg';
+import office2Img from '@/public/images/office2.jpg';
+import officeImg from '@/public/images/office.jpg';
+import techdithLogo from '@/public/images/techdithlogo.jpg';
 
 export const metadata: Metadata = {
   title: "About Us | TechDith Limited",
@@ -21,7 +26,9 @@ export default function AboutUs() {
       <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="images/backgroundImg1.jpg"
+            src={bgImg}
+            placeholder="blur"
+            sizes="100vw"
             alt="TECHDITH Technology Solutions"
             fill
             className="object-cover brightness-50"
@@ -31,7 +38,7 @@ export default function AboutUs() {
         <div className="container mx-auto px-4 relative z-10 text-center text-white">
           <AnimatedText
             text="About TechDith Limited"
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4"
           />
           <AnimatedSection variant="fadeInUp" delay={0.3}>
             <p className="text-lg md:text-xl max-w-3xl mx-auto">
@@ -71,7 +78,9 @@ export default function AboutUs() {
               className="md:w-1/2 rounded-lg overflow-hidden shadow-xl"
             >
               <Image
-                src="images/hand.jpg"
+                src={handImg}
+                placeholder="blur"
+                sizes="(min-width: 768px) 50vw, 100vw"
                 alt="TECHDITH Office"
                 width={600}
                 height={300}
@@ -94,11 +103,12 @@ export default function AboutUs() {
             <div className="md:w-1/2">
               <div className="relative w-full h-72 rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src="images/office2.jpg"
+                  src={office2Img}
+                  placeholder="blur"
+                  sizes="100vw"
                   alt="TECHDITH Vision"
                   fill
                   className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
             </div>
@@ -152,9 +162,11 @@ export default function AboutUs() {
             <div className="md:w-1/2">
               <div className="relative h-80 md:h-96 rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src="images/office.jpg"
+                  src={officeImg}
+                  placeholder="blur"
+                  sizes="100vw"
                   fill
-                  className="object-cover" alt={""}                />
+                  className="object-cover" alt={""}               />
               </div>
             </div>
             <div className="md:w-1/2">
@@ -195,7 +207,7 @@ export default function AboutUs() {
             Our Values
           </AnimatedHeading>
 
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8">
             <SlideInSection direction="left" delay={0.1}>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 transform transition-transform hover:scale-105">
                 <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
@@ -285,7 +297,7 @@ export default function AboutUs() {
             Our Objectives
           </AnimatedHeading>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             <SlideInSection direction="left" delay={0.1}>
               <div className="relative bg-white rounded-lg shadow-lg p-8 border-t-4 border-secondary">
                 <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
@@ -388,7 +400,7 @@ export default function AboutUs() {
             Our Services
           </AnimatedHeading>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-8">
             <SlideInSection direction="left" delay={0.1}>
               <div className="flex bg-white rounded-lg shadow-lg overflow-hidden hover:bg-primary/5 transition-colors">
                 <div className="w-1/3 relative">
@@ -657,7 +669,9 @@ export default function AboutUs() {
             <SlideInSection direction="left" delay={0.1} className="md:w-1/2">
               <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src="images/techdithlogo.jpg"
+                  src={techdithLogo}
+                  placeholder="blur"
+                  sizes="100vw"
                   alt="TECHDITH Office Location"
                   fill
                   className="object-cover"
