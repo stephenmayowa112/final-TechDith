@@ -104,7 +104,7 @@ FinTech
         <div className="container text-2xl mx-auto px-4 relative z-10 text-center text-white">
           <AnimatedText
             text="TechDith"
-            className="text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] font-bold mb-6 leading-tight"
+            className="text-7xl sm:text-7xl md:text-8xl lg:text-[10rem] font-bold mb-6 leading-tight"
           />
           <AnimatedSection variant="fadeInUp" delay={0.2}>
             <div className="slider max-w-4xl mx-auto mb-10">
