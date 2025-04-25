@@ -7,7 +7,7 @@ import { AnimatedButton } from "@/components/ui/animated-button";
 import { SlideInSection } from "@/components/animations/slide-in-section";
 import { FadeInView } from "@/components/animations/fade-in-view";
 import { AnimatedHeading } from "@/components/animations/animated-heading";
-import { useState } from "react"; // used below for expertise toggles
+import { useState, useEffect } from "react"; // Added useEffect for text animation
 import { Plus } from "lucide-react";
 import heroBg from '@/public/images/5192479.jpg';
 import techdithLogo from '@/public/images/techdithlogo.jpg';
@@ -16,6 +16,31 @@ import aiImg from '@/public/images/ai.jpg';
 import cybersecurityImg from '@/public/images/cybersecurity.jpg';
 
 export default function Home() {
+  // Added state for the sliding text animation
+  const heroTexts = [
+    "Transforming Businesses Through Technology",
+    "Powering Innovation & IT Solutions",
+    "Connecting Technology with Business Growth",
+    "Building Digital Success Stories"
+  ];
+  const [currentTextIndex, setCurrentTextIndex] = useState(0);
+  const [isTextFading, setIsTextFading] = useState(false);
+
+  // Animation for cycling through texts with reduced delay
+  useEffect(() => {
+    const textInterval = setInterval(() => {
+      setIsTextFading(true);
+      
+      setTimeout(() => {
+        setCurrentTextIndex((prev) => (prev + 1) % heroTexts.length);
+        setIsTextFading(false);
+      }, 300); // Reduced fade out time from 600ms to 400ms
+      
+    }, 2500); // Reduced interval from 4000ms to 3000ms
+    
+    return () => clearInterval(textInterval);
+  }, []);
+
   const expertise = [
     {
       title: 'Software Solutions',
@@ -83,8 +108,7 @@ FinTech
           />
           <AnimatedSection variant="fadeInUp" delay={0.2}>
             <div className="slider max-w-4xl mx-auto mb-10">
-              <span className="text-lg md:text-5xl leading-loose">Transforming Businesses Through Technology</span>
-              <span className="text-lg md:text-5xl leading-loose">Powering Innovation & IT Solutions</span>
+              <span className={`text-lg md:text-2xl leading-loose transition-opacity duration-700 ${isTextFading ? 'opacity-0' : 'opacity-100'}`}>{heroTexts[currentTextIndex]}</span>
             </div>
           </AnimatedSection>
           <AnimatedSection variant="fadeInUp" delay={0.6}>
