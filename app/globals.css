@@ -1,3 +1,7 @@
+/* stylelint-disable */
+/* postcss-css-variables: true */
+/* These directives tell CSS linters to ignore Tailwind's special syntax */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -73,7 +77,15 @@
 
 @layer utilities {
   .text-balance {
-    text-wrap: balance;
+    /* Progressive enhancement approach */
+    max-width: 100%; /* Base style for all browsers */
+    text-align: center; /* Helps with balance effect in older browsers */
+    
+    /* Modern browsers that support feature queries */
+    @supports (text-wrap: balance) {
+      text-wrap: balance;
+      text-align: inherit; /* Reset to original alignment when supported */
+    }
   }
 
   .marqueeY {

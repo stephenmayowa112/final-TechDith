@@ -7,39 +7,35 @@ import { AnimatedButton } from "@/components/ui/animated-button";
 import { SlideInSection } from "@/components/animations/slide-in-section";
 import { FadeInView } from "@/components/animations/fade-in-view";
 import { AnimatedHeading } from "@/components/animations/animated-heading";
-import { useState, useEffect } from "react"; // Added useEffect for text animation
+import { useState, useEffect } from "react";
 import { Plus } from "lucide-react";
 import heroBg from '@/public/images/5192479.jpg';
 import techdithLogo from '@/public/images/techdithlogo.jpg';
 import lardshareImg from '@/public/images/lardshare.jpg';
 import aiImg from '@/public/images/ai.jpg';
 import cybersecurityImg from '@/public/images/cybersecurity.jpg';
+import { motion, AnimatePresence } from "framer-motion"; // Add Framer Motion import
 
 export default function Home() {
-  // Added state for the sliding text animation
+  // Define hero texts array
   const heroTexts = [
     "Transforming Businesses Through Technology",
     "Powering Innovation & IT Solutions",
     "Connecting Technology with Business Growth",
     "Building Digital Success Stories"
   ];
+  
+  // Simplified state for text animation with Framer Motion
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
-  const [isTextFading, setIsTextFading] = useState(false);
 
-  // Animation for cycling through texts with reduced delay
+  // Animation cycle for hero text
   useEffect(() => {
-    const textInterval = setInterval(() => {
-      setIsTextFading(true);
-      
-      setTimeout(() => {
-        setCurrentTextIndex((prev) => (prev + 1) % heroTexts.length);
-        setIsTextFading(false);
-      }, 300); // Reduced fade out time from 600ms to 400ms
-      
-    }, 2500); // Reduced interval from 4000ms to 3000ms
+    const interval = setInterval(() => {
+      setCurrentTextIndex(prevIndex => (prevIndex + 1) % heroTexts.length);
+    }, 4000); // Total cycle time of 4 seconds (including transitions)
     
-    return () => clearInterval(textInterval);
-  }, []);
+    return () => clearInterval(interval);
+  }, [heroTexts.length]);
 
   const expertise = [
     {
@@ -107,8 +103,22 @@ FinTech
             className="text-7xl sm:text-7xl md:text-8xl lg:text-[10rem] font-bold mb-6 leading-tight"
           />
           <AnimatedSection variant="fadeInUp" delay={0.2}>
-            <div className="slider max-w-4xl mx-auto mb-10">
-              <span className={`text-base md:text-3xl leading-loose transition-opacity duration-700 ${isTextFading ? 'opacity-0' : 'opacity-100'}`}>{heroTexts[currentTextIndex]}</span>
+            <div className="max-w-4xl mx-auto mb-10 h-16 relative">
+              <AnimatePresence mode="wait">
+                <motion.span
+                  key={currentTextIndex}
+                  className="text-base md:text-3xl leading-loose absolute left-0 right-0"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ 
+                    duration: 0.5,
+                    ease: "easeInOut"
+                  }}
+                >
+                  {heroTexts[currentTextIndex]}
+                </motion.span>
+              </AnimatePresence>
             </div>
           </AnimatedSection>
           <AnimatedSection variant="fadeInUp" delay={0.6}>
