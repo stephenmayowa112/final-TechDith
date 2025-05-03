@@ -1,9 +1,35 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
 import { MapPin, Phone, Mail, Facebook, Twitter, Linkedin, Instagram } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { useState } from "react"
 
 export default function Footer() {
+  const [email, setEmail] = useState("")
+  const [status, setStatus] = useState<"idle"|"loading"|"success"|"error">("idle")
+
+  async function handleSubscribe(e: React.FormEvent) {
+    e.preventDefault()
+    setStatus("loading")
+    try {
+      const res = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({ email })
+      })
+      if (res.ok) {
+        setStatus('success')
+        setEmail('')
+      } else {
+        setStatus('error')
+      }
+    } catch {
+      setStatus('error')
+    }
+  }
+
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 py-8">
@@ -63,14 +89,20 @@ export default function Footer() {
           {/* Newsletter */}
           <div>
             <h3 className="text-lg font-bold mb-4">Newsletter</h3>
-            <div className="flex">
+            <form onSubmit={handleSubscribe} className="flex">
               <input
                 type="email"
                 placeholder="Your email"
                 className="bg-gray-800 text-white px-4 py-2 rounded-l w-full"
+                value={email}
+                onChange={e => setEmail(e.target.value)}
+                required
               />
-              <Button className="bg-orange-500 hover:bg-orange-600 text-white rounded-l-none">Subscribe</Button>
-            </div>
+              <Button type="submit" className="bg-orange-500 hover:bg-orange-600 text-white rounded-l-none">{status === "loading" ? "…" : "Subscribe"}</Button>
+            </form>
+            {status === "success" && <p className="mt-2 text-green-400">Subscribed!</p>}
+            {status === "error" && <p className="mt-2 text-red-400">Oops, please try again.</p>}
+
             <div className="flex space-x-4 mt-6">
               <Link href=" https://web.facebook.com/profile.php?id=61575122038301#" className="text-gray-400 hover:text-white">
                 <Facebook className="h-5 w-5" />
