@@ -18,9 +18,9 @@ export async function POST(request: Request) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${API_KEY}`,
+        'X-MailerLite-ApiKey': API_KEY,
       },
-      body: JSON.stringify({ email }),
+      body: JSON.stringify({ email, resubscribe: true }),
     })
 
     if (!res.ok) {
