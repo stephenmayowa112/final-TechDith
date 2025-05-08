@@ -1,20 +1,36 @@
 "use client";
+import dynamic from 'next/dynamic';
 import Image from "next/image";
 import Link from "next/link";
-import { AnimatedSection } from "@/components/animations/animated-section";
-import { AnimatedText } from "@/components/animations/animated-text";
-import { AnimatedButton } from "@/components/ui/animated-button";
-import { SlideInSection } from "@/components/animations/slide-in-section";
-import { FadeInView } from "@/components/animations/fade-in-view";
-import { AnimatedHeading } from "@/components/animations/animated-heading";
 import { useState, useEffect } from "react";
 import { Plus } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion"; // Add Framer Motion import
+
+// Fix dynamic imports by properly extracting named exports
+const AnimatedSection = dynamic(() => 
+  import("@/components/animations/animated-section").then(mod => mod.AnimatedSection)
+, { ssr: false });
+const AnimatedText = dynamic(() => 
+  import("@/components/animations/animated-text").then(mod => mod.AnimatedText)
+, { ssr: false });
+const AnimatedButton = dynamic(() => 
+  import("@/components/ui/animated-button").then(mod => mod.AnimatedButton)
+, { ssr: false });
+const SlideInSection = dynamic(() => 
+  import("@/components/animations/slide-in-section").then(mod => mod.SlideInSection)
+, { ssr: false });
+const FadeInView = dynamic(() => 
+  import("@/components/animations/fade-in-view").then(mod => mod.FadeInView)
+, { ssr: false });
+const AnimatedHeading = dynamic(() => 
+  import("@/components/animations/animated-heading").then(mod => mod.AnimatedHeading)
+, { ssr: false });
+
 import heroBg from '@/public/images/5192479.jpg';
 import techdithLogo from '@/public/images/techdithlogo.jpg';
 import lardshareImg from '@/public/images/lardshare.jpg';
 import aiImg from '@/public/images/ai.jpg';
 import cybersecurityImg from '@/public/images/cybersecurity.jpg';
-import { motion, AnimatePresence } from "framer-motion"; // Add Framer Motion import
 
 export default function Home() {
   // Define hero texts array

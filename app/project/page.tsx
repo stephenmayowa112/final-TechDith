@@ -19,7 +19,7 @@ export default function ProjectsPage() {
       <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="images/blueback.jpg"
+            src="/images/blueback.jpg"
             alt="TECHDITH Projects"
             fill
             className="object-cover brightness-50"
@@ -66,7 +66,7 @@ export default function ProjectsPage() {
               className="md:w-1/2 rounded-lg overflow-hidden shadow-xl"
             >
               <Image
-                src="images/inno.jpg"
+                src="/images/inno.jpg"
                 alt="TECHDITH Innovation"
                 width={400}
                 height={200}
@@ -92,7 +92,7 @@ export default function ProjectsPage() {
                   <div className="lg:w-1/2 order-1 lg:order-2 relative">
                     <div className="h-64 lg:h-full relative">
                       <Image
-                        src="images/agric.jpg"
+                        src="/images/agric.jpg"
                         alt="Black Soldier Fly Farming Research"
                         fill
                         className="object-cover"
@@ -237,7 +237,7 @@ export default function ProjectsPage() {
               <div className="bg-gray-50 rounded-xl shadow-lg overflow-hidden transform transition-transform hover:scale-105">
                 <div className="h-56 relative">
                   <Image
-                    src="images/inni4.jpg"
+                    src="/images/inni4.jpg"
                     alt="Government Partnerships"
                     fill
                     className="object-cover"
@@ -326,7 +326,7 @@ export default function ProjectsPage() {
               <div className="bg-gray-50 rounded-xl shadow-lg overflow-hidden transform transition-transform hover:scale-105">
                 <div className="h-56 relative">
                   <Image
-                    src="images/lardshare.jpg"
+                    src="/images/lardshare.jpg"
                     alt="LARDSHARE Product Development"
                     fill
                     className="object-cover"

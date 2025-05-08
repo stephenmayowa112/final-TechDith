@@ -1,16 +1,29 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { AnimatedSection } from "@/components/animations/animated-section";
-import { AnimatedText } from "@/components/animations/animated-text";
-import { SlideInSection } from "@/components/animations/slide-in-section";
-import { AnimatedHeading } from "@/components/animations/animated-heading";
+import dynamic from "next/dynamic";
+
+// Fix dynamic imports by specifying the component field
+const AnimatedSection = dynamic(() =>
+  import("@/components/animations/animated-section").then((mod) => mod.AnimatedSection)
+);
+const AnimatedText = dynamic(() =>
+  import("@/components/animations/animated-text").then((mod) => mod.AnimatedText)
+);
+const SlideInSection = dynamic(() =>
+  import("@/components/animations/slide-in-section").then((mod) => mod.SlideInSection)
+);
+const AnimatedHeading = dynamic(() =>
+  import("@/components/animations/animated-heading").then((mod) => mod.AnimatedHeading)
+);
 
 export const metadata: Metadata = {
   title: "Blog & News | TECHDITH LIMITED",
   description:
     "Stay updated with the latest tech insights, industry trends, and company news from TECHDITH LIMITED.",
 };
+
+export const revalidate = 3600; // ISR: revalidate every hour
 
 // Sample blog post data
 const blogPosts = [
@@ -23,7 +36,7 @@ const blogPosts = [
     date: "April 2, 2025",
     author: "Segun Oladiti",
     authorRole: "CEO",
-    image: "images/aiib.jpg",
+    image: "/images/aiib.jpg",
     featured: true,
   },
   {
@@ -46,7 +59,7 @@ const blogPosts = [
     date: "March 20, 2025",
     author: "Segun Oladiti",
     authorRole: "CEO",
-    image: "images/secu.jpg",
+    image: "/images/secu.jpg",
   },
   {
     id: 4,
@@ -57,7 +70,7 @@ const blogPosts = [
     date: "March 15, 2025",
     author: "Ife Thona Akoniyon",
     authorRole: "Executive Director",
-    image: "images/lardshare.jpg",
+    image: "/images/lardshare.jpg",
   },
   {
     id: 5,
@@ -68,7 +81,7 @@ const blogPosts = [
     date: "March 10, 2025",
     author: "Segun Oladiti",
     authorRole: "CEO",
-    image: "images/farm.jpg",
+    image: "/images/farm.jpg",
   },
   {
     id: 6,
@@ -80,7 +93,7 @@ const blogPosts = [
     date: "March 5, 2025",
     author: "Ife Thona Akoniyon",
     authorRole: "Executive Director",
-    image: "images/cloud.jpg",
+    image: "/images/cloud.jpg",
   },
 ];
 
@@ -96,7 +109,7 @@ export default function BlogPage() {
       <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="images/blog1.jpg"
+            src="/images/blog1.jpg"
             alt="TECHDITH Blog & News"
             fill
             className="object-cover brightness-50"
@@ -441,7 +454,7 @@ export default function BlogPage() {
                 </div>
                 <div className="md:w-1/2">
                   <Image
-                    src="images/techdithlogo.jpg"
+                    src="/images/techdithlogo.jpg"
                     alt="Newsletter Subscription"
                     width={500}
                     height={400}

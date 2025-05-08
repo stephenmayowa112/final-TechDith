@@ -405,7 +405,7 @@ export default function AboutUs() {
               <div className="flex bg-white rounded-lg shadow-lg overflow-hidden hover:bg-primary/5 transition-colors">
                 <div className="w-1/3 relative">
                   <Image
-                    src="https://img.freepik.com/free-photo/computer-program-coding-screen_53876-138060.jpg?uid=R75576832&ga=GA1.1.106458567.1743797612&semt=ais_hybrid&w=740"
+                    src="/images/coding.jpg" 
                     alt="Computer Programming"
                     fill
                     className="object-cover"
@@ -426,7 +426,7 @@ export default function AboutUs() {
               <div className="flex bg-white rounded-lg shadow-lg overflow-hidden hover:bg-primary/5 transition-colors">
                 <div className="w-1/3 relative">
                   <Image
-                    src="https://img.freepik.com/free-photo/cloud-storage-banner-background_53876-108506.jpg?t=st=1743858640~exp=1743862240~hmac=9e6d9e3a8c50e88a5e2060ed0a11d698251f444ceea4f1c10aae2992978fbb03&w=996"
+                    src="/images/cloud.jpg"
                     alt="IT Infrastructure"
                     fill
                     className="object-cover"
@@ -449,7 +449,7 @@ export default function AboutUs() {
               <div className="flex bg-white rounded-lg shadow-lg overflow-hidden hover:bg-primary/5 transition-colors">
                 <div className="w-1/3 relative">
                   <Image
-                    src="images/research.jpg"
+                    src="/images/research.jpg"
                     alt="Research and Development"
                     fill
                     className="object-cover"
@@ -471,7 +471,7 @@ export default function AboutUs() {
               <div className="flex bg-white rounded-lg shadow-lg overflow-hidden hover:bg-primary/5 transition-colors">
                 <div className="w-1/3 relative">
                   <Image
-                    src="images/development.jpg"
+                    src="/images/development.jpg"
                     alt="Training and Development"
                     fill
                     className="object-cover"
@@ -505,7 +505,7 @@ export default function AboutUs() {
               <div className="group relative overflow-hidden rounded-lg shadow-lg">
                 <div className="relative h-64">
                   <Image
-                    src="images/farm.jpg"
+                    src="/images/farm.jpg"
                     alt="Agricultural Investment"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -529,7 +529,7 @@ export default function AboutUs() {
               <div className="group relative overflow-hidden rounded-lg shadow-lg">
                 <div className="relative h-64">
                   <Image
-                    src="images/agric.jpg"
+                    src="/images/agric.jpg"
                     alt="Black Soldier Fly Farming"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -560,7 +560,7 @@ export default function AboutUs() {
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <SlideInSection direction="left" delay={0.1} className="md:w-1/2">
               <Image
-                src="images/aboutus 1.jpg"
+                src="/images/aboutus1.jpg"
                 alt="Future Initiatives"
                 width={800}
                 height={800}

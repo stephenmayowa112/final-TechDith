@@ -231,7 +231,7 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
           {/* Share Buttons */}
           <div className="mt-12 flex flex-wrap gap-4">
             <span className="text-gray-700 font-medium">Share this article:</span>
-            <button className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-colors">
+            <button className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-colors" aria-label="Share this article">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -247,7 +247,7 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
                 />
               </svg>
             </button>
-            <button className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-400 text-white hover:bg-blue-500 transition-colors">
+            <button className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-400 text-white hover:bg-blue-500 transition-colors" aria-label="Share this article">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -263,7 +263,7 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
                 />
               </svg>
             </button>
-            <button className="w-10 h-10 flex items-center justify-center rounded-full bg-green-600 text-white hover:bg-green-700 transition-colors">
+            <button className="w-10 h-10 flex items-center justify-center rounded-full bg-green-600 text-white hover:bg-green-700 transition-colors" aria-label="Share this article">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -279,7 +279,7 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
                 />
               </svg>
             </button>
-            <button className="w-10 h-10 flex items-center justify-center rounded-full bg-red-600 text-white hover:bg-red-700 transition-colors">
+            <button className="w-10 h-10 flex items-center justify-center rounded-full bg-red-600 text-white hover:bg-red-700 transition-colors" aria-label="Share this article">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
