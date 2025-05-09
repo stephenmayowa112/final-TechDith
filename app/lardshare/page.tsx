@@ -758,7 +758,7 @@ export default function LardSharePage() {
                           strokeLinecap="round"
                           strokeLinejoin="round"
                           strokeWidth={2}
-                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 012 2z"
                         />
                       </svg>
                     </div>
@@ -766,7 +766,11 @@ export default function LardSharePage() {
                       <h4 className="text-lg font-semibold text-gray-800">
                         Email
                       </h4>
-                      <p className="text-gray-600">investors@techdith.com</p>
+                      <p className="text-gray-600">
+                        <a href="mailto:investors@techdith.com" className="hover:text-primary">
+                          investors@techdith.com
+                        </a>
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -830,7 +834,7 @@ export default function LardSharePage() {
                           strokeLinecap="round"
                           strokeLinejoin="round"
                           strokeWidth={2}
-                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 012 2z"
                         />
                       </svg>
                     </div>
@@ -838,7 +842,11 @@ export default function LardSharePage() {
                       <h4 className="text-lg font-semibold text-gray-800">
                         Email
                       </h4>
-                      <p className="text-gray-600">partnerships@techdith.com</p>
+                      <p className="text-gray-600">
+                        <a href="mailto:partnerships@techdith.com" className="hover:text-primary">
+                          partnerships@techdith.com
+                        </a>
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">

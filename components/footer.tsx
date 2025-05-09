@@ -111,16 +111,16 @@ export default function Footer() {
             {status === "error" && <p className="mt-2 text-red-400">Oops, please try again.</p>}
 
             <div className="flex space-x-4 mt-6">
-              <Link href=" https://web.facebook.com/profile.php?id=61575122038301#" className="text-gray-400 hover:text-white">
+              <Link href="https://web.facebook.com/profile.php?id=61575122038301#" className="text-gray-400 hover:text-white" target="_blank" rel="noopener noreferrer">
                 <Facebook className="h-5 w-5" />
               </Link>
-              <Link href=" https://x.com/techdith?s=21" className="text-gray-400 hover:text-white">
+              <Link href="https://x.com/techdith?s=21" className="text-gray-400 hover:text-white" target="_blank" rel="noopener noreferrer">
                 <Twitter className="h-5 w-5" />
               </Link>
-              <Link href="https://www.linkedin.com/company/techdith/" className="text-gray-400 hover:text-white">
+              <Link href="https://www.linkedin.com/company/techdith/" className="text-gray-400 hover:text-white" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="h-5 w-5" />
               </Link>
-              <Link href=" https://www.instagram.com/techdith_24/" className="text-gray-400 hover:text-white">
+              <Link href="https://www.instagram.com/techdith_24/" className="text-gray-400 hover:text-white" target="_blank" rel="noopener noreferrer">
                 <Instagram className="h-5 w-5" />
               </Link>
             </div>

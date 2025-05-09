@@ -140,8 +140,10 @@ export default function ContactPageClient() {
                   </h3>
                   <div className="flex gap-4">
                     <Link
-                      href=" https://web.facebook.com/profile.php?id=61575122038301#"
+                      href="https://web.facebook.com/profile.php?id=61575122038301#"
                       className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -153,8 +155,10 @@ export default function ContactPageClient() {
                       </svg>
                     </Link>
                     <Link
-                      href=" https://x.com/techdith?s=21"
+                      href="https://x.com/techdith?s=21"
                       className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -166,8 +170,10 @@ export default function ContactPageClient() {
                       </svg>
                     </Link>
                     <Link
-                      href=" https://www.linkedin.com/company/techdith/"
+                      href="https://www.linkedin.com/company/techdith/"
                       className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -179,8 +185,10 @@ export default function ContactPageClient() {
                       </svg>
                     </Link>
                     <Link
-                      href=" https://www.instagram.com/techdith_24/"
+                      href="https://www.instagram.com/techdith_24/"
                       className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -284,7 +292,7 @@ export default function ContactPageClient() {
                 Call Us Now
               </Link>
               <Link
-                href="mailto:techlard4@gmail.com"
+                href="mailto:info@techdith.com"
                 className="inline-block bg-transparent border-2 border-white text-white font-semibold py-3 px-8 rounded-lg hover:bg-white hover:text-primary transition-colors"
               >
                 Email Us
