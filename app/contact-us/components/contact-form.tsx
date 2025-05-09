@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import { useState, type FormEvent } from "react"
 
 type FormData = {
@@ -87,9 +86,48 @@ export function ContactForm() {
     setSubmitError("")
 
     try {
-      // In a real application, you would send the form data to your backend
-      // For this example, we'll simulate a successful submission after a delay
-      await new Promise((resolve) => setTimeout(resolve, 1500))
+      // Submit form using FormSubmit service to send email to info@techdith.com
+      const form = e.target as HTMLFormElement
+      const formSubmitAction = "https://formsubmit.co/info@techdith.com"
+
+      // Create a temporary form for submission
+      const tempForm = document.createElement("form")
+      tempForm.method = "POST"
+      tempForm.action = formSubmitAction
+
+      // Add formdata fields
+      for (const key in formData) {
+        if (Object.prototype.hasOwnProperty.call(formData, key)) {
+          const input = document.createElement("input")
+          input.type = "hidden"
+          input.name = key
+          input.value = (formData as any)[key]
+          tempForm.appendChild(input)
+        }
+      }
+
+      // Add FormSubmit configuration fields
+      const configFields = {
+        _subject: `New contact form submission: ${formData.subject}`,
+        _captcha: "false",
+        _template: "table",
+        _next: window.location.href,
+      }
+
+      for (const key in configFields) {
+        if (Object.prototype.hasOwnProperty.call(configFields, key)) {
+          const input = document.createElement("input")
+          input.type = "hidden"
+          input.name = key
+          input.value = (configFields as any)[key]
+          tempForm.appendChild(input)
+        }
+      }
+
+      // Append form to body, submit it, and remove it
+      document.body.appendChild(tempForm)
+      tempForm.submit()
+      document.body.removeChild(tempForm)
 
       // Reset form after successful submission
       setFormData({

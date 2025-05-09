@@ -13,13 +13,20 @@ export default function Footer() {
   async function handleSubscribe(e: React.FormEvent) {
     e.preventDefault()
     setStatus("loading")
+    
     try {
-      const res = await fetch('/api/subscribe', {
+      // Direct submission to FormSubmit service
+      const formData = new FormData();
+      formData.append('email', email);
+      formData.append('_subject', 'New Newsletter Subscription');
+      formData.append('_captcha', 'false');
+      
+      const response = await fetch('https://formsubmit.co/info@techdith.com', {
         method: 'POST',
-        headers: {'Content-Type':'application/json'},
-        body: JSON.stringify({ email })
-      })
-      if (res.ok) {
+        body: formData
+      });
+      
+      if (response.ok) {
         setStatus('success')
         setEmail('')
       } else {
