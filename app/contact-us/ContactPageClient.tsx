@@ -16,7 +16,7 @@ export default function ContactPageClient() {
       <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="images/rep.jpg"
+            src="/images/rep.jpg"
             alt="TECHDITH Contact Us"
             fill
             className="object-cover brightness-50"
