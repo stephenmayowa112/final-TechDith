@@ -708,7 +708,27 @@ FinTech
                 <h3 className="text-xl font-semibold mb-6 text-gray-800">
                   Send Us a Message
                 </h3>
-                <form className="space-y-6">
+                <form 
+                  className="space-y-6" 
+                  action="https://formsubmit.co/info@techdith.com" 
+                  method="POST"
+                  onSubmit={(e) => {
+                    // Show a confirmation when the form is submitted
+                    const form = e.target as HTMLFormElement;
+                    if (form.checkValidity()) {
+                      setTimeout(() => {
+                        alert("Thank you for your message. We'll get back to you soon!");
+                        form.reset();
+                      }, 500);
+                    }
+                  }}
+                >
+                  {/* Hidden fields for FormSubmit configuration */}
+                  <input type="hidden" name="_subject" value="New message from TechDith website" />
+                  <input type="hidden" name="_captcha" value="false" />
+                  <input type="hidden" name="_template" value="table" />
+                  <input type="hidden" name="_next" value={typeof window !== 'undefined' ? window.location.href : ''} />
+
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label
@@ -723,6 +743,7 @@ FinTech
                         name="name"
                         className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                         placeholder="John Doe"
+                        required
                       />
                     </div>
                     <div>
@@ -738,6 +759,7 @@ FinTech
                         name="email"
                         className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                         placeholder="john@example.com"
+                        required
                       />
                     </div>
                   </div>
@@ -755,6 +777,7 @@ FinTech
                       name="subject"
                       className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                       placeholder="How can we help you?"
+                      required
                     />
                   </div>
 
@@ -771,6 +794,7 @@ FinTech
                       rows={4}
                       className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                       placeholder="Please provide details about your inquiry..."
+                      required
                     ></textarea>
                   </div>
 
